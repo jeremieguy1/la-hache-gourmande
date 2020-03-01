@@ -11,7 +11,7 @@ import { MapComponent } from './component/map/map.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
   { path: 'visite', component: VisiteComponent, pathMatch: 'full'}, // TODO : Enfants
   { path: 'tarif', component: TarifComponent, pathMatch: 'full'}, // TODO : Enfants
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'histoire', component: HistoireComponent, pathMatch: 'full' },
   { path: 'les-martis', component: LesMartisComponent, pathMatch: 'full'}, // TODO : Enfants
   { path: 'map', component: MapComponent, pathMatch: 'full'},
-  { path: '**', component: HomeComponent }
+  { path: '**', component: HomeComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
