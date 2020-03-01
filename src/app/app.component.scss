@@ -1,0 +1,16 @@
+@import '../vars';
+
+@function convert-to-rem($target) {
+    @return ($target / $base-size) * 1em;
+}
+
+.head {
+    background-color: $gray;
+    height: convert-to-rem(35);
+    align-items: center;
+}
+
+.head-text {   
+    color: $orange-axe; 
+    font-size: large;
+}
