@@ -12,6 +12,7 @@ import { MapComponent } from './component/map/map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '/', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
   { path: 'visite', component: VisiteComponent, pathMatch: 'full'}, // TODO : Enfants
   { path: 'tarif', component: TarifComponent, pathMatch: 'full'}, // TODO : Enfants
