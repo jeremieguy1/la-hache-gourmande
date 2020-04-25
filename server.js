@@ -15,22 +15,13 @@ const { expressCspHeader, INLINE, NONE, SELF } = require('express-csp-header');
     next();
 });*/
 
-const csp = require(`helmet-csp`)
 
-app.use(csp({
-    directives: {
-      defaultSrc: [`'self'`],
-      reportUri: `/api/csp/report`
-    },
-    reportOnly: true
-  }))
-
-app.use(express.static(__dirname + '/dist')); 
-
-app.listen(process.env.PORT || 8080);
+app.use(express.static(__dirname + '/dist/la-hache-gourmande')); 
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/la-hache-gourmande/index.html'));
 });
+
+app.listen(process.env.PORT || 8080);
 
 console.log('Listening')
