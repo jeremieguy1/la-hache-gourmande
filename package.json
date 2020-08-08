@@ -4,13 +4,16 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "start:local": "npm run css-build && ng serve -o",
+    "start:local": "ng serve -o",
     "css-build": "node-sass --omit-source-map-url src/styles.scss src/styles.css",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "int:extract": "ng xi18n --output-path src/locale",
+    "build:prod": "ng build --prod",
+    "build:i18n": "npm run build -- --output-path=dist/${LANG:-en} --bh /${LANG:-en}/ --i18n-file=locale/messages.${LANG:-en}.xlf --locale=${LANG:-en}",
+    "heroku-postbuild": "for lang in en fr; do LANG=$lang npm run build:i18n & done; wait;"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +24,7 @@
     "@angular/compiler-cli": "~9.0.3",
     "@angular/core": "~9.0.3",
     "@angular/forms": "~9.0.3",
+    "@angular/localize": "^9.1.3",
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/router": "~9.0.3",
@@ -28,7 +32,7 @@
     "core-js": "^3.6.4",
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
@@ -36,7 +40,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.4",
+    "@angular-devkit/build-angular": "^0.1000.5",
     "@angular/language-service": "~9.0.3",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
@@ -53,7 +57,7 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "webpack": "^4.42.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "engines": {
     "node": "12.16.1",
