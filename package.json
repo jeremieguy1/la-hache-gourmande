@@ -12,7 +12,7 @@
     "e2e": "ng e2e",
     "int:extract": "ng xi18n --output-path src/locale",
     "build:prod": "ng build --prod",
-    "build:i18n": "npm run build -- --output-path=dist/${LANG:-en} --bh /${LANG:-en}/ --i18n-file=locale/messages.${LANG:-en}.xlf --locale=${LANG:-en}",
+    "build:i18n": "npm run build --prod --output-path=dist/${LANG:-en} --bh /${LANG:-en}/ --i18n-file=locale/messages.${LANG:-en}.xlf --locale=${LANG:-en}",
     "heroku-postbuild": "for lang in en fr; do LANG=$lang npm run build:i18n & done; wait;"
   },
   "private": true,
