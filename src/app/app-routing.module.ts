@@ -1,14 +1,32 @@
+// Modules
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './component/home/home.component';
-import { VisiteComponent } from './component/visite/visite.component';
-import { TarifComponent } from './component/tarif/tarif.component';
-import { CoordonneeComponent } from './component/coordonnee/coordonnee.component';
-import { DescriptifComponent } from './component/descriptif/descriptif.component';
-import { HistoireComponent } from './component/histoire/histoire.component';
-import { LesMartisComponent } from './component/les-martis/les-martis.component';
-import { MapComponent } from './component/map/map.component';
 
+// Components
+import {
+  HomeComponent
+} from './features/home/home.component';
+import {
+  VisiteComponent
+} from './features/visite/visite.component';
+import {
+  TarifComponent
+} from './features/tarif/tarif.component';
+import {
+  CoordonneeComponent
+} from './features/coordonnee/coordonnee.component';
+import {
+  DescriptifComponent
+} from './features/descriptif/descriptif.component';
+import {
+  HistoireComponent
+} from './features/histoire/histoire.component';
+import {
+  LesMartisComponent
+} from './features/les-martis/les-martis.component';
+import {
+  MapComponent
+} from './features/map/map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
