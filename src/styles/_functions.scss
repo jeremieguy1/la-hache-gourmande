@@ -1,0 +1,5 @@
+@import 'vars';
+
+@function convert-to-rem($target) {
+    @return ($target / $base-size) * 1em;
+}

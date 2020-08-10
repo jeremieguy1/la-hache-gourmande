@@ -1,4 +1,3 @@
-
 // Modules
 import {
   NgModule 
@@ -7,6 +6,10 @@ import {
 import {
   CommonModule 
 } from '@angular/common';
+
+import {
+  RouterModule 
+} from '@angular/router';
 
 // Components
 import {
@@ -58,7 +61,8 @@ import {
     VisiteComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent

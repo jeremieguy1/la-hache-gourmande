@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "start:local": "ng serve -o",
+    "start:local": "npm run css-build && ng serve -o",
     "css-build": "node-sass --omit-source-map-url src/styles.scss src/styles.css",
     "build": "ng build",
     "test": "ng test",

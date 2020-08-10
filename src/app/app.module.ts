@@ -22,7 +22,7 @@ export const httpInterceptorProviders = [
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    HttpClientModule, FeaturesModule       
+    HttpClientModule, FeaturesModule
   ],
 
   providers: [ ...httpInterceptorProviders ],
