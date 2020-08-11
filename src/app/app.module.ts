@@ -7,25 +7,22 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // Components
 import { AppComponent } from './app.component';
 
-// Interceptor
-import { HttpInterceptorService } from './http-interceptor.service';
-import { FeaturesModule } from './features/features.module'
-
-export const httpInterceptorProviders = [
-  { provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true },
-];
+// Custom Modules
+import { FeaturesModule } from './features/features.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    HttpClientModule, FeaturesModule
+    HttpClientModule,
+    FeaturesModule, 
+    SharedModule,
   ],
-
-  providers: [ ...httpInterceptorProviders ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

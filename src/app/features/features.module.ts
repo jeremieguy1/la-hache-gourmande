@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 // Modules
 import {
   NgModule 
@@ -61,8 +62,8 @@ import {
     VisiteComponent
   ],
   imports: [
-    CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule,
   ],
   exports: [
     NavbarComponent
