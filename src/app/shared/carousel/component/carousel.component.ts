@@ -28,10 +28,12 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
    * @param eventTarget The target of the event
    */
   @HostListener('window:click', ['$event.target']) onClick(eventTarget: any) {
-    if (eventTarget.classList[0] === ('slider-navigation-next' || 'slider-navigation-previous')
-      || eventTarget.id === 'polyline') {
+    if (eventTarget.classList[0] && eventTarget.classList[0] === 'slider-navigation-next') {
       this.carouselInstance[0].stop();
       this.carouselInstance[0].next();
+    } else if (eventTarget.classList[0] && eventTarget.classList[0] === 'slider-navigation-previous') {
+      this.carouselInstance[0].stop();
+      this.carouselInstance[0].previous();
     }
   }
   constructor() { }
