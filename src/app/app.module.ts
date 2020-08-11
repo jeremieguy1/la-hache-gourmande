@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 // Angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,7 @@ import { AppComponent } from './app.component';
 
 // Interceptor
 import { HttpInterceptorService } from './http-interceptor.service';
-import { FeaturesModule } from './features/features.module'
+import { FeaturesModule } from './features/features.module';
 
 export const httpInterceptorProviders = [
   { provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true },
@@ -17,12 +18,14 @@ export const httpInterceptorProviders = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    HttpClientModule, FeaturesModule
+    HttpClientModule,
+    FeaturesModule, 
+    SharedModule,
   ],
 
   providers: [ ...httpInterceptorProviders ],

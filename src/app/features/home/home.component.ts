@@ -1,10 +1,15 @@
-import { CarouselContentService } from './../../shared/carousel-content.service';
-import { Component, OnInit } from '@angular/core';
+import { 
+  Component,
+  OnInit 
+} from '@angular/core';
 
-import
-  bulmaCarousel
-from '../../../../node_modules/bulma-carousel/src/js/index.js';
-import { CarouselContent } from 'src/app/shared/carousel-content.enum';
+import { 
+  CarouselContent
+} from '../../shared/carousel/carousel-content.enum';
+
+import {
+  CarouselContentService
+} from '../../shared/carousel/carousel-content.service';
 
 @Component({
   selector: 'app-home',
@@ -13,37 +18,45 @@ import { CarouselContent } from 'src/app/shared/carousel-content.enum';
 })
 export class HomeComponent implements OnInit {
 
+  /**
+   * Prefix for asset folder
+   */
   ASSETS_PREFIX: string = '../../assets/carousel/home/'
 
+  /**
+   * Id for the carousel
+   */
+  idCarousel: string = 'home'
+
+  /**
+   * Content of the carousel
+   */
   carouselContent: Array<string>
 
   constructor(private carouselContentService: CarouselContentService) { }
 
   ngOnInit(): void {
-
-    this.getCarouselContent();
-
-    bulmaCarousel.attach('#carousel-demo', {
-      initialSlide: 2,
-			slidesToScroll: 1,
-      slidesToShow: 1,
-      navigation: true,
-      pagination: true,
-      infinite: true,
-      autoplay: false,
-      autoplaySpeed: 4000,
-      duration: 1000,
-		});
+    this.carouselContent = this.computeCarouselContent(this.getCarouselContent());
   }
 
-  getCarouselContent(): void {
-    this.carouselContent = 
-      this.carouselContentService.getCarouselContent(CarouselContent.HOME);
+  /**
+   * Fetch data from carousel service
+   * @return The date fetched from the service
+   */
+  getCarouselContent(): Array<string> {
+    return this.carouselContentService.getCarouselContent(CarouselContent.HOME);
   }
 
-  computeCarouselContent(): void {
-    for (let [_i, content] of this.carouselContent.entries()) {
-      this.carouselContent[_i] = this.ASSETS_PREFIX + content;
+  /**
+   * Compute image names fetched with the prefix
+   * @param carouselContent The data fetched
+   * @return The data fetched with the prefix
+   */
+  computeCarouselContent(carouselContent: Array<string>): Array<string> {
+    let _carouselContent: Array<string> = [];
+    for (let [_i, content] of carouselContent.entries()) {
+      _carouselContent[_i] = this.ASSETS_PREFIX + content;
     }
+    return _carouselContent;
   }
 }

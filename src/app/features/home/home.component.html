@@ -1,34 +1,7 @@
 <div class="container">
     <section class="section">
         <div class="container">
-            <!-- Start Carousel -->
-            <div id="carousel-demo" class="carousel">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-16by9 is-covered">
-                            <img src="../../assets/image/hache-g.png">
-                        </figure>
-                    </div>
-                    <!-- Slide Content -->
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-16by9 is-covered">
-                            <img src="../../assets/image/bienvenue.jpg">
-                        </figure>
-                    </div>
-                    <!-- Slide Content -->
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-16by9 is-covered">
-                            <img src="../../assets/image/hache-g.png">
-                        </figure>
-                    </div>
-                    <!-- Slide Content -->
-                </div>
-            </div>
-            <!-- End Carousel -->
+            <app-carousel [idCarousel]="idCarousel" [carouselContent]="carouselContent"></app-carousel>
         </div>
     </section>
 </div>
