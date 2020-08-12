@@ -12,7 +12,6 @@ import {
 } from '../../shared/carousel/carousel-content.service';
 
 @Component({
-  selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

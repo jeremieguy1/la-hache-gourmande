@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CoordonneeComponent } from './coordonnee.component';
+import { CoordinateComponent } from './coordinate.component';
 
-describe('CoordonneeComponent', () => {
-  let component: CoordonneeComponent;
-  let fixture: ComponentFixture<CoordonneeComponent>;
+describe('CoordinateComponent', () => {
+  let component: CoordinateComponent;
+  let fixture: ComponentFixture<CoordinateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CoordonneeComponent ]
+      declarations: [ CoordinateComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CoordonneeComponent);
+    fixture = TestBed.createComponent(CoordinateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

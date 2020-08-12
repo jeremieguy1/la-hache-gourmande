@@ -7,20 +7,20 @@ import {
   HomeComponent
 } from './features/home/home.component';
 import {
-  VisiteComponent
-} from './features/visite/visite.component';
+  VisitComponent
+} from './features/visit/visit.component';
 import {
-  TarifComponent
-} from './features/tarif/tarif.component';
+  TariffComponent
+} from './features/tariff/tariff.component';
 import {
-  CoordonneeComponent
-} from './features/coordonnee/coordonnee.component';
+  CoordinateComponent
+} from './features/coordinate/coordinate.component';
 import {
-  DescriptifComponent
-} from './features/descriptif/descriptif.component';
+  DescriptionComponent
+} from './features/description/description.component';
 import {
-  HistoireComponent
-} from './features/histoire/histoire.component';
+  HistoryComponent
+} from './features/history/history.component';
 import {
   LesMartisComponent
 } from './features/les-martis/les-martis.component';
@@ -31,11 +31,11 @@ import {
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
-  { path: 'visite', component: VisiteComponent, pathMatch: 'full'}, // TODO : Enfants
-  { path: 'tarif', component: TarifComponent, pathMatch: 'full'}, // TODO : Enfants
-  { path: 'coordonnee', component: CoordonneeComponent, pathMatch: 'full'},
-  { path: 'descriptif', component: DescriptifComponent, pathMatch: 'full'},
-  { path: 'histoire', component: HistoireComponent, pathMatch: 'full' },
+  { path: 'visit', component: VisitComponent, pathMatch: 'full'}, // TODO : Enfants
+  { path: 'tariff', component: TariffComponent, pathMatch: 'full'}, // TODO : Enfants
+  { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
+  { path: 'description', component: DescriptionComponent, pathMatch: 'full'},
+  { path: 'history', component: HistoryComponent, pathMatch: 'full' },
   { path: 'les-martis', component: LesMartisComponent, pathMatch: 'full'}, // TODO : Enfants
   { path: 'map', component: MapComponent, pathMatch: 'full'},
   { path: '**', component: HomeComponent, pathMatch: 'full' }

@@ -50,7 +50,7 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
       initialSlide: 1,
 			slidesToScroll: 1,
       slidesToShow: 1,
-      navigation: true,
+      //navigation: true,
       pagination: true,
       loop: true,
       autoplay: true,

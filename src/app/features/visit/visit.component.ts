@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-visite',
-  templateUrl: './visite.component.html',
-  styleUrls: ['./visite.component.scss']
+  templateUrl: './visit.component.html',
+  styleUrls: ['./visit.component.scss']
 })
-export class VisiteComponent implements OnInit {
+export class VisitComponent implements OnInit {
 
   lastClickIndex: number;
 
