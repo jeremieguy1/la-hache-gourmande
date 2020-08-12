@@ -1,3 +1,51 @@
 <div class="container">
-    <p>visite works!</p>
+    <div class="timeline">
+        <ul class="steps">
+            <li [ngClass]="{'is-active': isActive(0)}" class="steps-segment">
+                <button
+                    id="visit-outside"
+                    class="button steps-marker"
+                    role="link"
+                    (click)="navigateTo($event)">
+                </button>
+                <span>Les extérieurs</span>
+            </li>
+            <li [ngClass]="{'is-active': isActive(1)}" class="steps-segment">
+                <button
+                    id="visit-dining-room"
+                    class="button steps-marker"
+                    role="link"
+                    (click)="navigateTo($event)">
+                </button>
+                <span>La salle à manger</span>
+            </li>
+            <li [ngClass]="{'is-active': isActive(2)}" class="steps-segment">
+                <button
+                    id="visit-bedrooms"
+                    class="button steps-marker"
+                    role="link"
+                    (click)="navigateTo($event)">
+                </button>
+                <span>Les chambres</span>
+            </li>
+            <li [ngClass]="{'is-active': isActive(3)}" class="steps-segment">
+                <button
+                    id="visit-kitchen"
+                    class="button steps-marker"
+                    role="link"
+                    (click)="navigateTo($event)">
+                </button>
+                <span>La cuisine</span>
+            </li>
+            <li [ngClass]="{'is-active': isActive(4)}" class="steps-segment">
+                <button
+                    id="visit-kings-corner"
+                    class="button steps-marker"
+                    role="link"
+                    (click)="navigateTo($event)">
+                </button>
+                <span>La coin du roi</span>
+            </li>
+        </ul>
+    </div>
 </div>

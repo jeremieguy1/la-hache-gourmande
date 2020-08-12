@@ -1,0 +1,17 @@
+{
+    "visit-outside": [
+        {"title": "a", "src":""}
+    ],
+    "visit-dining-room": [
+        {"title": "b", "src":""}
+    ],
+    "visit-bedrooms": [
+        {"title": "c", "src":""}
+    ],
+    "visit-kitchen": [
+        {"title": "d", "src":""}
+    ],
+    "visit-kings-corner": [
+        {"title": "e", "src":""}
+    ]
+}
