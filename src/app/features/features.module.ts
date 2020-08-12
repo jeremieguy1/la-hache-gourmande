@@ -1,16 +1,3 @@
-import { SharedModule } from './../shared/shared.module';
-// Modules
-import {
-  NgModule 
-} from '@angular/core';
-
-import {
-  CommonModule 
-} from '@angular/common';
-
-import {
-  RouterModule 
-} from '@angular/router';
 
 // Components
 import {
@@ -49,6 +36,20 @@ import {
   VisitComponent
 } from './../features/visit/visit.component';
 
+// Angular modules
+import {
+  NgModule 
+} from '@angular/core';
+
+// Custom modules
+import {
+  FeaturesRoutingModule
+} from './features-routing-routing.module'
+
+import {
+  SharedModule
+} from './../shared/shared.module';
+
 @NgModule({
   declarations: [
     CoordinateComponent,
@@ -59,10 +60,10 @@ import {
     MapComponent,
     NavbarComponent,
     TariffComponent,
-    VisitComponent
+    VisitComponent,
   ],
   imports: [
-    RouterModule,
+    FeaturesRoutingModule,
     SharedModule,
   ],
   exports: [
