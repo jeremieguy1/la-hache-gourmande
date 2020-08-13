@@ -3,7 +3,11 @@ import {
   OnInit,
   Input 
 } from '@angular/core';
-  
+
+import {
+  ActivatedRoute
+} from '@angular/router';
+
 import 
   imagePageContentJSON
 from './image-page-content.json';
@@ -23,10 +27,15 @@ export class ImagePageComponent implements OnInit {
 
   imagePageContent: ImageContent[];
 
-  constructor() { }
+  id: string;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.imagePageContent = imagePageContentJSON[this.targetImagePage];
+    this.route.paramMap.subscribe(params => {
+      params.get('id') !== null ? this.id = params.get('id') : this.id = 'visit-outside';
+    });
+    this.imagePageContent = imagePageContentJSON[this.id];
   }
 
 }

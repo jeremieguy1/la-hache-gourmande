@@ -1,3 +1,4 @@
+import { ImagePageComponent } from './../shared/image-page/image-page.component';
 // Components
 import {
   MapComponent
@@ -42,7 +43,12 @@ import {
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
-  { path: 'visit', component: VisitComponent}, // TODO : Enfants
+  { path: 'visit',
+    component: VisitComponent,
+    children: [
+      { path: '', redirectTo: 'page', pathMatch: 'full' },
+      { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
+    ]}, 
   { path: 'tariff', component: TariffComponent, pathMatch: 'full'}, // TODO : Enfants
   { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
   { path: 'description', component: DescriptionComponent, pathMatch: 'full'},
@@ -53,6 +59,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: []
+  exports: [RouterModule]
 })
 export class FeaturesRoutingModule { }

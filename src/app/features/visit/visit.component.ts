@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router'
+
 
 @Component({
   templateUrl: './visit.component.html',
@@ -9,7 +11,7 @@ export class VisitComponent implements OnInit {
 
   lastClickIndex: number;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.lastClickIndex = 0;
@@ -23,7 +25,7 @@ export class VisitComponent implements OnInit {
     let li = event.target.parentNode;
     let index = this._index(li.parentNode, li);
     this.lastClickIndex = index;
-    // Navigate -> event.target.id
+    this.router.navigate(['/visit/page', { id:`${event.target.id}` }]);
   }
 
   /**
