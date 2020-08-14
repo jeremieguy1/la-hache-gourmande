@@ -13,7 +13,8 @@ import
 from './image-page-content.json';
 
 import {
-  ImageContent 
+  ImagePageContent,
+  ImageContent
 } from './image-content';
 
 @Component({
@@ -23,9 +24,11 @@ import {
 })
 export class ImagePageComponent implements OnInit {
 
+  ASSETS_PREFIX: string = '../../assets/visit/';
+
   @Input() targetImagePage: string;
 
-  imagePageContent: ImageContent[];
+  imagePageContent: ImagePageContent;
 
   id: string;
 
@@ -34,8 +37,8 @@ export class ImagePageComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       params.get('id') !== null ? this.id = params.get('id') : this.id = 'visit-outside';
+      this.imagePageContent = imagePageContentJSON[this.id], this.id;
     });
-    this.imagePageContent = imagePageContentJSON[this.id];
   }
 
 }
