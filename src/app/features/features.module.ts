@@ -1,29 +1,16 @@
-import { SharedModule } from './../shared/shared.module';
-// Modules
-import {
-  NgModule 
-} from '@angular/core';
-
-import {
-  CommonModule 
-} from '@angular/common';
-
-import {
-  RouterModule 
-} from '@angular/router';
 
 // Components
 import {
-  CoordonneeComponent
-} from './../features/coordonnee/coordonnee.component';
+  CoordinateComponent
+} from './../features/coordinate/coordinate.component';
 
 import {
-  DescriptifComponent
-} from './../features/descriptif/descriptif.component';
+  DescriptionComponent
+} from './../features/description/description.component';
 
 import {
-  HistoireComponent
-} from './../features/histoire/histoire.component';
+  HistoryComponent
+} from './../features/history/history.component';
 
 import {
   HomeComponent
@@ -42,27 +29,41 @@ import {
 } from './../features/navbar/navbar.component';
 
 import {
-  TarifComponent 
-} from './../features/tarif/tarif.component';
+  TariffComponent 
+} from './../features/tariff/tariff.component';
 
 import {
-  VisiteComponent
-} from './../features/visite/visite.component';
+  VisitComponent
+} from './../features/visit/visit.component';
+
+// Angular modules
+import {
+  NgModule 
+} from '@angular/core';
+
+// Custom modules
+import {
+  FeaturesRoutingModule
+} from './features-routing-routing.module'
+
+import {
+  SharedModule
+} from './../shared/shared.module';
 
 @NgModule({
   declarations: [
-    CoordonneeComponent,
-    DescriptifComponent,
-    HistoireComponent,
+    CoordinateComponent,
+    DescriptionComponent,
+    HistoryComponent,
     HomeComponent,
     LesMartisComponent,
     MapComponent,
     NavbarComponent,
-    TarifComponent,
-    VisiteComponent
+    TariffComponent,
+    VisitComponent,
   ],
   imports: [
-    RouterModule,
+    FeaturesRoutingModule,
     SharedModule,
   ],
   exports: [
