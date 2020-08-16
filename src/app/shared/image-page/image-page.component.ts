@@ -1,3 +1,4 @@
+import { ImagePageContentService } from './image-page-content.service';
 import {
   Component,
   OnInit,
@@ -8,13 +9,8 @@ import {
   ActivatedRoute
 } from '@angular/router';
 
-import 
-  imagePageContentJSON
-from './image-page-content.json';
-
 import {
   ImagePageContent,
-  ImageContent
 } from './image-content';
 
 @Component({
@@ -24,20 +20,19 @@ import {
 })
 export class ImagePageComponent implements OnInit {
 
-  ASSETS_PREFIX: string = '../../assets/visit/';
-
   @Input() targetImagePage: string;
 
   imagePageContent: ImagePageContent;
 
   id: string;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+    private imagePageContentService: ImagePageContentService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      params.get('id') !== null ? this.id = params.get('id') : this.id = 'visit-outside';
-      this.imagePageContent = imagePageContentJSON[this.id], this.id;
+      params.get('id') ? this.id = params.get('id') : this.id = 'visit-outside';
+      this.imagePageContent = this.imagePageContentService.getContent(this.id);
     });
   }
 
