@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/vars';
-@import './styles/functions';
+@import 'vars';
+@import 'functions';
+
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma-carousel/src/sass/index.sass";
 @import "../node_modules/bulma-o-steps/bulma-steps.sass";
