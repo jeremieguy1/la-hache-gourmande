@@ -10,6 +10,10 @@ import
   bulmaCarousel
 from '../../../../../node_modules/bulma-carousel/src/js/index.js';
 
+import {
+  BreakpointsEnum
+} from '../../../config/breakpoints.enum';
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -50,16 +54,19 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
       initialSlide: 1,
 			slidesToScroll: 1,
       slidesToShow: 1,
-      //navigation: true,
       pagination: true,
       loop: true,
       autoplay: true,
       autoplaySpeed: 4000,
       duration: 1000,
+      breakpoints: [
+        { changePoint: BreakpointsEnum.SM, slidesToShow: 1},
+        { changePoint: BreakpointsEnum.MD, slidesToShow: 1}
+      ]
 		});
   }
 
   ngOnDestroy(): void {
-    window.removeEventListener("click", this.onClick)
+    window.removeEventListener("click", this.onClick);
   }
 }

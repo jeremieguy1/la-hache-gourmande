@@ -12,4 +12,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  burgerClick(): void {
+    const burger: Element = document.querySelector('.burger');
+    const navMenu: Element = document.querySelector('#' + burger.attributes['data-target'].value);
+    burger.classList.toggle('is-active');
+    navMenu.classList.toggle('is-active');
+    document.querySelector('.navbar').classList.toggle('is-mobile');
+  }
+
 }
