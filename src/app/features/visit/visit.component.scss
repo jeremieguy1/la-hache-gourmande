@@ -1,5 +1,42 @@
 @import "functions";
+@import "mixins";
 
 .timeline {
     padding-top: convert-to-rem(48);
+}
+
+@include xs {
+    .timeline {
+        display: flex;
+        justify-content: center;
+
+        .steps {
+            .steps-segment {
+                display: flex;
+                align-items: baseline;
+
+                span {
+                    padding-left: convert-to-rem(4);
+                }
+            }
+        }
+    }
+}
+
+@include sm {
+    .timeline {
+        display: flex;
+        justify-content: center;
+
+        .steps {
+            .steps-segment {
+                display: flex;
+                align-items: baseline;
+
+                span {
+                    padding-left: convert-to-rem(4);
+                }
+            }
+        }
+    }
 }
