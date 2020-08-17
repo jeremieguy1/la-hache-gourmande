@@ -5,8 +5,8 @@
     padding-top: convert-to-rem(48);
 
     .steps {
-        animation: bounce; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 2s; /* don't forget to set a duration! */
+        animation: zoomIn;
+        animation-duration: 1s;
     }
 }
 
