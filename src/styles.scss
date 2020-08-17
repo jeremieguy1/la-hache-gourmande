@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'vars';
-@import 'functions';
+@import "vars";
+@import "functions";
 
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma-carousel/src/sass/index.sass";
 @import "../node_modules/bulma-o-steps/bulma-steps.sass";
+
+html {
+    height: 100%;
+    background-color: $background-gray-0;
+}
