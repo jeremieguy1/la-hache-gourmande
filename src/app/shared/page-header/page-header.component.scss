@@ -1,5 +1,6 @@
-p {
-    height: 150px;
-    width: 100%;
-    background-color: red;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

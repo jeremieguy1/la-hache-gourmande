@@ -1,13 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component, OnInit }
+from '@angular/core';
 
-import { Router } from '@angular/router'
+import {
+  Router }
+from '@angular/router';
 
+
+import {
+  PagesNameEnum }
+from './../../shared/enums/pages-name.enum';
 
 @Component({
   templateUrl: './visit.component.html',
   styleUrls: ['./visit.component.scss']
 })
 export class VisitComponent implements OnInit {
+
+  pageName: string = PagesNameEnum.VISIT;
 
   lastClickIndex: number;
 

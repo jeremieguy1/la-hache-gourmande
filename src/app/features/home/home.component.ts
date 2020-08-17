@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   /**
    * Id for the carousel
    */
-  idCarousel: PagesNameEnum = PagesNameEnum.HOME;
+  pageName: PagesNameEnum = PagesNameEnum.HOME;
 
   /**
    * Content of the carousel
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
    * @return The date fetched from the service
    */
   getCarouselContent(): string[] {
-    return this.carouselContentService.getCarouselContent(this.idCarousel);
+    return this.carouselContentService.getCarouselContent(this.pageName);
   }
 
   /**
