@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { CarouselContent } from './carousel-content.enum';
+import { PagesNameEnum } from '../enums/pages-name.enum';
 import carouselContent from './carousel-content.json'
 
 @Injectable({
@@ -10,7 +10,7 @@ export class CarouselContentService {
 
   constructor() {}
 
-  getCarouselContent(location: CarouselContent): Array<string> {
+  getCarouselContent(location: PagesNameEnum): Array<string> {
     return carouselContent[location];
   }
 }

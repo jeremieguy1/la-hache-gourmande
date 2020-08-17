@@ -8,11 +8,11 @@ import {
 
 import
   bulmaCarousel
-from '../../../../../node_modules/bulma-carousel/src/js/index.js';
+from '../../../../node_modules/bulma-carousel/src/js/index.js';
 
 import {
   BreakpointsEnum
-} from '../../../config/breakpoints.enum';
+} from '../../config/breakpoints.enum';
 
 @Component({
   selector: 'app-carousel',

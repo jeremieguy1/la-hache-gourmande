@@ -4,8 +4,8 @@ import {
 } from '@angular/core';
 
 import { 
-  CarouselContent
-} from '../../shared/carousel/carousel-content.enum';
+  PagesNameEnum
+} from '../../shared/enums/pages-name.enum';
 
 import {
   CarouselContentService
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   /**
    * Id for the carousel
    */
-  idCarousel: string = 'home';
+  pageName: PagesNameEnum = PagesNameEnum.HOME;
 
   /**
    * Content of the carousel
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
    * @return The date fetched from the service
    */
   getCarouselContent(): string[] {
-    return this.carouselContentService.getCarouselContent(CarouselContent.HOME);
+    return this.carouselContentService.getCarouselContent(this.pageName);
   }
 
   /**

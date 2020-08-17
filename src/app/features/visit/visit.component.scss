@@ -1,12 +1,17 @@
 @import "functions";
 @import "mixins";
 
-.timeline {
+.section {
     padding-top: convert-to-rem(48);
+
+    .steps {
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+    }
 }
 
 @include xs {
-    .timeline {
+    .section {
         display: flex;
         justify-content: center;
 
@@ -24,7 +29,7 @@
 }
 
 @include sm {
-    .timeline {
+    .section {
         display: flex;
         justify-content: center;
 
