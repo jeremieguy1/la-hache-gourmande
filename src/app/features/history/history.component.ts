@@ -1,4 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component, OnInit
+} from '@angular/core';
+
+import {
+  PagesNameEnum
+} from './../../shared/enums/pages-name.enum';
+
+import {
+  HistoryService
+} from './history.service';
+
+import {
+  History
+} from './history';
 
 @Component({
   templateUrl: './history.component.html',
@@ -6,9 +20,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
 
-  constructor() { }
+  pageName: string = PagesNameEnum.HISTORY;
+
+  historyContent: History;
+
+  constructor(private historyService: HistoryService) { }
 
   ngOnInit(): void {
+    this.historyContent = this.historyService.getContent();
   }
 
 }
