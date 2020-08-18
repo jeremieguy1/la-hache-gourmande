@@ -9,6 +9,9 @@
     "coordinate": {
         "title": "Comment nous joindre ?"
     },
+    "description": {
+        "title": "Descriptif du gîte"
+    },
     "tariff": {
         "title": "Nos tarifs"
     },

@@ -1,0 +1,13 @@
+@import "vars";
+@import "functions";
+
+hr {
+    border: none;
+    border-top: convert-to-rem(2) solid $gray;
+    text-align: center;
+    max-width: 85%;
+}
+
+.content {
+    margin-bottom: convert-to-rem(8);
+}
