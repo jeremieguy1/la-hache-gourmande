@@ -12,4 +12,9 @@
 html {
     height: 100%;
     background-color: $background-gray-0;
+    color: $gray;
+
+    .title {
+        color: $gray;
+    }
 }
