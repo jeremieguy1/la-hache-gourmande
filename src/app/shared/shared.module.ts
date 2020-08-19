@@ -26,16 +26,20 @@ import {
   BoldByNameDirective
 } from './directives/bold-by-name.directive';
 
+import { StepsComponent } from './steps/steps.component';
+
 @NgModule({
   declarations: [
     CarouselComponent,
     ImagePageComponent,
     PageHeaderComponent,
     BoldByNameDirective,
+    StepsComponent,
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
+    
   ],
   exports: [
     CarouselComponent,
@@ -44,6 +48,7 @@ import {
     CommonModule,
     FontAwesomeModule,
     BoldByNameDirective,
+    StepsComponent,
   ]
 })
 export class SharedModule { }

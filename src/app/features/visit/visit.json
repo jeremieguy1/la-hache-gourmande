@@ -1,0 +1,30 @@
+{
+    "visit": {
+        "targetRoute": "/visit/page",
+        "steps": [
+            {
+                "id": "visit-outside",
+                "description": "Les extérieurs"
+            },
+            {
+                "id": "visit-dining-room",
+                "description": "La salle à manger"
+            },
+            {
+                "id": "visit-bedrooms",
+                "description": "Les chambres"
+            },
+            {
+                "id": "visit-kitchen",
+                "description": "La cuisine"
+            },
+            {
+                "id": "visit-kings-corner",
+                "description": "La coin du roi"
+            }
+        ]
+    },
+    "les-martis": {
+
+    }
+}

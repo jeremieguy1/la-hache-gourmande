@@ -1,0 +1,47 @@
+@import "functions";
+@import "mixins";
+
+.section {
+    padding-top: convert-to-rem(48);
+
+    .steps {
+        animation: zoomIn;
+        animation-duration: 1s;
+    }
+}
+
+@include xs {
+    .section {
+        display: flex;
+        justify-content: center;
+
+        .steps {
+            .steps-segment {
+                display: flex;
+                align-items: baseline;
+
+                span {
+                    padding-left: convert-to-rem(4);
+                }
+            }
+        }
+    }
+}
+
+@include sm {
+    .section {
+        display: flex;
+        justify-content: center;
+
+        .steps {
+            .steps-segment {
+                display: flex;
+                align-items: baseline;
+
+                span {
+                    padding-left: convert-to-rem(4);
+                }
+            }
+        }
+    }
+}
