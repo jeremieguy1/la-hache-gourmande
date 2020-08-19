@@ -1,3 +1,4 @@
+import { PagesNameEnum } from './../../shared/enums/pages-name.enum';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LesMartisComponent implements OnInit {
 
+  pageName: PagesNameEnum = PagesNameEnum.LESMARTIS;
+  
   constructor() { }
 
   ngOnInit(): void {

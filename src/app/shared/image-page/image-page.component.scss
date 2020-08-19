@@ -1,4 +1,34 @@
-.is-flex {
-    flex-direction: column;
-    align-items: center;
+@import "functions";
+.container {
+    
+    .is-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img {
+        animation: fadeIn;
+        animation-duration: 1s;
+        height: convert-to-rem(800);
+    }
+    
+    p {
+        animation: fadeIn;
+        animation-duration: 1s;
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        padding: convert-to-rem(16) 0;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .explanation {
+        max-width: 80%;
+        text-align: center;
+    }
 }

@@ -53,7 +53,12 @@ const routes: Routes = [
   { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
   { path: 'description', component: DescriptionComponent, pathMatch: 'full'},
   { path: 'history', component: HistoryComponent, pathMatch: 'full' },
-  { path: 'les-martis', component: LesMartisComponent, pathMatch: 'full'}, // TODO : Enfants
+  { path: 'les-martis',
+    component: LesMartisComponent,
+    children: [
+      { path: '', redirectTo: 'page', pathMatch: 'full' },
+      { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
+    ]},  
   { path: 'map', component: MapComponent, pathMatch: 'full'},
 ];
 
