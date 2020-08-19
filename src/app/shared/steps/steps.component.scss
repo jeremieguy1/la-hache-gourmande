@@ -7,6 +7,12 @@
     .steps {
         animation: zoomIn;
         animation-duration: 1s;
+
+        .steps-segment {
+            button {
+                transition:background-color 1s ease;
+            }
+        }
     }
 }
 

@@ -6,8 +6,20 @@
 
     .navbar {
         background-color: transparent;
+
         .welcome-libelle {
             padding-left: convert-to-rem(10);
+        }
+        
+        .active {
+            transition:background-color 1s ease;
+            background-color: $orange-axe;
+        }
+
+        .navbar-brand {
+            .is-flex {
+                align-items: center;
+            }
         }
     }
 }
