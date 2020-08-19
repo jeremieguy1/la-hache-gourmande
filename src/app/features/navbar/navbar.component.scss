@@ -5,6 +5,7 @@
     background-color: $background-gray-0;
 
     .navbar {
+        
         background-color: transparent;
 
         .welcome-libelle {
@@ -12,8 +13,9 @@
         }
         
         .active {
-            transition:background-color 1s ease;
-            background-color: $orange-axe;
+            font-weight: 600;
+            transition: background-color 1s ease;
+            background-color: $background-gray-3;
         }
 
         .navbar-brand {
