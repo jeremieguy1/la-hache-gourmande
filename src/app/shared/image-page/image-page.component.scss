@@ -15,12 +15,12 @@
     p {
         animation: fadeIn;
         animation-duration: 1s;
-        padding: convert-to-rem(16) 0;
     }
 
     figure {
         display: flex;
         justify-content: center;
+        padding: convert-to-rem(16) 0;
     }
 
     .content {

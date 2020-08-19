@@ -1,7 +1,7 @@
 <div class="container">
     <div class="section is-flex">
         <div *ngFor="let image of imagePageContent.images; let _i = index">
-            <p class="is-size-4">{{image.title}}</p>
+            <p *ngIf="image.title" class="is-size-4">{{image.title}}</p>
             <figure>
                 <img class="content" [src]="image.src" [alt]="imagePageContent.alt + (_i + 1)">
             </figure>

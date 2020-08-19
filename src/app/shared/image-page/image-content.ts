@@ -1,5 +1,5 @@
 export class ImageContent {
-    title: string;
+    title?: string;
     src: string;
 }
 
