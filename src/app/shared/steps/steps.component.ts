@@ -9,6 +9,10 @@ import {
 } from '@angular/router';
 
 import {
+  StepsService
+} from './steps.service';
+
+import {
   Steps
 } from './steps';
 
@@ -19,14 +23,19 @@ import {
 })
 export class StepsComponent implements OnInit {
 
-  @Input() stepsContent: Steps;
+  @Input() id: string;
+  
+  stepsContent: Steps;
 
   lastClickIndex: number;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+    private stepsService: StepsService) {}
 
   ngOnInit(): void {
     this.lastClickIndex = 0;
+    this.stepsContent = this.stepsService.getContent(this.id);
+    console.log(this.stepsContent);
   }
 
   /**

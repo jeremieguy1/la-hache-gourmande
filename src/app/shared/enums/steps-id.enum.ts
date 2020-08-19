@@ -1,4 +1,4 @@
 export enum StepsId {
     VISIT = 'visit-outside',
-    LESMARTIS = 'les-martis'
+    LESMARTIS = 'les-martis-surrounding-nature'
 }
