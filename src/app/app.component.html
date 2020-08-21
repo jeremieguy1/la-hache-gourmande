@@ -10,3 +10,6 @@
 <div id="main-content">
     <router-outlet></router-outlet>
 </div>
+<a *ngIf="isScrolled" class="back-to-top" [href]="skipLinkPath" title="Lien haut de page">
+    <fa-icon [icon]="faArrowUp"></fa-icon>
+</a>

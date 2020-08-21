@@ -29,3 +29,11 @@
         @content;
     }
 }
+
+@mixin scroll-auto {
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+}

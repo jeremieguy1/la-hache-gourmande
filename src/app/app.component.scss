@@ -32,3 +32,22 @@ a:focus {
   .skiplink:focus {
     transform: translateY(0%);
   }
+  
+  a.back-to-top {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 3.125rem;
+    position: fixed;
+    bottom: 1.5625rem;
+    right: 1.5625rem;
+    border: none;
+    background-color: $orange-axe;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    fa-icon {
+      color: white;
+    }
+  }
