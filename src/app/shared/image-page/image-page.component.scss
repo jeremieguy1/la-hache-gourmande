@@ -10,24 +10,16 @@
         animation: fadeIn;
         animation-duration: 1s;
         max-height: convert-to-rem(800);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: convert-to-rem(16) 0;
+        object-fit: contain;
     }
     
     p {
         animation: fadeIn;
         animation-duration: 1s;
-    }
-
-    figure {
-        display: flex;
-        justify-content: center;
-        padding: convert-to-rem(16) 0;
-        img {
-        object-fit: contain;
-        }
-    }
-
-    .content {
-        text-align: center;
     }
 
     .explanation {

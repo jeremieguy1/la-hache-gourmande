@@ -1,9 +1,9 @@
 <div *ngIf="idCarousel" id="carousel-{{idCarousel}}" class="carousel">
-    <div *ngFor="let imgSrc of carouselContent" class="card">
+    <div *ngFor="let imgSrc of carouselContent; let _i = index" class="card" tabindex="-1">
         <div class="card-image">
-            <figure class="image is-16by9 is-covered">
+            <div class="image is-16by9 is-covered">
                 <img [src]="imgSrc" alt="carousel image">
-            </figure>
+            </div>
         </div>
     </div>
 </div>
