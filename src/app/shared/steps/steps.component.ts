@@ -35,7 +35,6 @@ export class StepsComponent implements OnInit {
   ngOnInit(): void {
     this.lastClickIndex = 0;
     this.stepsContent = this.stepsService.getContent(this.id);
-    console.log(this.stepsContent);
   }
 
   /**
