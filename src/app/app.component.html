@@ -1,3 +1,4 @@
+<a class="skiplink" [href]="skipLinkPath">Skip to content</a>
 <div class="head is-flex">
     <div class="container">
         <a href="" routerLink="/home">
@@ -6,4 +7,6 @@
     </div>
 </div>
 <app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<div id="main-content">
+    <router-outlet></router-outlet>
+</div>
