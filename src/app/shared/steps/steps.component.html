@@ -7,6 +7,7 @@
                 id={{stepContent.id}}
                 class="button steps-marker"
                 role="link"
+                [title]="stepContent.description"
                 (click)="navigateTo($event)">
             </button>
             <span>{{stepContent.description}}</span>

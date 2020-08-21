@@ -1,5 +1,6 @@
 @import "vars";
 @import "functions";
+@import "mixins";
 
 .head {
     background-color: $gray;
@@ -10,4 +11,65 @@
 .head-text {
     color: $orange-axe; 
     font-size: large;
+    padding: 0 convert-to-rem(4);
+}
+
+a:focus {
+    outline: solid;
+    outline-color: $background-gray-3;
+    outline-width: thin;
+}
+
+.skiplink {
+    background: $orange-axe;
+    left: 50%;
+    z-index: 100;
+    padding: convert-to-rem(4);
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skiplink:focus {
+    transform: translateY(0%);
+  }
+  
+  a.back-to-top {
+    height: convert-to-rem(70);
+    width: convert-to-rem(70);
+    border-radius: convert-to-rem(50);
+    position: fixed;
+    bottom: convert-to-rem(15);
+    right: convert-to-rem(15);
+    border: none;
+    background-color: $orange-axe;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    fa-icon {
+      color: white;
+    }
+  }
+
+@include md {
+  a.back-to-top {
+    height: convert-to-rem(60);
+    width: convert-to-rem(60);
+  }
+}
+
+@include sm {
+  a.back-to-top {
+    height: convert-to-rem(60);
+    width: convert-to-rem(60);
+  }
+}
+
+@include xs {
+  a.back-to-top {
+    height: convert-to-rem(60);
+    width: convert-to-rem(60);
+  }
 }

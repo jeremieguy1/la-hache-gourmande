@@ -9,22 +9,17 @@
     img {
         animation: fadeIn;
         animation-duration: 1s;
-        height: convert-to-rem(800);
+        max-height: convert-to-rem(800);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: convert-to-rem(16) 0;
+        object-fit: contain;
     }
     
     p {
         animation: fadeIn;
         animation-duration: 1s;
-    }
-
-    figure {
-        display: flex;
-        justify-content: center;
-        padding: convert-to-rem(16) 0;
-    }
-
-    .content {
-        text-align: center;
     }
 
     .explanation {
