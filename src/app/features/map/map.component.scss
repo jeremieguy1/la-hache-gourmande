@@ -11,3 +11,9 @@ iframe {
     border: convert-to-rem(2) solid transparent;
     border-image: linear-gradient($orange-axe, $gray) 1;
 }
+
+iframe:focus {
+    outline: solid;
+    outline-color: $background-gray-3;
+    outline-width: thin;
+}

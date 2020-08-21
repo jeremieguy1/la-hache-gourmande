@@ -1,5 +1,6 @@
 @import "vars";
 @import "functions";
+@import "mixins";
 
 .head {
     background-color: $gray;
@@ -34,15 +35,15 @@ a:focus {
   }
   
   a.back-to-top {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 3.125rem;
+    height: convert-to-rem(70);
+    width: convert-to-rem(70);
+    border-radius: convert-to-rem(50);
     position: fixed;
-    bottom: 1.5625rem;
-    right: 1.5625rem;
+    bottom: convert-to-rem(15);
+    right: convert-to-rem(15);
     border: none;
     background-color: $orange-axe;
-    opacity: 0.5;
+    opacity: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,3 +52,24 @@ a:focus {
       color: white;
     }
   }
+
+@include md {
+  a.back-to-top {
+    height: convert-to-rem(60);
+    width: convert-to-rem(60);
+  }
+}
+
+@include sm {
+  a.back-to-top {
+    height: convert-to-rem(60);
+    width: convert-to-rem(60);
+  }
+}
+
+@include xs {
+  a.back-to-top {
+    height: convert-to-rem(60);
+    width: convert-to-rem(60);
+  }
+}
