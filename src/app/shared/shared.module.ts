@@ -26,7 +26,23 @@ import {
   BoldByNameDirective
 } from './directives/bold-by-name.directive';
 
-import { StepsComponent } from './steps/steps.component';
+import {
+  StepsComponent
+} from './steps/steps.component';
+
+import {
+   LOCALE_ID 
+} from '@angular/core';
+
+import {
+  registerLocaleData
+} from '@angular/common';
+
+import 
+  localeFR 
+from '@angular/common/locales/fr';
+
+registerLocaleData(localeFR);
 
 @NgModule({
   declarations: [
@@ -49,6 +65,9 @@ import { StepsComponent } from './steps/steps.component';
     FontAwesomeModule,
     BoldByNameDirective,
     StepsComponent,
+  ],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr' }
   ]
 })
 export class SharedModule { }
