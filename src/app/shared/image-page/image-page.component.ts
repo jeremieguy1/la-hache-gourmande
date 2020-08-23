@@ -22,11 +22,11 @@ import {
 
 import {
   StepsId
-} from '../enums/steps-id.enum';
+} from '../../config/enums/steps-id.enum';
 
 import {
   PagesNameEnum
-} from './../enums/pages-name.enum';
+} from '../../config/enums/pages-name.enum';
 
 @Component({
   selector: 'app-image-page',

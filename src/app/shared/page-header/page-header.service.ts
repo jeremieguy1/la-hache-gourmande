@@ -8,7 +8,7 @@ import {
 
 import
   pageHeaderJSON
-from './page-header.json';
+from '../../config/content/page-header.json';
 
 @Injectable({
   providedIn: 'root'

@@ -1,5 +1,16 @@
-import { PagesNameEnum } from './../../shared/enums/pages-name.enum';
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+
+import {
+  TitleService
+} from './../title.service';
+
+import {
+  PagesNameEnum,
+  PagesNameEnumFR
+} from './../../config/enums/pages-name.enum';
 
 @Component({
   templateUrl: './les-martis.component.html',
@@ -9,9 +20,10 @@ export class LesMartisComponent implements OnInit {
 
   pageName: PagesNameEnum = PagesNameEnum.LESMARTIS;
   
-  constructor() { }
+  constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.LESMARTIS);
   }
 
 }

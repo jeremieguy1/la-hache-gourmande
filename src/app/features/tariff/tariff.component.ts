@@ -3,7 +3,14 @@ import {
   OnInit
 } from '@angular/core';
 
-import { PagesNameEnum } from './../../shared/enums/pages-name.enum';
+import {
+  TitleService
+} from './../title.service';
+
+import {
+  PagesNameEnum,
+  PagesNameEnumFR
+} from './../../config/enums/pages-name.enum';
 
 import {
   faHome,
@@ -11,7 +18,7 @@ import {
   faCheck,
   faPlus,
   faPercent
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   templateUrl: './tariff.component.html',
@@ -26,9 +33,11 @@ export class TariffComponent implements OnInit {
   faPercent = faPercent;
 
   pageName: PagesNameEnum = PagesNameEnum.TARIFF;
-  constructor() { }
+
+  constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.TARIFF);
   }
 
 }

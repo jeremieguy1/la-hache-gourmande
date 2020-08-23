@@ -3,9 +3,14 @@ import {
   OnInit 
 } from '@angular/core';
 
+import {
+  TitleService
+} from './../title.service';
+
 import { 
-  PagesNameEnum
-} from '../../shared/enums/pages-name.enum';
+  PagesNameEnum,
+  PagesNameEnumFR
+} from './../../config/enums/pages-name.enum';
 
 import {
   CarouselContentService
@@ -32,9 +37,11 @@ export class HomeComponent implements OnInit {
    */
   carouselContent: string[];
 
-  constructor(private carouselContentService: CarouselContentService) { }
+  constructor(private carouselContentService: CarouselContentService,
+    private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.HOME);
     this.carouselContent = this.computeCarouselContent(this.getCarouselContent());
   }
 

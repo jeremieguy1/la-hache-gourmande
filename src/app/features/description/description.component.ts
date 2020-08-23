@@ -4,11 +4,21 @@ import {
 } from '@angular/core';
 
 import {
-  PagesNameEnum
-} from './../../shared/enums/pages-name.enum';
+  TitleService
+} from './../title.service';
 
-import { DescriptionService } from './description.service';
-import { Description, DescriptionPart } from './description';
+import {
+  PagesNameEnum,
+  PagesNameEnumFR
+} from './../../config/enums/pages-name.enum';
+
+import {
+  DescriptionService
+} from './description.service';
+
+import {
+  Description
+} from './description';
 
 @Component({
   templateUrl: './description.component.html',
@@ -16,13 +26,15 @@ import { Description, DescriptionPart } from './description';
 })
 export class DescriptionComponent implements OnInit {
 
-  pageName: string = PagesNameEnum.DESCRIPTION;
+  pageName: PagesNameEnum = PagesNameEnum.DESCRIPTION;
 
   descriptionContent: Description[];
 
-  constructor(private descriptionService: DescriptionService) { }
+  constructor(private descriptionService: DescriptionService,
+    private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.DESCRIPTION);
     this.descriptionContent = [];
     this.descriptionContent.push(this.descriptionService.getContent('inside'));
     this.descriptionContent.push(this.descriptionService.getContent('outside'));

@@ -8,7 +8,7 @@ import {
 
 import
   stepsContentJSON
-from '../../shared/steps/steps-content.json';
+from '../../config/content/steps-content.json';
 
 @Injectable({
   providedIn: 'root'

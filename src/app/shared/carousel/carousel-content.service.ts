@@ -1,7 +1,14 @@
-import { Injectable } from '@angular/core';
+import {
+  Injectable
+} from '@angular/core';
 
-import { PagesNameEnum } from '../enums/pages-name.enum';
-import carouselContent from './carousel-content.json'
+import {
+  PagesNameEnum
+} from './../../config/enums/pages-name.enum';
+
+import 
+  carouselContent 
+from '../../config/content/carousel-content.json';
 
 @Injectable({
   providedIn: 'root'

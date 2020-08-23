@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { History } from './history';
 import 
   historyJSON 
-from './history.json';
+from '../../config/content/history.json';
 
 @Injectable({
   providedIn: 'root'
