@@ -35,7 +35,6 @@
     "core-js": "^3.6.4",
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
-    "googleapis": "^39.2.0",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
