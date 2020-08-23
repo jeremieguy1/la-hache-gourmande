@@ -8,7 +8,7 @@ import {
 
 import 
   imagePageContentJSON
-from './image-page-content.json';
+from '../../config/content/image-page-content.json';
 
 @Injectable({
   providedIn: 'root'

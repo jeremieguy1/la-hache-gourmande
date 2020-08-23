@@ -8,7 +8,7 @@ import {
 
 import
   descriptionJSON
-from './description.json';
+from '../../config/content/description.json';
 
 @Injectable({
   providedIn: 'root'

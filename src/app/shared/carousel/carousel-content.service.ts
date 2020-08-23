@@ -8,7 +8,7 @@ import {
 
 import 
   carouselContent 
-from './carousel-content.json';
+from '../../config/content/carousel-content.json';
 
 @Injectable({
   providedIn: 'root'
