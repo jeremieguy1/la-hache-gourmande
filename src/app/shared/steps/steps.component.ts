@@ -16,6 +16,10 @@ import {
   Steps
 } from './steps';
 
+import {
+  TitleService
+} from './../../features/title.service';
+
 @Component({
   selector: 'app-steps',
   templateUrl: './steps.component.html',
@@ -30,7 +34,8 @@ export class StepsComponent implements OnInit {
   lastClickIndex: number;
 
   constructor(private router: Router,
-    private stepsService: StepsService) {}
+    private stepsService: StepsService,
+    private titleService: TitleService) {}
 
   ngOnInit(): void {
     this.lastClickIndex = 0;
@@ -41,10 +46,11 @@ export class StepsComponent implements OnInit {
    * Navigate to the view indicated by the target
    * @param event Click event
    */
-  navigateTo(event: any): void {
+  navigateTo(event: any, title: string): void {
     let li = event.target.parentNode;
     let index = this._index(li.parentNode, li);
     this.lastClickIndex = index;
+    this.titleService.setTitle(title);
     this.router.navigate([this.stepsContent.targetRoute, { id:`${event.target.id}` }]);
   }
 

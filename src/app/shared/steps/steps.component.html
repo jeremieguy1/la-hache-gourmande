@@ -8,7 +8,7 @@
                 class="button steps-marker"
                 role="link"
                 [title]="stepContent.description"
-                (click)="navigateTo($event)">
+                (click)="navigateTo($event, stepContent.description)">
             </button>
             <span>{{stepContent.description}}</span>
         </li>
