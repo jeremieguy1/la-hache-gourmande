@@ -3,7 +3,12 @@ import {
 } from '@angular/core';
 
 import {
-  PagesNameEnum
+  TitleService
+} from './../title.service';
+
+import {
+  PagesNameEnum,
+  PagesNameEnumFR
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -24,9 +29,11 @@ export class HistoryComponent implements OnInit {
 
   historyContent: History;
 
-  constructor(private historyService: HistoryService) { }
+  constructor(private historyService: HistoryService,
+    private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.HISTORY);
     this.historyContent = this.historyService.getContent();
   }
 

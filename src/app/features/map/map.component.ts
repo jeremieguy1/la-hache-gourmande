@@ -4,9 +4,13 @@ import {
 } from '@angular/core';
 
 import {
-  PagesNameEnum
-} from './../../config/enums/pages-name.enum';
+  TitleService
+} from './../title.service';
 
+import {
+  PagesNameEnum,
+  PagesNameEnumFR
+} from './../../config/enums/pages-name.enum';
 
 @Component({
   templateUrl: './map.component.html',
@@ -16,9 +20,10 @@ export class MapComponent implements OnInit {
 
   pageName: PagesNameEnum = PagesNameEnum.MAP;
 
-  constructor() { }
+  constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.MAP);
   }
 
 }

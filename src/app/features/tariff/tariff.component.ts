@@ -4,7 +4,12 @@ import {
 } from '@angular/core';
 
 import {
-  PagesNameEnum
+  TitleService
+} from './../title.service';
+
+import {
+  PagesNameEnum,
+  PagesNameEnumFR
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -29,9 +34,10 @@ export class TariffComponent implements OnInit {
 
   pageName: PagesNameEnum = PagesNameEnum.TARIFF;
 
-  constructor() { }
+  constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.TARIFF);
   }
 
 }

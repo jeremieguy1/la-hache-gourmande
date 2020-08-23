@@ -9,3 +9,15 @@ export enum PagesNameEnum {
     LESMARTIS = 'les-martis',
     MAP = 'map',
 }
+
+export enum PagesNameEnumFR {
+    HOME = 'accueil',
+    VISIT = 'visite',
+    COORDINATE = 'coordonnées',
+    TARIFF = 'tarifs',
+    DISPONIBILITY = 'disponibilités',
+    DESCRIPTION = 'descriptif',
+    HISTORY = 'histoire',
+    LESMARTIS = 'les Martis',
+    MAP = 'localisation',
+}
