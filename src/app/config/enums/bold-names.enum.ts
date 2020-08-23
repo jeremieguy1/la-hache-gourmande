@@ -1,4 +1,4 @@
-export enum BoldNames {
+export enum BoldNamesEnum {
     GRANDGARAGE = 'grand garage',
     BUADERIE = 'buanderie',
     SEJOUR = 'séjour',
@@ -9,5 +9,5 @@ export enum BoldNames {
     CHAMBRE2 = 'chambre 2',
     CHAMBRE3 = 'chambre 3',
     PALIERAMENAGE = 'palier aménagé',
-    TERRASSE = 'terrasse couverte bois'
+    TERRASSE = 'terrasse couverte bois',
 }

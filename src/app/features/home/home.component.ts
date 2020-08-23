@@ -5,7 +5,7 @@ import {
 
 import { 
   PagesNameEnum
-} from '../../shared/enums/pages-name.enum';
+} from './../../config/enums/pages-name.enum';
 
 import {
   CarouselContentService

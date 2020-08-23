@@ -5,10 +5,15 @@ import {
 
 import {
   PagesNameEnum
-} from './../../shared/enums/pages-name.enum';
+} from './../../config/enums/pages-name.enum';
 
-import { DescriptionService } from './description.service';
-import { Description, DescriptionPart } from './description';
+import {
+  DescriptionService
+} from './description.service';
+
+import {
+  Description
+} from './description';
 
 @Component({
   templateUrl: './description.component.html',
@@ -16,7 +21,7 @@ import { Description, DescriptionPart } from './description';
 })
 export class DescriptionComponent implements OnInit {
 
-  pageName: string = PagesNameEnum.DESCRIPTION;
+  pageName: PagesNameEnum = PagesNameEnum.DESCRIPTION;
 
   descriptionContent: Description[];
 

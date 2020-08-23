@@ -5,8 +5,8 @@ import {
 } from '@angular/core';
 
 import {
-  BoldNames
-} from '../enums/bold-names.enum';
+  BoldNamesEnum
+} from '../../config/enums/bold-names.enum';
 
 @Directive({
   selector: '[appBoldByName]'
@@ -16,6 +16,14 @@ export class BoldByNameDirective implements AfterViewInit {
   constructor(private el: ElementRef) { }
 
   ngAfterViewInit() {
+    this.boldContent();
+    
+  }
+
+  /**
+   * Bold a list of words defined in BoldNamesEnum.
+   */
+  boldContent(): void {
     let words = this.el.nativeElement.childNodes[0].innerHTML.split(' ');
     for(let [_i, word] of words.entries()) {
       let currentWord:string[] = word.split('_');
@@ -24,7 +32,7 @@ export class BoldByNameDirective implements AfterViewInit {
         currentWord = [];
         currentWord.push(tmp.join(' '));
       }
-      if (Object.values(BoldNames).find(e => e === currentWord[0].toLowerCase())) {
+      if (Object.values(BoldNamesEnum).find(e => e === currentWord[0].toLowerCase())) {
         words[_i] = currentWord[0].bold();
       }
     }

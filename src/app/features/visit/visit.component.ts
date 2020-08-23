@@ -1,11 +1,11 @@
-
 import {
-  Component, OnInit
+  Component,
+  OnInit
 } from '@angular/core';
 
 import {
   PagesNameEnum
-} from './../../shared/enums/pages-name.enum';
+} from './../../config/enums/pages-name.enum';
 
 @Component({
   templateUrl: './visit.component.html',
@@ -13,7 +13,7 @@ import {
 })
 export class VisitComponent implements OnInit {
 
-  pageName: string = PagesNameEnum.VISIT;
+  pageName: PagesNameEnum = PagesNameEnum.VISIT;
 
   constructor() {}
 

@@ -1,6 +1,16 @@
-import { PagesNameEnum } from './../../shared/enums/pages-name.enum';
-import { Component, OnInit } from '@angular/core';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+
+import {
+  PagesNameEnum
+} from './../../config/enums/pages-name.enum';
+
+import {
+  faEnvelope,
+  faPhone
+} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   templateUrl: './coordinate.component.html',
@@ -11,7 +21,7 @@ export class CoordinateComponent implements OnInit {
   faEnvelope = faEnvelope;
   faPhone = faPhone;
 
-  pageName: string = PagesNameEnum.COORDINATE;
+  pageName: PagesNameEnum = PagesNameEnum.COORDINATE;
 
   constructor() { }
 

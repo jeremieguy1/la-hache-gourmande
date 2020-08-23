@@ -4,7 +4,7 @@ import {
 
 import {
   PagesNameEnum
-} from './../../shared/enums/pages-name.enum';
+} from './../../config/enums/pages-name.enum';
 
 import {
   HistoryService
@@ -20,7 +20,7 @@ import {
 })
 export class HistoryComponent implements OnInit {
 
-  pageName: string = PagesNameEnum.HISTORY;
+  pageName: PagesNameEnum = PagesNameEnum.HISTORY;
 
   historyContent: History;
 

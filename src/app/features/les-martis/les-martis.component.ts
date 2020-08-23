@@ -1,5 +1,10 @@
-import { PagesNameEnum } from './../../shared/enums/pages-name.enum';
-import { Component, OnInit } from '@angular/core';
+import {
+  Component, OnInit
+} from '@angular/core';
+
+import {
+  PagesNameEnum
+} from './../../config/enums/pages-name.enum';
 
 @Component({
   templateUrl: './les-martis.component.html',
