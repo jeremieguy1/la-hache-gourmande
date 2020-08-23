@@ -1,4 +1,3 @@
-@import "vars";
 @import "functions";
 
 .is-flex {
@@ -10,4 +9,8 @@ iframe {
     animation-duration: 2s;
     border: convert-to-rem(2) solid transparent;
     border-image: linear-gradient($orange-axe, $gray) 1;
+}
+
+.space {
+    padding-bottom: convert-to-rem(24);
 }

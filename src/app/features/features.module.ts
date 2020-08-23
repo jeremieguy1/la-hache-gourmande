@@ -36,6 +36,10 @@ import {
   VisitComponent
 } from './../features/visit/visit.component';
 
+import {
+  DisponibilityComponent
+} from './disponibility/disponibility.component';
+
 // Angular modules
 import {
   NgModule 
@@ -61,6 +65,7 @@ import {
     NavbarComponent,
     TariffComponent,
     VisitComponent,
+    DisponibilityComponent,
   ],
   imports: [
     FeaturesRoutingModule,

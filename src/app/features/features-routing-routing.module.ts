@@ -1,4 +1,3 @@
-import { ImagePageComponent } from './../shared/image-page/image-page.component';
 // Components
 import {
   MapComponent
@@ -32,6 +31,14 @@ import {
   HomeComponent
 } from './home/home.component';
 
+import {
+  DisponibilityComponent
+} from './disponibility/disponibility.component';
+
+import {
+  ImagePageComponent
+} from './../shared/image-page/image-page.component';
+
 // Angular modules
 import {
   NgModule
@@ -49,7 +56,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'page', pathMatch: 'full' },
       { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
     ]}, 
-  { path: 'tariff', component: TariffComponent, pathMatch: 'full'}, // TODO : Enfants
+  { path: 'tariff', component: TariffComponent, pathMatch: 'full'},
+  { path: 'disponibility', component: DisponibilityComponent, pathMatch: 'full'},
   { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
   { path: 'description', component: DescriptionComponent, pathMatch: 'full'},
   { path: 'history', component: HistoryComponent, pathMatch: 'full' },

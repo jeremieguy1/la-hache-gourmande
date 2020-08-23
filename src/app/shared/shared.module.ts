@@ -54,8 +54,7 @@ registerLocaleData(localeFR);
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule,
-    
+    FontAwesomeModule,    
   ],
   exports: [
     CarouselComponent,
