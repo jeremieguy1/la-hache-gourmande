@@ -25,18 +25,10 @@ describe('HomeComponent', () => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-
-    carouselContentServiceSpy =
-      spyOn(carouselContentService, 'getCarouselContent').and.returnValue(["1", "2"]);
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('should fetch the content from service', () => {
-    component.getCarouselContent();
-    expect(carouselContentServiceSpy).toHaveBeenCalled();
   });
 
 });
