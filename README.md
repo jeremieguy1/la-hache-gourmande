@@ -1,27 +1,12 @@
 # LaHacheGourmande
+Le projet consiste en un site web du gîte de "la grange de la hache gourmande". Ce gîte est situé en Ariège et propose des séjours dans un cadre idyllique pour se ressourcer.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+## Accéder au site [en ligne.](https://grange-de-la-hache-gourmande.herokuapp.com/)
 
-## Development server
+## Pour reporter une évolution [créez une issue de feature...](https://github.com/jeremieguy1/la-hache-gourmande/issues/new?assignees=jeremieguy1&labels=enhancement&template=requ-te-de-fonctionnalit-.md&title=%5BFonctionnalit%C3%A9%5D%20-%20NOM)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Pour reporter une bogue [créez une issue de bogue...](https://github.com/jeremieguy1/la-hache-gourmande/issues/new?assignees=jeremieguy1&labels=bug&template=report-de-bogue.md&title=%5BBogue%5D+-+NOM)
 
-## Code scaffolding
+## Développeur
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Jérémie Guy
