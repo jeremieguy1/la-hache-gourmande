@@ -1,5 +1,27 @@
+@import "vars";
+@import "functions";
+@import "mixins";
+
 /* You can add global styles to this file, and also import other style files */
-@import './styles/vars';
-@import './styles/functions';
 @import "../node_modules/bulma/bulma";
-@import "../node_modules/bulma-carousel/src/sass/index.sass"
+@import "../node_modules/bulma-carousel/src/sass/index.sass";
+@import "../node_modules/bulma-o-steps/bulma-steps.sass";
+
+@import "../node_modules/animate.css/animate.min.css";
+
+html {
+    height: 100%;
+    background-color: $background-gray-0;
+    color: $gray;
+    scroll-behavior: smooth;
+    
+    @include scroll-auto;
+
+    a {
+        color: $gray;
+    }
+
+    .title {
+        color: $gray;
+    }
+}

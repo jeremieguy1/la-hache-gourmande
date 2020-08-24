@@ -1,0 +1,16 @@
+<div class="section">
+    <ul class="steps">
+        <li *ngFor="let stepContent of stepsContent.steps; let i = index"
+            [ngClass]="{'is-active': isActive(i)}" 
+            class="steps-segment">
+            <button
+                id={{stepContent.id}}
+                class="button steps-marker"
+                role="link"
+                [title]="stepContent.description"
+                (click)="navigateTo($event, stepContent.description)">
+            </button>
+            <span>{{stepContent.description}}</span>
+        </li>
+    </ul>
+</div>

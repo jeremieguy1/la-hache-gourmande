@@ -1,0 +1,12 @@
+@import "vars";
+
+.background {
+    background-color: $background-gray-3;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

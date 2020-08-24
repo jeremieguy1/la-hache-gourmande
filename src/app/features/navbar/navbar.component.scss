@@ -1,5 +1,58 @@
-@import '../../../styles/functions';
+@import "functions";
+@import "vars";
+@import "mixins";
 
-.welcome-libelle {
-    padding-left: convert-to-rem(10);
+.background {
+    background-color: $background-gray-0;
+
+    .navbar {
+        
+        background-color: transparent;
+
+        .welcome-libelle {
+            padding-left: convert-to-rem(10);
+        }
+        
+        .active {
+            font-weight: 600;
+            transition: background-color 1s ease;
+            background-color: $background-gray-3;
+        }
+    }
+}
+
+@include md {
+    .background {
+        .navbar {
+            .navbar-brand {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@include sm {
+    .background {
+        .navbar {
+            .navbar-brand {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@include xs {
+    .background {
+        .navbar {
+            .navbar-brand {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
 }

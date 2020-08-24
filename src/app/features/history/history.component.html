@@ -1,0 +1,10 @@
+<app-page-header [pageName]="pageName"></app-page-header>
+<div class="container">
+    <div class="section">
+        <p *ngFor="let paragraph of historyContent.section"
+            class="paragraph is-size-4">
+                {{paragraph.content}}
+        </p>
+    </div>
+</div>
+

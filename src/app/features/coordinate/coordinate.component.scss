@@ -1,0 +1,62 @@
+@import "functions";
+@import "vars";
+@import "mixins";
+
+.is-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .card {
+            height: convert-to-rem(300);
+            width: convert-to-rem(400);
+            
+            .card-header {
+                background-color: $gray;
+            .card-header-title {
+                color: $orange-axe;
+            }
+        }
+    }
+}
+
+    .space {
+        margin-top: convert-to-rem(24);
+        text-align: center;
+    }
+}
+
+@include xs {
+    .section {
+        .cards {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@include sm {
+    .section {
+        .cards {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@include md {
+    .section {
+        .cards {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

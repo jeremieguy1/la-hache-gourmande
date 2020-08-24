@@ -3,16 +3,20 @@ import {
   OnInit 
 } from '@angular/core';
 
+import {
+  TitleService
+} from './../title.service';
+
 import { 
-  CarouselContent
-} from '../../shared/carousel/carousel-content.enum';
+  PagesNameEnum,
+  PagesNameEnumFR
+} from './../../config/enums/pages-name.enum';
 
 import {
   CarouselContentService
 } from '../../shared/carousel/carousel-content.service';
 
 @Component({
-  selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
@@ -21,21 +25,23 @@ export class HomeComponent implements OnInit {
   /**
    * Prefix for asset folder
    */
-  ASSETS_PREFIX: string = '../../assets/carousel/home/'
+  ASSETS_PREFIX: string = '../../assets/carousel/home/';
 
   /**
    * Id for the carousel
    */
-  idCarousel: string = 'home'
+  pageName: PagesNameEnum = PagesNameEnum.HOME;
 
   /**
    * Content of the carousel
    */
-  carouselContent: Array<string>
+  carouselContent: string[];
 
-  constructor(private carouselContentService: CarouselContentService) { }
+  constructor(private carouselContentService: CarouselContentService,
+    private titleService: TitleService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle(PagesNameEnumFR.HOME);
     this.carouselContent = this.computeCarouselContent(this.getCarouselContent());
   }
 
@@ -43,8 +49,8 @@ export class HomeComponent implements OnInit {
    * Fetch data from carousel service
    * @return The date fetched from the service
    */
-  getCarouselContent(): Array<string> {
-    return this.carouselContentService.getCarouselContent(CarouselContent.HOME);
+  getCarouselContent(): string[] {
+    return this.carouselContentService.getCarouselContent(this.pageName);
   }
 
   /**
@@ -52,8 +58,8 @@ export class HomeComponent implements OnInit {
    * @param carouselContent The data fetched
    * @return The data fetched with the prefix
    */
-  computeCarouselContent(carouselContent: Array<string>): Array<string> {
-    let _carouselContent: Array<string> = [];
+  computeCarouselContent(carouselContent: string[]): string[] {
+    let _carouselContent: string[] = [];
     for (let [_i, content] of carouselContent.entries()) {
       _carouselContent[_i] = this.ASSETS_PREFIX + content;
     }
