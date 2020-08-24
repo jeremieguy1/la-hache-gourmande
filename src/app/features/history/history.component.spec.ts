@@ -1,3 +1,4 @@
+import { HistoryService } from './history.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HistoryComponent } from './history.component';
@@ -8,7 +9,8 @@ describe('HistoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HistoryComponent ]
+      declarations: [ HistoryComponent ],
+      providers: [ HistoryService ]
     })
     .compileComponents();
   }));
