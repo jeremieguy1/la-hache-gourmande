@@ -15,7 +15,7 @@ import {
 import {
   faEnvelope,
   faPhone
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   templateUrl: './coordinate.component.html',

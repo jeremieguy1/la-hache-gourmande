@@ -1,8 +1,4 @@
 import {
-  CarouselComponent
-} from './carousel/carousel.component';
-
-import {
   NgModule
 } from '@angular/core';
 
@@ -11,12 +7,16 @@ import {
 } from '@angular/common';
 
 import {
+  FontAwesomeModule
+} from '@fortawesome/angular-fontawesome';
+
+import {
   ImagePageComponent
 } from './image-page/image-page.component';
 
 import {
-  FontAwesomeModule
-} from '@fortawesome/angular-fontawesome';
+  CarouselComponent
+} from './carousel/carousel.component';
 
 import {
   PageHeaderComponent
@@ -31,6 +31,10 @@ import {
 } from './steps/steps.component';
 
 import {
+  CardComponent
+} from './card/card.component';
+
+import {
    LOCALE_ID 
 } from '@angular/core';
 
@@ -41,7 +45,6 @@ import {
 import 
   localeFR 
 from '@angular/common/locales/fr';
-import { CardComponent } from './card/card.component';
 
 registerLocaleData(localeFR);
 
@@ -56,7 +59,7 @@ registerLocaleData(localeFR);
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule,    
+    FontAwesomeModule,
   ],
   exports: [
     CarouselComponent,

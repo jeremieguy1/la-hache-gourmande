@@ -17,6 +17,11 @@ export class PageHeaderService {
 
   constructor() { }
 
+  /**
+   * Fetch data for the page heaeder
+   * @param pageName The pageName of the page header to return
+   * @return The page header wanted
+   */
   getContent(pageName: string): PageHeader {
     return pageHeaderJSON[pageName];
   }

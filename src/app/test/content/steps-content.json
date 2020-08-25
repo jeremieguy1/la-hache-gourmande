@@ -1,0 +1,60 @@
+{
+    "visit": {
+        "targetRoute": "/visit/page",
+        "steps": [
+            {
+                "id": "visit-outside",
+                "description": "Les extérieurs"
+            },
+            {
+                "id": "visit-dining-room",
+                "description": "La salle à manger"
+            },
+            {
+                "id": "visit-bedrooms",
+                "description": "Les chambres"
+            },
+            {
+                "id": "visit-kitchen",
+                "description": "La cuisine"
+            },
+            {
+                "id": "visit-kings-corner",
+                "description": "La coin du roi"
+            }
+        ]
+    },
+    "les-martis": {
+        "targetRoute": "/les-martis/page",
+        "steps": [
+            {
+                "id": "les-martis-surrounding-nature",
+                "description": "La nature environnante"
+            },
+            {
+                "id": "les-martis-walks-and-hikes",
+                "description": "Randonnées et balades"
+            },
+            {
+                "id": "les-martis-attelages",
+                "description": "Attelages en vadrouille"
+            },
+            {
+                "id": "les-martis-merens",
+                "description": "Les chevaux de Mérens"
+            },            
+            {
+                "id": "les-martis-owners-games",
+                "description": "Les jeux du proprio"
+            },
+            {
+                "id": "les-martis-cami-des-encantats",
+                "description": "Cami des encatats"
+            },
+            {
+                "id": "les-martis-alfumisterie",
+                "description": "Alfumisterie(use) !"
+            }
+        ]
+    }
+}

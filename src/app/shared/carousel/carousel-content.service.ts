@@ -17,6 +17,11 @@ export class CarouselContentService {
 
   constructor() {}
 
+  /**
+   * Fetch data from carousel service
+   * @param location The location of the carousel
+   * @return The date fetched from the service
+   */
   getCarouselContent(location: PagesNameEnum): Array<string> {
     return carouselContent[location];
   }

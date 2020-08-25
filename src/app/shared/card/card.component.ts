@@ -1,4 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input
+} from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -9,7 +13,7 @@ export class CardComponent implements OnInit {
 
   @Input() title: string;
 
-  @Input() icon;
+  @Input() icon: string;
 
   @Input() animation?: string;
 
@@ -26,9 +30,9 @@ export class CardComponent implements OnInit {
       this.cardClass = "card animate__animated " + this.animation:
       this.cardClass = "card";
 
-      this.color ?
-        this.iconClass = "is-size-1 " + this.color:
-        this.iconClass = "is-size-1";
+    this.color ?
+      this.iconClass = "is-size-1 " + this.color:
+      this.iconClass = "is-size-1";
   }
 
 }

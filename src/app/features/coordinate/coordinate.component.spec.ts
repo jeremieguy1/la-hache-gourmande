@@ -1,6 +1,12 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  async,
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 
-import { CoordinateComponent } from './coordinate.component';
+import {
+  CoordinateComponent
+} from './coordinate.component';
 
 describe('CoordinateComponent', () => {
   let component: CoordinateComponent;
