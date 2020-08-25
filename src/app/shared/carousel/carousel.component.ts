@@ -97,5 +97,6 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     window.removeEventListener("click", this.onClick);
+    window.removeEventListener("keydown", this.onClick);
   }
 }
