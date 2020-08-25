@@ -3,53 +3,36 @@
     <p class="is-size-3 has-text-danger has-text-centered space">Location sur une semaine minimum</p>
     <div class="section">
         <div class="cards">
-            <div class="card animate__animated animate__backInLeft">
-                <header class="card-header">
-                    <p class="card-header-title">Haute saison</p>
-                </header>
-                <div class="card-content">
+            <app-card animation="animate__backInLeft"
+                title="Haute saison"
+                [icon]="faBed">
                     <div class="is-flex">
-                        <fa-icon class="is-size-1" [icon]="faHome"></fa-icon>
-                        <div class="is-flex">
-                            <p class="is-size-4">1er Juillet au 31 Août</p>
-                            <p class="is-size-5">{{535 | currency:'EUR': 'symbol': '1.0'}} /semaine</p>
-                        </div>
+                        <p class="is-size-4">1er Juillet au 31 Août</p>
+                        <p class="is-size-5">{{535 | currency:'EUR': 'symbol': '1.0'}} /semaine</p>
                     </div>
-                </div>
-            </div>
-            <div class="card animate__animated animate__backInRight">
-                <header class="card-header">
-                    <p class="card-header-title">Basse saison</p>
-                </header>
-                <div class="card-content">
+            </app-card>
+
+            <app-card animation="animate__backInRight"
+                title="Basse saison"
+                [icon]="faBed">
                     <div class="is-flex">
-                        <fa-icon class="is-size-1" [icon]="faHome"></fa-icon>
-                        <div class="is-flex">
-                            <p class="is-size-4">1er septembre au 31 septembre</p>
-                            <p class="is-size-5">{{470 | currency:'EUR': 'symbol': '1.0'}} /semaine</p>
-                        </div>
+                        <p class="is-size-4">1er septembre au 31 septembre</p>
+                        <p class="is-size-5">{{470 | currency:'EUR': 'symbol': '1.0'}} /semaine</p>
                     </div>
-                </div>
-            </div>
+            </app-card>
         </div>
     </div>
     <div class="section">
         <div class="cards">
-            <div class="card animate__animated animate__backInUp">
-                <header class="card-header">
-                    <p class="card-header-title">Remise</p>
-                </header>
-                <div class="card-content">
-                    <div class="is-flex">
-                        <fa-icon class="is-size-1" [icon]="faPercent"></fa-icon>
-                        <ul class="is-flex">
-                            <li class="is-size-4">2 semaines : -5%</li>
-                            <li class="is-size-4">3 semaines : -7%</li>
-                            <li class="is-size-4">4 semaines : -10%</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <app-card animation="animate__backInUp"
+                title="Remise"
+                [icon]="faPercent">
+                    <ul class="is-flex">
+                        <li class="is-size-4">2 semaines : -5%</li>
+                        <li class="is-size-4">3 semaines : -7%</li>
+                        <li class="is-size-4">4 semaines : -10%</li>
+                    </ul>
+            </app-card>
         </div>
     </div>
         <div class="hr animate__animated animate__zoomIn">
@@ -57,53 +40,39 @@
         </div>
         <div class="section">
             <div class="cards">
-                <div class="card animate__animated animate__backInLeft">
-                    <header class="card-header">
-                        <p class="card-header-title">Le prix comprend</p>
-                    </header>
-                    <div class="card-content">
-                        <div class="is-flex">
-                            <fa-icon class="is-size-1 has-text-success" [icon]="faCheck"></fa-icon>
-                            <ul class="is-flex">
-                                <li class="is-size-4">Le linge de maison</li>
-                                <li class="is-size-4">Le linge de lit (faits à l'arrivée)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card animate__animated animate__backInRight">
-                    <header class="card-header">
-                        <p class="card-header-title">Le prix ne comprend pas</p>
-                    </header>
-                    <div class="card-content">
-                        <div class="is-flex">
-                            <fa-icon class="is-size-1 has-text-danger" [icon]="faTimes"></fa-icon>
-                            <ul class="is-flex">
-                                <li class="is-size-4">Electricité {{0.11184 | currency:'EUR': 'symbol': '1.1-5'}} par Kwh</li>
-                                <li class="is-size-4">Dépôt de garantie {{250 | currency:'EUR': 'symbol': '1.0'}}</li>
-                                <li class="is-size-4">Taxe de séjour</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <app-card animation="animate__backInLeft"
+                    title="Le prix comprend"
+                    [icon]="faCheck"
+                    color="has-text-success">
+                        <ul class="is-flex">
+                            <li class="is-size-4">Le linge de maison</li>
+                            <li class="is-size-4">Le linge de lit (faits à l'arrivée)</li>
+                        </ul>
+                </app-card>
+                
+                <app-card animation="animate__backInRight"
+                    title="Le prix ne comprend pas"
+                    [icon]="faTimes"
+                    color="has-text-danger">
+                        <ul class="is-flex">
+                            <li class="is-size-4">Electricité {{0.11184 | currency:'EUR': 'symbol': '1.1-5'}} par Kwh</li>
+                            <li class="is-size-4">Dépôt de garantie {{250 | currency:'EUR': 'symbol': '1.0'}}</li>
+                            <li class="is-size-4">Taxe de séjour</li>
+                        </ul>
+                </app-card>
             </div>
         </div>
         <div class="section">
             <div class="cards">
-                <div class="card animate__animated animate__backInLeft">
-                    <header class="card-header">
-                        <p class="card-header-title">En option</p>
-                    </header>
-                    <div class="card-content">
-                        <div class="is-flex">
-                            <fa-icon class="is-size-1 has-text-warning" [icon]="faPlus"></fa-icon>
-                            <ul class="is-flex">
-                                <li class="is-size-4">Ménage  {{60 | currency:'EUR': 'symbol': '1.0'}}</li>
-                                <li class="is-size-5">sur demande en fin de séjour</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <app-card animation="animate__backInUp"
+                    title="En option"
+                    [icon]="faPlus"
+                    color="has-text-warning">
+                    <ul class="is-flex">
+                        <li class="is-size-4">Ménage  {{60 | currency:'EUR': 'symbol': '1.0'}}</li>
+                        <li class="is-size-5">sur demande en fin de séjour</li>
+                    </ul>
+                </app-card>
             </div>
         </div>
         <div class="section">

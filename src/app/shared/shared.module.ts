@@ -41,6 +41,7 @@ import {
 import 
   localeFR 
 from '@angular/common/locales/fr';
+import { CardComponent } from './card/card.component';
 
 registerLocaleData(localeFR);
 
@@ -51,6 +52,7 @@ registerLocaleData(localeFR);
     PageHeaderComponent,
     BoldByNameDirective,
     StepsComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
@@ -64,6 +66,7 @@ registerLocaleData(localeFR);
     FontAwesomeModule,
     BoldByNameDirective,
     StepsComponent,
+    CardComponent
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr' }

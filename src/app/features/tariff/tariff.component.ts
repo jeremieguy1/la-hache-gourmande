@@ -13,7 +13,7 @@ import {
 } from './../../config/enums/pages-name.enum';
 
 import {
-  faHome,
+  faBed,
   faTimes,
   faCheck,
   faPlus,
@@ -26,7 +26,7 @@ import {
 })
 export class TariffComponent implements OnInit {
 
-  faHome = faHome;
+  faBed = faBed;
   faTimes = faTimes;
   faCheck = faCheck;
   faPlus = faPlus;

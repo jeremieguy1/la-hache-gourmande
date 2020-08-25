@@ -1,0 +1,40 @@
+@import "functions";
+@import "vars";
+@import "mixins";
+
+.is-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: convert-to-rem(300);
+    width: convert-to-rem(400);
+    
+    .card-header {
+        background-color: $gray;
+
+        .card-header-title {
+            color: $orange-axe;
+        }
+    }
+}
+
+@include xs {
+    .card {
+        margin: convert-to-rem(24) 0;
+    }
+}
+
+@include sm {
+    .card {
+        margin: convert-to-rem(24) 0;
+    }
+}
+
+@include md {
+    .card {
+        margin: convert-to-rem(24) 0;
+    }
+}

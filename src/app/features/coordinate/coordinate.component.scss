@@ -14,19 +14,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
-        .card {
-            height: convert-to-rem(300);
-            width: convert-to-rem(400);
-            
-            .card-header {
-                background-color: $gray;
-            .card-header-title {
-                color: $orange-axe;
-            }
-        }
     }
-}
 
     .space {
         margin-top: convert-to-rem(24);

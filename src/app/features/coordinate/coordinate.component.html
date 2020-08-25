@@ -1,40 +1,30 @@
-<app-page-header [pageName]="pageName"></app-page-header>
+<app-page-header [pageName]="pageName">aaa</app-page-header>
 <div class="container">
     <div class="section">
         <div class="cards">
-            <div class="card animate__animated animate__backInLeft">
-                <header class="card-header">
-                    <p class="card-header-title">Par courrier électronique</p>
-                </header>
-                <div class="card-content">
-                    <div class="is-flex">
-                        <fa-icon class="is-size-1" [icon]="faEnvelope"></fa-icon>
-                        <div class="is-flex">
-                            <p class="is-size-4">
-                                <a href="mailto:lahachegourmande@gmail.com">lahachegourmande@gmail.com</a></p>
-                            <p class="is-size-5">(réponse rapide assurée...)</p>
-                        </div>
-                    </div>
+            <app-card animation="animate__backInLeft"
+                title="Par courrier électronique"
+                [icon]="faEnvelope"
+                >
+                <div class="is-flex">
+                    <p class="is-size-4">
+                        <a href="mailto:lahachegourmande@gmail.com">lahachegourmande@gmail.com</a></p>
+                    <p class="is-size-5">(réponse rapide assurée...)</p>
                 </div>
-            </div>
+            </app-card>
             <div>
                 <p class="is-size-1">OU</p>
             </div>
-            <div class="card animate__animated animate__backInRight">
-                <header class="card-header">
-                    <p class="card-header-title">Par téléphone</p>
-                </header>
-                <div class="card-content">
-                    <div class="is-flex">
-                        <fa-icon class="is-size-1" [icon]="faPhone"></fa-icon>
-                        <div class="is-flex">
-                            <p class="is-size-4">05 61 02 88 12</p>
-                            <p class="is-size-5">ou</p>
-                            <p class="is-size-4">06 33 59 36 67</p>
-                        </div>
-                    </div>
+            <app-card animation="animate__backInRight"
+                title="Par téléphone"
+                [icon]="faPhone"
+                >
+                <div class="is-flex">
+                    <p class="is-size-4">05 61 02 88 12</p>
+                    <p class="is-size-5">ou</p>
+                    <p class="is-size-4">06 33 59 36 67</p>
                 </div>
-            </div>
+            </app-card>
         </div>
         <div class="is-flex space animate__animated animate__fadeIn">
             <p class="is-size-5">Veuillez préciser dès le début de la communication la raison de votre appel, merci...</p>
