@@ -25,7 +25,7 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
 
   @Input() carouselContent: string;
 
-  carouselInstance: Object;
+  carouselInstance: any;
 
   /**
    * Event handler onClick to reset autoplay
