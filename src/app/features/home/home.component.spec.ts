@@ -1,13 +1,20 @@
-import { CarouselContentService } from './../../shared/carousel/carousel-content.service';
-import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
+import {
+  async,
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
+import {
+  CarouselContentService
+} from './../../shared/carousel/carousel-content.service';
+
+import {
+  HomeComponent
+} from './home.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
-  let carouselContentService: CarouselContentService;
   let fixture: ComponentFixture<HomeComponent>;
-  let carouselContentServiceSpy;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({

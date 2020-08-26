@@ -24,8 +24,8 @@ export class BoldByNameDirective implements AfterViewInit {
    * Bold a list of words defined in BoldNamesEnum.
    */
   boldContent(): void {
-    let words = this.el.nativeElement.childNodes[0].innerHTML.split(' ');
-    for(let [_i, word] of words.entries()) {
+    const words = this.el.nativeElement.childNodes[0].innerHTML.split(' ');
+    for(const [_i, word] of words.entries()) {
       let currentWord:string[] = word.split('_');
       if (currentWord.length > 1) {
         const tmp = currentWord;

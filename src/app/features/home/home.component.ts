@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   /**
    * Prefix for asset folder
    */
-  ASSETS_PREFIX: string = '../../assets/carousel/home/';
+  ASSETS_PREFIX = '../../assets/carousel/home/';
 
   /**
    * Id for the carousel
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
   }
 
   /**
-   * Fetch data from carousel service
+   * Call the service which fetch data from carousel service
    * @return The date fetched from the service
    */
   getCarouselContent(): string[] {
@@ -59,8 +59,8 @@ export class HomeComponent implements OnInit {
    * @return The data fetched with the prefix
    */
   computeCarouselContent(carouselContent: string[]): string[] {
-    let _carouselContent: string[] = [];
-    for (let [_i, content] of carouselContent.entries()) {
+    const _carouselContent: string[] = [];
+    for (const [_i, content] of carouselContent.entries()) {
       _carouselContent[_i] = this.ASSETS_PREFIX + content;
     }
     return _carouselContent;

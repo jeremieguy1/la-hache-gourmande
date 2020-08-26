@@ -1,4 +1,6 @@
-import { BoldByNameDirective } from './bold-by-name.directive';
+import {
+  BoldByNameDirective
+} from './bold-by-name.directive';
 
 describe('BoldByNameDirective', () => {
   it('should create an instance', () => {

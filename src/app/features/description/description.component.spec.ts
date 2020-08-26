@@ -1,7 +1,16 @@
-import { DescriptionService } from './description.service';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  DescriptionService
+} from './description.service';
 
-import { DescriptionComponent } from './description.component';
+import {
+  async,
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
+
+import {
+  DescriptionComponent
+} from './description.component';
 
 describe('DescriptionComponent', () => {
   let component: DescriptionComponent;

@@ -15,13 +15,13 @@ import {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title: string = 'la-hache-gourmande';
+  title = 'la-hache-gourmande';
 
   faArrowUp = faArrowUp;
 
   skipLinkPath: string;
 
-  isScrolled: boolean = false;
+  isScrolled = false
   
   constructor(private router: Router) {
     

@@ -40,6 +40,11 @@ export class DescriptionComponent implements OnInit {
     this.descriptionContent.push(this.descriptionService.getContent('outside'));
   }
 
+  /**
+   * Tells if the description part is the last
+   * @param description  The description to check
+   * @param index Index of the description
+   */
   isNotLast(description: Description, index: number): boolean {
     return description.part.length !== (index + 1);
   }

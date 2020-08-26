@@ -1,0 +1,352 @@
+{
+    "visit-outside": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-2.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-3.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-4.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-5.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-6.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-7.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-8.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-outside/outside-9.jpg"
+            }
+        ],
+        "alt": "Outside view "
+    },
+    "visit-dining-room": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-2.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-3.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-4.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-5.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-6.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-7.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-8.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-9.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-10.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-11.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-12.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-13.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-14.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-dining-room/dining-room-15.jpg"
+            }
+        ],
+        "alt": "Dining room view "
+    },
+    "visit-bedrooms": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-bedrooms/bedrooms-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-bedrooms/bedrooms-2.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-bedrooms/bedrooms-3.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-bedrooms/bedrooms-4.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-bedrooms/bedrooms-5.jpg"
+            }
+        ],
+        "alt": "Bedrooms view "
+    },
+    "visit-kitchen": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kitchen/kitchen-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kitchen/kitchen-2.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kitchen/kitchen-3.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kitchen/kitchen-4.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kitchen/kitchen-5.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kitchen/kitchen-6.jpg"
+            }
+        ],
+        "alt": "Kitchen view "
+    },
+    "visit-kings-corner": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/visit/visit-kings-corner/kings-corner-1.jpg"
+            }
+        ],
+        "alt": "Kings corner view "
+    },
+    "les-martis-surrounding-nature": {
+        "images": [
+            {
+                "title": "Toutes ces prises de vues sont faites depuis le jardin du Gîte",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-2.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-3.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-4.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-5.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-6.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-7.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-8.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-surrounding-nature/surrounding-nature-9.jpg"
+            }
+        ],
+        "alt": "Surrounding nature view "
+    },
+    "les-martis-walks-and-hikes": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-walks-and-hikes/walks-and-hikes-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-walks-and-hikes/walks-and-hikes-2.jpg"
+            }
+        ],
+        "alt": "Walks and hikes view ",
+        "explanation": [
+            "Il existe, à quelques minutes de voiture des Martis, une multitude de chemins de randonnée",
+            "Dans des cadres tous plus magnifiques les uns que les autres...",
+            "Nos plus beaux coins et sommets verdoyants vous attendent..."
+        ]
+    },
+    "les-martis-attelages": {
+        "images": [
+            {
+                "title": "Au détour du chemin,",
+                "src":"../../assets/les-martis/les-martis-attelages/attelages-1.jpg"
+            },
+            {
+                "title": "Par une matinée ensoleillée,",
+                "src":"../../assets/les-martis/les-martis-attelages/attelages-2.jpg"
+            },
+            {
+                "title": "Les heureux propriétaires d'attelages sont de sortie,",
+                "src":"../../assets/les-martis/les-martis-attelages/attelages-3.jpg"
+            },
+            {
+                "title": "La caravane avance, pour le plus grand plaisir des petits et des grands...",
+                "src":"../../assets/les-martis/les-martis-attelages/attelages-4.jpg"
+            },
+            {
+                "title": "Bonne route, et à l'année prochaine...",
+                "src":"../../assets/les-martis/les-martis-attelages/attelages-5.jpg"
+            }
+        ],
+        "alt": "Attelages view "
+    },
+    "les-martis-merens": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-merens/merens-1.jpg"
+            }
+        ],
+        "alt": "Merens view ",
+        "explanation": [
+            "A voir, sur place, à la saison...",
+            "Les magnifiques chevaux de Mérens.",
+            "Pure race Ariégeoise"
+        ]
+        
+    },
+    "les-martis-owners-games": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-owners-games/nacelle-1.jpg"
+            }
+        ],
+        "alt": "Owner's games view ",
+        "explanation": [
+            "Le propriétaire, Mr GUY, cultive les principes ludiques avec la même passion qui anime sa femme et ses extérieurs fleuris...",
+            "De son atelier sortent parfois des jeux insolites voir diaboliques qui pourront être mis à votre disposition..., pour des moments de détente originaux.",
+            "Aurez-vous la concentration nécessaire pour arriver à la fin du parcours du jeu de \"la nacelle\"?",
+            "Chaque année, de nouveaux jeux inédits vous attendent...",
+            "Venez encourager mon plaisir du \"ludobricolage\"... en testant mes créations du moment."
+        ]
+    },
+    "les-martis-cami-des-encantats": {
+        "images": [
+            {
+                "title": "Au cours d'une balade vers Benac... suivez le \"Cami des encantats\".",
+                "src":"../../assets/les-martis/les-martis-cami-des-encantats/cami-des-encantats-1.jpg"
+            },
+            {
+                "title": "\"Bonjour m'sieur,dame\"",
+                "src":"../../assets/les-martis/les-martis-cami-des-encantats/cami-des-encantats-2.jpg"
+            },
+            {
+                "title": "Ce parcours vous mènera dans les petits hameaux de la commune et vous fera découvrir, à travers une jolie mise en scène, tous les personnages de l'ancien temps...",
+                "src":"../../assets/les-martis/les-martis-cami-des-encantats/cami-des-encantats-3.jpg"
+            },
+            {
+                "title": "De plus, chaque personnage, est accompagné d'un petit récit qui le situe dans sa fonction, son rôle au sein de la localité.",
+                "src":"../../assets/les-martis/les-martis-cami-des-encantats/cami-des-encantats-4.jpg"
+            },
+            {
+                "title": "\"Salut ! facteur !\"",
+                "src":"../../assets/les-martis/les-martis-cami-des-encantats/cami-des-encantats-5.jpg"
+            },
+            {
+                "title": "\"Bonjour monsieur le maire\"",
+                "src":"../../assets/les-martis/les-martis-cami-des-encantats/cami-des-encantats-6.jpg"
+            }
+        ],
+        "alt": "Cami des encantats view "
+    },
+    "les-martis-alfumisterie": {
+        "images": [
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-1.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-2.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-3.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-4.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-5.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-6.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-7.jpg"
+            },
+            {
+                "title": "",
+                "src":"../../assets/les-martis/les-martis-alfumisterie/alfumisterie-8.png"
+            }
+        ],
+        "alt": "Alfumisterie view "
+    }
+}
