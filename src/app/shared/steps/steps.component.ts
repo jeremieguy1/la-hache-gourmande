@@ -47,8 +47,8 @@ export class StepsComponent implements OnInit {
    * @param event Click event
    */
   navigateTo(event: any, title: string): void {
-    let li = event.target.parentNode;
-    let index = this._index(li.parentNode, li);
+    const li = event.target.parentNode;
+    const index = this._index(li.parentNode, li);
     this.lastClickIndex = index;
     this.titleService.setTitle(title);
     this.router.navigate([this.stepsContent.targetRoute, { id:`${event.target.id}` }]);
