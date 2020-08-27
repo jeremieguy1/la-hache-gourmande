@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="header-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{headerContent.title}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Bienvenue au gîte d'Ariège "la grange de la hache gourmande" ! {Welcome to the lodging of Ariège "la grange de la hache gourmande" !}
+          Visitez le gîte en image {Visit the lodging in pictures}
+          Comment nous joindre ? {Our coordinates}
+          Nos disponibilités {Our disponibilities}
+          Nos tarifs {Our tariffs}
+          Descriptif du gîte {Description of the lodging}
+          Entrevoyez notre histoire {Our history}
+          Découvrez notre hameau {The corner of "Les Martis"}
+          Notre localisation {Our localisation}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/page-header/page-header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header-subtitle" datatype="html">
+        <source>{VAR_SELECT, select, subtitle {subtitle} other {<x id="INTERPOLATION" equiv-text="{{headerContent.subtitle}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          5 pers. 3 épis de 470 à 535 € {5 pers. 3 ears of corn from 470 to 535 €.}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/page-header/page-header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

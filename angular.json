@@ -11,8 +11,9 @@
         }
       },
       "i18n": {
+        "sourceLocale": "fr",
         "locales": {
-          "fr": "src/locale/messages.fr.xlf"
+          "en": "src/app/locale/messages.en.xlf"
         }
       },
       "root": "",
@@ -71,22 +72,29 @@
                 }
               ]
             },
+            "en": {
+              "outputPath": "dist/la-hache-gourmande/en",
+              "i18nFile": "src/app/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en"
+            },
             "fr": {
-              "localize": ["fr"]
-            }            
+              "outputPath": "dist/la-hache-gourmande/fr",
+              "i18nLocale": "fr"
+            }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "la-hache-gourmande:build"
+            "browserTarget": "la-hache-gourmande:build:fr"
           },
           "configurations": {
             "production": {
               "browserTarget": "la-hache-gourmande:build:production"
             },
-            "fr": {
-              "browserTarget": "la-hache-gourmande:build:fr"
+            "en": {
+              "browserTarget": "la-hache-gourmande:build:en"
             }
           }
         },
