@@ -13,7 +13,7 @@
     "lint:fix": "eslint . --ext js,ts,json --quiet --fix",
     "extract:i18n": "ng xi18n --output-path src/app/locale",
     "e2e": "ng e2e",
-    "heroku-postbuild": "for lang in en; do ng build --output-path=dist/$lang --prod --base-href /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --i18n-locale=$lang; done"
+    "heroku-postbuild": "for lang in en; do ng build --output-path=dist/$lang --prod --base-href /$lang/ --locales=src/app/locale/messages.$lang.xlf --localize=$lang; done"
   },
   "private": true,
   "dependencies": {
