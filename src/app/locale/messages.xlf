@@ -58,6 +58,188 @@
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="prices-warning-week" datatype="html">
+        <source>Location sur une semaine minimum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-H-season-months" datatype="html">
+        <source>1er Juillet au 31 Août</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-H-season-price" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{535 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /semaine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-H-season" datatype="html">
+        <source>Haute saison</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-L-season-months" datatype="html">
+        <source>1er septembre au 31 septembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-L-season-price" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{470 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /semaine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-L-season" datatype="html">
+        <source>Basse saison</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount-2-weeks" datatype="html">
+        <source>2 semaines : -5%</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount-3-weeks" datatype="html">
+        <source>3 semaines : -7%</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount-4-weeks" datatype="html">
+        <source>4 semaines : -10%</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount" datatype="html">
+        <source>Remise</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-with-1" datatype="html">
+        <source>Le linge de maison</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-with-2" datatype="html">
+        <source>Le linge de lit (faits à l&apos;arrivée)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-with" datatype="html">
+        <source>Le prix comprend</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-without-1" datatype="html">
+        <source>Electricité <x id="INTERPOLATION" equiv-text="{{0.11184 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.1-5&apos;}}"/> par Kwh</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-without-2" datatype="html">
+        <source>Dépôt de garantie <x id="INTERPOLATION" equiv-text="{{250 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-without-3" datatype="html">
+        <source>Taxe de séjour</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-without" datatype="html">
+        <source>Le prix ne comprend pas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-option-1" datatype="html">
+        <source>Ménage  <x id="INTERPOLATION" equiv-text="{{60 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-option-2" datatype="html">
+        <source>sur demande en fin de séjour</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-option" datatype="html">
+        <source>En option</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-1" datatype="html">
+        <source>Intéressé ? Alors,</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-2" datatype="html">
+        <source>contactez-nous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-3" datatype="html">
+        <source>ou vérifiez</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-4" datatype="html">
+        <source>notre disponibilité</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-5" datatype="html">
+        <source>dès à présent !</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
