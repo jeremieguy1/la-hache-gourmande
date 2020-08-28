@@ -3,31 +3,31 @@
     <div class="section">
         <div class="cards">
             <app-card animation="animate__backInLeft"
-                title="Par courrier électronique"
+                i18n-title="@@coordinate-mail-title" title="Par courrier électronique"
                 [icon]="faEnvelope"
                 >
                 <div class="is-flex">
                     <p class="is-size-4">
                         <a href="mailto:lahachegourmande@gmail.com">lahachegourmande@gmail.com</a></p>
-                    <p class="is-size-5">(réponse rapide assurée...)</p>
+                    <p i18n="@@coordinate-mail-desc" class="is-size-5">(réponse rapide assurée...)</p>
                 </div>
             </app-card>
             <div>
-                <p class="is-size-1">OU</p>
+                <p i18n="@@coordinate-or" class="is-size-1">OU</p>
             </div>
             <app-card animation="animate__backInRight"
-                title="Par téléphone"
+                i18n-title="@@coordinate-call-title" title="Par téléphone"
                 [icon]="faPhone"
                 >
                 <div class="is-flex">
                     <p class="is-size-4">05 61 02 88 12</p>
-                    <p class="is-size-5">ou</p>
+                    <p i18n="@@coordinate-content-or" class="is-size-5">ou</p>
                     <p class="is-size-4">06 33 59 36 67</p>
                 </div>
             </app-card>
         </div>
         <div class="is-flex space animate__animated animate__fadeIn">
-            <p class="is-size-5">Veuillez préciser dès le début de la communication la raison de votre appel, merci...</p>
+            <p i18n="@@coordinate-call" class="is-size-5">Veuillez préciser dès le début de la communication la raison de votre appel, merci...</p>
         </div>
     </div>
 </div>

@@ -2,6 +2,7 @@
 <xliff version="1.2">
   <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
+      <!-- Page header -->
       <trans-unit id="header-title" datatype="html">
         <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{headerContent.title}}"/> } }</source>
         <target>{VAR_SELECT, select,
@@ -29,6 +30,57 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
+
+      <!-- Coordinate -->
+      <trans-unit id="coordinate-mail-desc" datatype="html">
+        <source>(réponse rapide assurée...)</source>
+        <target>(quick answer guaranteed...)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-mail-title" datatype="html">
+        <source>Par courrier électronique</source>
+        <target>By e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-or" datatype="html">
+        <source>OU</source>
+        <target>OR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-content-or" datatype="html">
+        <source>ou</source>
+        <target>or</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-call-title" datatype="html">
+        <source>Par téléphone</source>
+        <target>By phone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-call" datatype="html">
+        <source>Veuillez préciser dès le début de la communication la raison de votre appel, merci...</source>
+        <target>Please specify at the beginning of the communication the reason of your call, thanks...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      
     </body>
   </file>
 </xliff>
