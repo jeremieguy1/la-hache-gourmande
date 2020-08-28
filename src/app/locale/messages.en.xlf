@@ -8,9 +8,9 @@
         <target>{VAR_SELECT, select,
           Bienvenue au gîte d'Ariège "la grange de la hache gourmande" ! {Welcome to the lodging of Ariège "la grange de la hache gourmande" !}
           Visitez le gîte en image {Visit the lodging in pictures}
-          Comment nous joindre ? {Our coordinates}
-          Nos disponibilités {Our disponibilities}
-          Nos tarifs {Our tariffs}
+          Comment nous joindre ? {How to join us ?}
+          Nos disponibilités {Our availabilities}
+          Nos tarifs {Our prices}
           Descriptif du gîte {Description of the lodging}
           Entrevoyez notre histoire {Our history}
           Découvrez notre hameau {The corner of "Les Martis"}
