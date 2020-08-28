@@ -74,14 +74,13 @@
             },
             "en": {
               "outputPath": "dist/la-hache-gourmande/en",
-              "baseHref": "/en",
+              "baseHref": "/en/",
               "i18nFile": "src/app/locale/messages.en.xlf",
-              "i18nFormat": "xlf",
               "i18nLocale": "en"
             },
             "fr": {
               "outputPath": "dist/la-hache-gourmande/fr",
-              "baseHref": "/fr",
+              "baseHref": "/fr/",
               "i18nLocale": "fr"
             }
           }

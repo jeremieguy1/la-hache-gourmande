@@ -1,14 +1,24 @@
 import { 
-  Component, OnInit, HostListener
+  Component,
+  OnInit,
+  HostListener,
+  Inject,
+  LOCALE_ID
 } from '@angular/core';
 
-import { Router, NavigationEnd } from '@angular/router';
+import {
+  Router,
+  NavigationEnd
+} from '@angular/router';
 
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import {
+  faArrowUp
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
   filter
-} from 'rxjs/operators'
+} from 'rxjs/operators';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,8 +33,9 @@ export class AppComponent implements OnInit {
 
   isScrolled = false
   
-  constructor(private router: Router) {
-    
+  constructor(private router: Router,
+    @Inject(LOCALE_ID) protected locale: string) {
+        
   }
 
   @HostListener("window:scroll", [])
@@ -37,17 +48,15 @@ export class AppComponent implements OnInit {
       }
   }
   ngOnInit() {
-
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)).subscribe(() => {
       if (!this.router.url.endsWith('#main-content')) {
-          this.skipLinkPath = `${this.router.url}#main-content`;
+          this.skipLinkPath = `/${this.locale}${this.router.url}#main-content`;
       }
    });
-  }
+}
 
   scroll(): void {
-    console.log(window.pageYOffset > 100)
     this.isScrolled = window.pageYOffset > 100;
   }
 }

@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   /**
    * Prefix for asset folder
    */
-  ASSETS_PREFIX = '../../assets/carousel/home/';
+  ASSETS_PREFIX = 'assets/carousel/home/';
 
   /**
    * Id for the carousel
