@@ -309,6 +309,55 @@
           <context context-type="linenumber">90</context>
         </context-group>
       </trans-unit>
+
+      <!-- Description -->
+      <!-- Description title -->
+      <trans-unit id="description-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{description.title}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Aménagements intérieurs {Internal fittings}
+          Aménagements extérieurs {External fittings}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/description/description.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Description part title -->
+      <trans-unit id="description-part-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{part.title}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Au rez de rue : {On the street level: }
+          Au rez de chaussée : {On the ground floor: }
+          Au 1er étage : {On the 1st floor: }
+        }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/description/description.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Description part content -->
+      <trans-unit id="description-part-content" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{content.text}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Grand_garage privatif avecs étagères de rangement; Buanderie : Lave-linge, Sèche-linge, évier bi-bacs avec eau chaude, matériel petite enfance (baignoire-lit parapluie-chaise haute). {Large_private_garage with storage shelves; Laundry: Washing machine, tumble dryer, double sink with hot water, children's equipment (bath-bed, umbrella and high chair).}
+          Séjour avec différents coins salons (129 m²): Chaîne Hi-Fi mini, Télévision couleur (lecteur DVD), Fauteuil (2), Canapé (2), Grande table massive, Cheminée, Bibliothèque, Jeux... Alfumisterie... {Living_room with different sitting areas (129 m²): Hi-Fi mini, Colour television (DVD player), Armchair (2), Sofa (2), Large massive table, Fireplace, Library, Games... Alfumisterie...}
+          Cuisine équipée avec four micro-ondes, réfrigérateur-congélateur, hotte aspirante, gazinière avec four. {Fully equipped kitchen with microwave oven, fridge-freezer, extractor hood, gas cooker with oven.}
+          WC indépendant avec lave-mains. {Separate WC with washbasin.}
+          Salle_d'eau privée avec chauffage électrique (avec sèche-serviettes), Douche, Lavabo. {Private_bathroom with electric heating (with towel dryer), Shower, Washbasin.}
+          Chambre_1 avec des rangements (armoire, console/bureau), Lit 2 personnes en 140. {Bedroom_1 with storages (wardrobe, console/study), Double bed in 140.}
+          Chambre_2 en mezzanine: Trés belle mansarde dont l'ouverture donne sur la pièce de jour - Lit 2 personnes en 140, Rangements (armoire, coiffeuse). {Bedroom_2 on the mezzanine: Very beautiful attic with an opening onto the day room - Double bed (140cm), Storage space (wardrobe, dressing table). }
+          Chambre_3 en mezzanine: Petite mansarde idéale pour enfant dont l'ouverture donne sur la pièce de jour - Lit 1 personne en 90, Rangements (espace jeux). {Bedroom_3 on the mezzanine: Small attic room ideal for children with an opening onto the day room - Single bed (90 cm), Storage (play area). }
+          Palier_aménagé en coin salon: Canapé, Fauteuil (2), table basse. {Landing_furnished in the living room: Sofa, Armchair (2), coffee table.}
+          Terrasse_couverte_bois sur pelouse, façon estrade, avec coin repas (4/6 personnes) électrification et éclairage incorporé. Barbecue fixe grande capacité. {Wooden_covered_terrace on lawn, platform-style, with dining area (4/6 people) electrification and built-in lighting. Large capacity fixed barbecue. }}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/description/description.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -2,13 +2,13 @@
 <div class="container">
     <div class="section"
         *ngFor="let description of descriptionContent">
-        <h2 class="title is-size-2">{{description.title}}</h2>
+        <h2 i18n="@@description-title" class="title is-size-2">{description.title, select, title {title} other { {{description.title}} } }</h2>
         <div *ngFor="let part of description.part; let i = index">
-            <h3 class="is-size-3" *ngIf="part.title">{{part.title}}</h3>
+            <h3 i18n="@@description-part-title" class="is-size-3" *ngIf="part.title">{part.title, select, title {title} other { {{part.title}} } }</h3>
             <div appBoldByName
                 class="content"
                 *ngFor="let content of part.content">
-                <p  class="is-size-4">{{content.text}}</p>
+                <p i18n="@@description-part-content" class="is-size-4">{content.text, select, title {title} other { {{content.text}} } }</p>
             </div>
             <hr *ngIf="isNotLast(description, i)">
         </div>
