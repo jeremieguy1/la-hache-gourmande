@@ -79,6 +79,13 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="history-content" datatype="html">
+        <source>{VAR_SELECT, select, content {content} other {<x id="INTERPOLATION" equiv-text="{{paragraph.content}}"/> } }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/history/history.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="prices-warning-week" datatype="html">
         <source>Location sur une semaine minimum</source>
         <context-group purpose="location">
