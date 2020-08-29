@@ -423,6 +423,88 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
+
+      <!-- NavBar-->
+      <trans-unit id="navbar-nav-home-alt" datatype="html">
+        <source>Accueil logo</source>
+        <target>Home logo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-home" datatype="html">
+        <source>Accueil</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-visit" datatype="html">
+        <source>Visite du gîte</source>
+        <target>Visit of the lodging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-prices" datatype="html">
+        <source>Nos tarifs</source>
+        <target>Our prices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-coordinates" datatype="html">
+        <source>Nos coordonnées</source>
+        <target>Our coordinates</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-avaibility" datatype="html">
+        <source>Nos disponibilités</source>
+        <target>Our availabilities</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-description" datatype="html">
+        <source>Descriptif du gîte</source>
+        <target>Description of the lodging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-history" datatype="html">
+        <source>Notre histoire</source>
+        <target>Our history</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-les-martis" datatype="html">
+        <source>Le coin des Martis</source>
+        <target>The Martis corner</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-map" datatype="html">
+        <source>Localisation</source>
+        <target>Location</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

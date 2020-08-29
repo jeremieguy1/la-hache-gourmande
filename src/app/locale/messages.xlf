@@ -2,6 +2,76 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="navbar-nav-home-alt" datatype="html">
+        <source>Accueil logo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-home" datatype="html">
+        <source>Accueil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-visit" datatype="html">
+        <source>Visite du gîte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-prices" datatype="html">
+        <source>Nos tarifs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-coordinates" datatype="html">
+        <source>Nos coordonnées</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-avaibility" datatype="html">
+        <source>Nos disponibilités</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-description" datatype="html">
+        <source>Descriptif du gîte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-history" datatype="html">
+        <source>Notre histoire</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-les-martis" datatype="html">
+        <source>Le coin des Martis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-map" datatype="html">
+        <source>Localisation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="header-title" datatype="html">
         <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{headerContent.title}}"/> } }</source>
         <context-group purpose="location">

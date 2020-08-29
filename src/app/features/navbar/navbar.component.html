@@ -3,8 +3,8 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand navbar-item" routerLinkActive="active">
                 <a class="is-light is-outlined is-flex" routerLink="/home">
-                    <img src="assets/image/hache-g.png" alt="Accueil logo">
-                    <span class="welcome-libelle">Accueil</span>
+                    <img src="assets/image/hache-g.png" i18n-alt="@@navbar-nav-home-alt" alt="Accueil logo">
+                    <span i18n="@@navbar-nav-home" class="welcome-libelle">Accueil</span>
                 </a>
                 <div (click)="burgerClick($event)"
                     (keydown)="burgerClick($event)"
@@ -23,42 +23,42 @@
                 <div class="navbar-start">
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/visit">
-                            <span>Visite du gîte</span>
+                            <span i18n="@@navbar-nav-visit">Visite du gîte</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/tariff" >
-                            <span>Nos tarifs</span>
+                            <span i18n="@@navbar-nav-prices">Nos tarifs</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/coordinate">
-                            <span>Nos coordonnées</span>
+                            <span i18n="@@navbar-nav-coordinates">Nos coordonnées</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/disponibility">
-                            <span>Nos disponibilités</span>
+                            <span i18n="@@navbar-nav-avaibility">Nos disponibilités</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/description">
-                            <span>Descriptif du gîte</span>
+                            <span i18n="@@navbar-nav-description">Descriptif du gîte</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/history">
-                            <span>Notre histoire</span>
+                            <span i18n="@@navbar-nav-history">Notre histoire</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/les-martis">
-                            <span>Le coin des Martis</span>
+                            <span i18n="@@navbar-nav-les-martis">Le coin des Martis</span>
                         </a>
                     </div>
                     <div class="navbar-item" routerLinkActive="active">
                         <a class="is-light is-outlined" routerLink="/map">
-                            <span>Localisation</span>
+                            <span i18n="@@navbar-nav-map">Localisation</span>
                         </a>
                     </div>
                 </div>
