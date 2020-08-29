@@ -265,6 +265,36 @@
           <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="availability-week" datatype="html">
+        <source>Votre semaine est disponible ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-contact" datatype="html">
+        <source>
+                        Contactez-nous
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-book" datatype="html">
+        <source>vite pour la réserver !</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-calendar-title" datatype="html">
+        <source>Disponibilité du gîte sur google calendar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
