@@ -14,7 +14,7 @@
           Descriptif du gîte {Description of the lodging}
           Entrevoyez notre histoire {Our history}
           Découvrez notre hameau {The corner of "Les Martis"}
-          Notre localisation {Our localisation}}
+          Notre localisation {Our location}}
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/page-header/page-header.component.html</context>
@@ -503,6 +503,49 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
           <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Image page -->
+      <trans-unit id="image-page-image-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{image.title}}"/> } }</source>
+        <target>{VAR_SELECT, select, 
+          Toutes ces prises de vues sont faites depuis le jardin du Gîte {All these shots are taken from the Lodging's garden.}
+          Au détour du chemin, {At the turn of the road,}
+          Par une matinée ensoleillée, {On a sunny morning,}
+          Les heureux propriétaires d'attelages sont de sortie, {The happy carriage owners are out and about,}
+          La caravane avance, pour le plus grand plaisir des petits et des grands... {The caravan moves forward, to the delight of young and old...}
+          Bonne route, et à l'année prochaine... {Have a good trip, and see you next year...}
+          Au cours d'une balade vers Benac... suivez le "Cami des encantats". {During a walk towards Benac... follow the "Cami des encantats".}
+          Bonjour m'sieur,dame {Hello, sir, ma'am.}
+          Ce parcours vous mènera dans les petits hameaux de la commune et vous fera découvrir, à travers une jolie mise en scène, tous les personnages de l'ancien temps... {This route will take you through the small hamlets of the commune and will make you discover, through an attractive setting, all the characters of the old days...}
+          De plus, chaque personnage, est accompagné d'un petit récit qui le situe dans sa fonction, son rôle au sein de la localité. {In addition, each character is accompanied by a short story that situates him in his function, his role within the locality.}
+          Salut, facteur ! {Hey, postman !}
+          Bonjour monsieur le maire {Good morning, Mr. Mayor}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/image-page/image-page.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="image-page-explanation" datatype="html">
+        <source>{VAR_SELECT, select, ligne {ligne} other {<x id="INTERPOLATION" equiv-text="{{ligne}}"/> } }</source>
+        <target>{VAR_SELECT, select, 
+          Il existe, à quelques minutes de voiture des Martis, une multitude de chemins de randonnée {Within a few minutes drive from the Martis there are a multitude of hiking trails}
+          Dans des cadres tous plus magnifiques les uns que les autres... {In frames each one more magnificent than the other...}
+          Nos plus beaux coins et sommets verdoyants vous attendent... {Our most beautiful green corners and peaks are waiting for you...}
+          A voir, sur place, à la saison... {To see, on the spot, at the season...}
+          Les magnifiques chevaux de Mérens. {The magnificent horses of Mérens.}
+          Pure race Ariégeoise {Pure Ariegean breed}
+          Le propriétaire, Mr GUY, cultive les principes ludiques avec la même passion qui anime sa femme et ses extérieurs fleuris... {The owner, Mr GUY, cultivates playful principles with the same passion that animates his wife and his flowery exteriors...}
+          De son atelier sortent parfois des jeux insolites voir diaboliques qui pourront être mis à votre disposition..., pour des moments de détente originaux. {His workshop sometimes produces unusual or even diabolical games that can be put at your disposal..., for original moments of relaxation.}
+          Aurez-vous la concentration nécessaire pour arriver à la fin du parcours du jeu de "la nacelle"? {Will you be able to concentrate enough to get to the end of the "la nacelle" game?}
+          Chaque année, de nouveaux jeux inédits vous attendent... {Every year, new and original games are waiting for you...}
+          Venez encourager mon plaisir du "ludobricolage"... en testant mes créations du moment. {Come and encourage my pleasure of "do-it-yourself"... by testing my creations of the moment.}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/image-page/image-page.component.html</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
     </body>
