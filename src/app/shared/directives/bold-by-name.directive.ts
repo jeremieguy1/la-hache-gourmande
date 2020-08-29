@@ -31,7 +31,6 @@ export class BoldByNameDirective implements AfterViewInit {
         const tmp = currentWord;
         currentWord = [];
         currentWord.push(tmp.join(' '));
-        console.log(currentWord)
       }
       if (Object.values(BoldNamesEnum).find(e => e === currentWord[0].toLowerCase())) {
         words[_i] = currentWord[0].bold();
