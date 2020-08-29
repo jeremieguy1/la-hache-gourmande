@@ -548,6 +548,29 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
+
+      <!-- Steps -->
+      <trans-unit id="steps-description" datatype="html">
+        <source>{VAR_SELECT, select, description {description} other {<x id="INTERPOLATION" equiv-text="{{stepContent.description}}"/> } }</source>
+        <target>{VAR_SELECT, select, 
+          Les extérieurs {The outsides}
+          La salle à manger {The dining room}
+          Les chambres {The rooms}
+          La cuisine {The kitchen}
+          La coin du roi {King's Corner}
+          La nature environnante {The surrounding nature}
+          Randonnées et balades {Walks and hikes}
+          Attelages en vadrouille {Mop hitches}
+          Les chevaux de Mérens {The horses of Mérens}
+          Les jeux du proprio {The owner's games}
+          Cami des encatats {Cami des encatats}
+          Alfumisterie(use) ! {Alfumisterie(use) !}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/steps/steps.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

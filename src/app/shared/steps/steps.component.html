@@ -7,10 +7,11 @@
                 id={{stepContent.id}}
                 class="button steps-marker"
                 role="link"
+                i18n-title="@@steps-title"
                 [title]="stepContent.description"
                 (click)="navigateTo($event, stepContent.description)">
             </button>
-            <span>{{stepContent.description}}</span>
+            <span i18n="@@steps-description">{stepContent.description, select, description {description} other { {{stepContent.description}} } }</span>
         </li>
     </ul>
 </div>
