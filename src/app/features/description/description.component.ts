@@ -9,7 +9,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -34,7 +34,7 @@ export class DescriptionComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.DESCRIPTION);
+    this.titleService.setTitle(PagesNameTitleEnum.DESCRIPTION);
     this.descriptionContent = [];
     this.descriptionContent.push(this.descriptionService.getContent('inside'));
     this.descriptionContent.push(this.descriptionService.getContent('outside'));

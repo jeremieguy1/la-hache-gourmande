@@ -9,7 +9,7 @@ import {
 
 import { 
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.HOME);
+    this.titleService.setTitle(PagesNameTitleEnum.HOME);
     this.carouselContent = this.computeCarouselContent(this.getCarouselContent());
   }
 
