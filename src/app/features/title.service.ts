@@ -11,6 +11,8 @@ import {
 import {
   PagesNameEnumTitleFR,
   PagesNameEnumTitleEN,
+  PagesNameStepsEnumTitleFR,
+  PagesNameStepsEnumTitleEN
 } from './../config/enums/pages-name.enum';
 
 @Injectable({
@@ -25,8 +27,17 @@ export class TitleService {
    * Set the title of the page (Uppercase the first letter)
    * @param title The title to display
    */
-  setTitle(title: string) {
+  setPageTitle(title: string) {
     title = this.locale === 'fr' ? PagesNameEnumTitleFR[title] : PagesNameEnumTitleEN[title];
     this.title.setTitle(`${title.charAt(0).toUpperCase()}${title.slice(1)}`);
+  }
+
+  /**
+   * Set the title of the page by steps (Uppercase the first letter)
+   * @param title The title to display
+   */
+  setStepsTitle(idTitle: string) {
+    idTitle = this.locale === 'fr' ? PagesNameStepsEnumTitleFR[idTitle] : PagesNameStepsEnumTitleEN[idTitle];
+    this.title.setTitle(`${idTitle.charAt(0).toUpperCase()}${idTitle.slice(1)}`);
   }
 }

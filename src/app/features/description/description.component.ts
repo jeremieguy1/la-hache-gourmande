@@ -34,7 +34,7 @@ export class DescriptionComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.DESCRIPTION);
+    this.titleService.setPageTitle(PagesNameTitleEnum.DESCRIPTION);
     this.descriptionContent = [];
     this.descriptionContent.push(this.descriptionService.getContent('inside'));
     this.descriptionContent.push(this.descriptionService.getContent('outside'));

@@ -23,6 +23,6 @@ export class VisitComponent implements OnInit {
   constructor(private titleService: TitleService) {}
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.VISIT);
+    this.titleService.setPageTitle(PagesNameTitleEnum.VISIT);
   }
 }

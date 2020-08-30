@@ -23,7 +23,7 @@ export class LesMartisComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.LESMARTIS);
+    this.titleService.setPageTitle(PagesNameTitleEnum.LESMARTIS);
   }
 
 }

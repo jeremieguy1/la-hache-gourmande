@@ -33,7 +33,7 @@ export class HistoryComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.HISTORY);
+    this.titleService.setPageTitle(PagesNameTitleEnum.HISTORY);
     this.historyContent = this.historyService.getContent();
   }
 

@@ -23,7 +23,7 @@ export class MapComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.MAP);
+    this.titleService.setPageTitle(PagesNameTitleEnum.MAP);
   }
 
 }

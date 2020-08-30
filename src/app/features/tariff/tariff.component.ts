@@ -37,7 +37,7 @@ export class TariffComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.PRICES);
+    this.titleService.setPageTitle(PagesNameTitleEnum.PRICES);
   }
 
 }

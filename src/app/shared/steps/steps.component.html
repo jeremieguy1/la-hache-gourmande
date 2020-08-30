@@ -9,7 +9,7 @@
                 role="link"
                 i18n-title="@@steps-title"
                 [title]="stepContent.description"
-                (click)="navigateTo($event, stepContent.description)">
+                (click)="navigateTo($event, stepContent.id)">
             </button>
             <span i18n="@@steps-description">{stepContent.description, select, description {description} other { {{stepContent.description}} } }</span>
         </li>

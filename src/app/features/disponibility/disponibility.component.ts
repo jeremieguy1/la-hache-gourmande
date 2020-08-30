@@ -22,7 +22,7 @@ export class DisponibilityComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameTitleEnum.AVAILABILITIES);
+    this.titleService.setPageTitle(PagesNameTitleEnum.AVAILABILITIES);
   }
 
 }
