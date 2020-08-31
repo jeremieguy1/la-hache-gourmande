@@ -74,6 +74,11 @@ a:focus {
     opacity: 1;
   }
 
+  a.image:hover {
+    backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+  }
 @include md {
   a.back-to-top {
     height: convert-to-rem(60);
