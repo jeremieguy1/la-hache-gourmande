@@ -6,6 +6,17 @@
     background-color: $gray;
     height: convert-to-rem(35);
     align-items: center;
+
+    .container {
+      .is-flex {
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          margin: 0 convert-to-rem(8);
+        }
+      }
+    }
 }
 
 .head-text {

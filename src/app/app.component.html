@@ -1,9 +1,21 @@
 <a class="skiplink" [href]="skipLinkPath">Passer au contenu</a>
 <div class="head is-flex">
     <div class="container">
-        <a href="" routerLink="/home">
-            <span class="head-text">La hache gourmande</span>
-        </a>
+        <div class="is-flex">
+            <div class="is-flex">
+                <a href="" routerLink="/home">
+                    <span class="head-text">La hache gourmande</span>
+                </a>
+            </div>
+            <div class="is-flex">
+                <a class="image is-24x24" [href]="hrefLocale" (click)='redirectTo("fr")'>
+                    <img src="assets/flag/flag-fr.png" alt="Flag france">
+                </a>
+                <a class="image is-24x24" [href]="hrefLocale" (click)='redirectTo("en")'>
+                    <img src="assets/flag/flag-en.png" alt="Flag england">
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 <app-navbar></app-navbar>

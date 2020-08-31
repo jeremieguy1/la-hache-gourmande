@@ -8,7 +8,7 @@ import {
 
 import {
   Router,
-  NavigationEnd
+  NavigationEnd,
 } from '@angular/router';
 
 import {
@@ -25,18 +25,26 @@ import {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'la-hache-gourmande';
 
   faArrowUp = faArrowUp;
 
+  /**
+   * Path to redirect by the back to top button
+   */
   skipLinkPath: string;
 
-  isScrolled = false
+  /**
+   * Tell if the window is scrolled
+   */
+  isScrolled: boolean = false;
+
+  /**
+   * Path to redirect for locale link
+   */
+  hrefLocale: string;
   
   constructor(private router: Router,
-    @Inject(LOCALE_ID) protected locale: string) {
-        
-  }
+    @Inject(LOCALE_ID) protected locale: string) { }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
@@ -59,4 +67,9 @@ export class AppComponent implements OnInit {
   scroll(): void {
     this.isScrolled = window.pageYOffset > 100;
   }
-}
+
+  redirectTo(locale: string): void {
+    this.hrefLocale = `${window.location.origin}/${locale}${this.router.url}`;
+    console.log(`${window.location.origin}/${locale}${this.router.url}`);
+  }
+ }
