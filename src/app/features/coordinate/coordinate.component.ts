@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Inject
 } from '@angular/core';
 
 import {
@@ -9,7 +10,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -26,12 +27,12 @@ export class CoordinateComponent implements OnInit {
   faEnvelope = faEnvelope;
   faPhone = faPhone;
 
-  pageName: string = PagesNameEnum.COORDINATE;
+  pageName: string = PagesNameEnum.COORDINATES;
 
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.COORDINATE);
+    this.titleService.setPageTitle(PagesNameTitleEnum.COORDINATES);
   }
 
 }

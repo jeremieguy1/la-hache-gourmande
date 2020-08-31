@@ -40,17 +40,18 @@ export class StepsComponent implements OnInit {
   ngOnInit(): void {
     this.lastClickIndex = 0;
     this.stepsContent = this.stepsService.getContent(this.id);
+    this.titleService.setStepsTitle(this._key(this.stepsContent.steps[0].id));
   }
 
   /**
    * Navigate to the view indicated by the target
    * @param event Click event
    */
-  navigateTo(event: any, title: string): void {
+  navigateTo(event: any, idTitle: string): void {
     const li = event.target.parentNode;
     const index = this._index(li.parentNode, li);
     this.lastClickIndex = index;
-    this.titleService.setTitle(title);
+    this.titleService.setStepsTitle(this._key(idTitle));
     this.router.navigate([this.stepsContent.targetRoute, { id:`${event.target.id}` }]);
   }
 
@@ -74,6 +75,14 @@ export class StepsComponent implements OnInit {
       }
     }
     return 0;
+  }
+
+  /**
+   * Transform id to ENUM key
+   * @param id the id to transform
+   */
+  _key(id: string): string {
+    return id.split('-').join('').toUpperCase();
   }
 
 }

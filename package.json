@@ -5,13 +5,15 @@
     "ng": "ng",
     "start": "node server.js",
     "start:local": "ng serve -o",
+    "start:local:en": "ng serve --configuration=en -o",
     "css-build": "node-sass --omit-source-map-url src/styles.scss src/styles.css",
     "build": "ng build",
     "test": "ng test",
     "lint": "eslint . --ext js,ts,json",
     "lint:fix": "eslint . --ext js,ts,json --quiet --fix",
+    "extract:i18n": "ng xi18n --output-path src/app/locale",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --configuration=fr --prod && ng build --configuration=en --prod"
   },
   "private": true,
   "dependencies": {

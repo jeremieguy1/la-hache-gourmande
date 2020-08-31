@@ -3,7 +3,7 @@
     <div class="section">
         <p *ngFor="let paragraph of historyContent.section"
             class="paragraph is-size-4">
-                {{paragraph.content}}
+            <span i18n="@@history-content">{paragraph.content, select, content {content} other { {{paragraph.content}} } }</span>
         </p>
     </div>
 </div>

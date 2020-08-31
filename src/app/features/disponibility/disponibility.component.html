@@ -4,11 +4,11 @@
         <div class="space">
             <div class="is-flex">
                 <p class="is-size-4 has-text-centered">
-                    <span>Votre semaine est disponible ?</span>
-                    <a class="has-text-link" routerLink="/coordinate">
+                    <span i18n="@@availability-week">Votre semaine est disponible ?</span>
+                    <a i18n="@@availability-contact" class="has-text-link" routerLink="/coordinate">
                         Contactez-nous
                     </a>
-                    <span>vite pour la réserver !</span>
+                    <span i18n="@@availability-book">vite pour la réserver !</span>
                 </p>
             </div>
         </div>
@@ -18,6 +18,7 @@
                 height="600"
                 frameborder="0"
                 scrolling="no"
+                i18n-title="@@availability-calendar-title"
                 title="Disponibilité du gîte sur google calendar">
             </iframe>
         </div>

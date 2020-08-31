@@ -8,7 +8,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 @Component({
@@ -17,12 +17,12 @@ import {
 })
 export class DisponibilityComponent implements OnInit {
 
-  pageName: PagesNameEnum = PagesNameEnum.DISPONIBILITY;
+  pageName: PagesNameEnum = PagesNameEnum.AVAILABILITIES;
 
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.DISPONIBILITY);
+    this.titleService.setPageTitle(PagesNameTitleEnum.AVAILABILITIES);
   }
 
 }

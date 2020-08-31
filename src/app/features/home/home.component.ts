@@ -9,7 +9,7 @@ import {
 
 import { 
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   /**
    * Prefix for asset folder
    */
-  ASSETS_PREFIX = '../../assets/carousel/home/';
+  ASSETS_PREFIX = 'assets/carousel/home/';
 
   /**
    * Id for the carousel
@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.HOME);
+    this.titleService.setPageTitle(PagesNameTitleEnum.HOME);
     this.carouselContent = this.computeCarouselContent(this.getCarouselContent());
   }
 

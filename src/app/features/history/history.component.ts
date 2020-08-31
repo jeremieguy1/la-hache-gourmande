@@ -8,7 +8,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -33,7 +33,7 @@ export class HistoryComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.HISTORY);
+    this.titleService.setPageTitle(PagesNameTitleEnum.HISTORY);
     this.historyContent = this.historyService.getContent();
   }
 

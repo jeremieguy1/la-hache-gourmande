@@ -34,20 +34,6 @@ import {
   CardComponent
 } from './card/card.component';
 
-import {
-   LOCALE_ID 
-} from '@angular/core';
-
-import {
-  registerLocaleData
-} from '@angular/common';
-
-import 
-  localeFR 
-from '@angular/common/locales/fr';
-
-registerLocaleData(localeFR);
-
 @NgModule({
   declarations: [
     CarouselComponent,
@@ -71,8 +57,6 @@ registerLocaleData(localeFR);
     StepsComponent,
     CardComponent
   ],
-  providers: [
-    { provide: LOCALE_ID, useValue: 'fr' }
-  ]
+  providers: [ ]
 })
 export class SharedModule { }

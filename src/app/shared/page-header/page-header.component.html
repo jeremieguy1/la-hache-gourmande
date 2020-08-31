@@ -1,8 +1,8 @@
 <div class="background">
     <div class="container">
         <div class="section">
-            <h1 class="title is-size-2 has-text-centered is-spaced">{{headerContent.title}}</h1>
-            <p class="subtitle is-size-4 has-text-centered" *ngIf="headerContent.subtitle">{{headerContent.subtitle}}</p>
+            <h1 i18n="@@header-title" class="title is-size-2 has-text-centered is-spaced">{headerContent.title, select, title {title} other { {{headerContent.title}} } }</h1>
+            <p i18n="@@header-subtitle" class="subtitle is-size-4 has-text-centered" *ngIf="headerContent.subtitle">{headerContent.subtitle, select, subtitle {subtitle} other { {{headerContent.subtitle}} } }</p>
         </div>
     </div>
 </div>
