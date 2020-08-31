@@ -35,6 +35,11 @@
                 flex-direction: row;
                 align-items: center;
             }
+
+            .navbar-item:hover {
+                transform: none;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -47,6 +52,11 @@
                 flex-direction: row;
                 align-items: center;
             }
+            
+            .navbar-item:hover {
+                transform: none;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -58,6 +68,11 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+            }
+            
+            .navbar-item:hover {
+                transform: none;
+                font-weight: 600;
             }
         }
     }

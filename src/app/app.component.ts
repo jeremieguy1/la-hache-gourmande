@@ -12,7 +12,7 @@ import {
 } from '@angular/router';
 
 import {
-  faCaretUp
+  faArrowUp
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -26,7 +26,7 @@ import {
 })
 export class AppComponent implements OnInit {
 
-  faCaretUp = faCaretUp;
+  faArrowUp = faArrowUp;
 
   /**
    * Path to redirect by the back to top button

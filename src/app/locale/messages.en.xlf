@@ -74,7 +74,7 @@
       <trans-unit id="header-subtitle" datatype="html">
         <source>{VAR_SELECT, select, subtitle {subtitle} other {<x id="INTERPOLATION" equiv-text="{{headerContent.subtitle}}"/> } }</source>
         <target>{VAR_SELECT, select,
-          5 pers. 3 épis de 470 à 535 € {5 pers. 3 ears of corn from 470 to 535 €.}}</target>
+          5 pers. 3 épis de 470 à 535 € {5 pers. 3 épis from 470 to €535.}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/page-header/page-header.component.html</context>
           <context context-type="linenumber">5</context>
@@ -84,8 +84,8 @@
       <!-- Coordinate -->
       <!-- Card Mail-->
       <trans-unit id="coordinate-mail-desc" datatype="html">
-        <source>(réponse rapide assurée...)</source>
-        <target>(quick answer guaranteed...)</target>
+        <source>(réponse rapide assurée !)</source>
+        <target>(quick answer guaranteed !)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
           <context context-type="linenumber">12</context>
@@ -110,12 +110,28 @@
       </trans-unit>
 
       <!-- Card phone-->
+      <trans-unit id="coordinate-content-phone-1" datatype="html">
+        <source>05 61 02 88 12</source>
+        <target>+33 5 61 02 88 12</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="coordinate-content-or" datatype="html">
         <source>ou</source>
         <target>or</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
           <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-content-phone-2" datatype="html">
+        <source>06 33 59 36 67</source>
+        <target>+33 6 33 59 36 67</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-call-title" datatype="html">
@@ -392,15 +408,15 @@
       <trans-unit id="description-part-content" datatype="html">
         <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{content.text}}"/> } }</source>
         <target>{VAR_SELECT, select,
-          Grand_garage privatif avecs étagères de rangement; Buanderie : Lave-linge, Sèche-linge, évier bi-bacs avec eau chaude, matériel petite enfance (baignoire-lit parapluie-chaise haute). {Large_private_garage with storage shelves; Laundry: Washing machine, tumble dryer, double sink with hot water, children's equipment (bath-bed, umbrella and high chair).}
-          Séjour avec différents coins salons (129 m²): Chaîne Hi-Fi mini, Télévision couleur (lecteur DVD), Fauteuil (2), Canapé (2), Grande table massive, Cheminée, Bibliothèque, Jeux... Alfumisterie... {Living_room with different sitting areas (129 m²): Hi-Fi mini, Colour television (DVD player), Armchair (2), Sofa (2), Large massive table, Fireplace, Library, Games... Alfumisterie...}
+          Grand_garage privatif avecs étagères de rangement ; Buanderie : Lave-linge, Sèche-linge, évier bi-bacs avec eau chaude, matériel petite enfance (baignoire-lit parapluie-chaise haute). {Large_private_garage with storage shelves; Laundry: Washing machine, tumble dryer, double sink with hot water, children's equipment (bath-bed, umbrella and high chair).}
+          Séjour avec différents coins salons (129 m²) : Chaîne Hi-Fi mini, Télévision couleur (lecteur DVD), Fauteuil (2), Canapé (2), Grande table massive, Cheminée, Bibliothèque, Jeux... Alfumisterie... {Living_room with different sitting areas (129 m²): Hi-Fi mini, Colour television (DVD player), Armchair (2), Sofa (2), Large massive table, Fireplace, Library, Games... Alfumisterie...}
           Cuisine équipée avec four micro-ondes, réfrigérateur-congélateur, hotte aspirante, gazinière avec four. {Fully equipped kitchen with microwave oven, fridge-freezer, extractor hood, gas cooker with oven.}
           WC indépendant avec lave-mains. {Separate WC with washbasin.}
           Salle_d'eau privée avec chauffage électrique (avec sèche-serviettes), Douche, Lavabo. {Private_bathroom with electric heating (with towel dryer), Shower, Washbasin.}
           Chambre_1 avec des rangements (armoire, console/bureau), Lit 2 personnes en 140. {Bedroom_1 with storages (wardrobe, console/study), Double bed in 140.}
-          Chambre_2 en mezzanine: Trés belle mansarde dont l'ouverture donne sur la pièce de jour - Lit 2 personnes en 140, Rangements (armoire, coiffeuse). {Bedroom_2 on the mezzanine: Very beautiful attic with an opening onto the day room - Double bed (140cm), Storage space (wardrobe, dressing table). }
-          Chambre_3 en mezzanine: Petite mansarde idéale pour enfant dont l'ouverture donne sur la pièce de jour - Lit 1 personne en 90, Rangements (espace jeux). {Bedroom_3 on the mezzanine: Small attic room ideal for children with an opening onto the day room - Single bed (90 cm), Storage (play area). }
-          Palier_aménagé en coin salon: Canapé, Fauteuil (2), table basse. {Landing_furnished in the living room: Sofa, Armchair (2), coffee table.}
+          Chambre_2 en mezzanine : Trés belle mansarde dont l'ouverture donne sur la pièce de jour - Lit 2 personnes en 140, Rangements (armoire, coiffeuse). {Bedroom_2 on the mezzanine: Very beautiful attic with an opening onto the day room - Double bed (140cm), Storage space (wardrobe, dressing table). }
+          Chambre_3 en mezzanine : Petite mansarde idéale pour enfant dont l'ouverture donne sur la pièce de jour - Lit 1 personne en 90, Rangements (espace jeux). {Bedroom_3 on the mezzanine: Small attic room ideal for children with an opening onto the day room - Single bed (90 cm), Storage (play area). }
+          Palier_aménagé en coin salon : Canapé, Fauteuil (2), table basse. {Landing_furnished in the living room: Sofa, Armchair (2), coffee table.}
           Terrasse_couverte_bois sur pelouse, façon estrade, avec coin repas (4/6 personnes) électrification et éclairage incorporé. Barbecue fixe grande capacité. {Wooden_covered_terrace on lawn, platform-style, with dining area (4/6 people) electrification and built-in lighting. Large capacity fixed barbecue. }}
         </target>
         <context-group purpose="location">
@@ -409,7 +425,7 @@
         </context-group>
       </trans-unit>
 
-      <!-- Disponibility -->
+      <!-- Availabilities -->
       <trans-unit id="availability-week" datatype="html">
         <source>Votre semaine est disponible ?</source>
         <target>Is your week available ?</target>
@@ -474,7 +490,7 @@
         </context-group>
       </trans-unit>
 
-      <!-- NavBar-->
+      <!-- NavBar -->
       <trans-unit id="navbar-nav-home-alt" datatype="html">
         <source>Accueil logo</source>
         <target>Home logo</target>
@@ -560,7 +576,7 @@
       <trans-unit id="image-page-image-title" datatype="html">
         <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{image.title}}"/> } }</source>
         <target>{VAR_SELECT, select, 
-          Toutes ces prises de vues sont faites depuis le jardin du Gîte {All these shots are taken from the Lodging's garden.}
+          Toutes ces prises de vues sont faites depuis le jardin du gîte {All these shots are taken from the Lodging's garden.}
           Au détour du chemin, {At the turn of the road,}
           Par une matinée ensoleillée, {On a sunny morning,}
           Les heureux propriétaires d'attelages sont de sortie, {The happy carriage owners are out and about,}

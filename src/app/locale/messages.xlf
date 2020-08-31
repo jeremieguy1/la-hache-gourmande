@@ -23,50 +23,50 @@
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="navbar-nav-prices" datatype="html">
-        <source>Nos tarifs</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
-          <context context-type="linenumber">31</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navbar-nav-coordinates" datatype="html">
-        <source>Nos coordonnées</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
-          <context context-type="linenumber">36</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navbar-nav-avaibility" datatype="html">
-        <source>Nos disponibilités</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="navbar-nav-description" datatype="html">
         <source>Descriptif du gîte</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navbar-nav-history" datatype="html">
         <source>Notre histoire</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navbar-nav-les-martis" datatype="html">
         <source>Le coin des Martis</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navbar-nav-map" datatype="html">
         <source>Localisation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-prices" datatype="html">
+        <source>Nos tarifs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-coordinates" datatype="html">
+        <source>Nos coordonnées</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-avaibility" datatype="html">
+        <source>Nos disponibilités</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
           <context context-type="linenumber">61</context>
@@ -118,39 +118,39 @@
         <source>Drapeau Français</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="app-flag-french-title" datatype="html">
         <source>Drapeau Français</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="app-flag-english-alt" datatype="html">
         <source>Drapeau Anglais</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="app-flag-english-title" datatype="html">
         <source>Drapeau Anglais</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="app-backToTop-title" datatype="html">
         <source>Lien haut de page</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-mail-desc" datatype="html">
-        <source>(réponse rapide assurée...)</source>
+        <source>(réponse rapide assurée !)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
           <context context-type="linenumber">12</context>
@@ -170,11 +170,25 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="coordinate-content-phone-1" datatype="html">
+        <source>05 61 02 88 12</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="coordinate-content-or" datatype="html">
         <source>ou</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
           <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-content-phone-2" datatype="html">
+        <source>06 33 59 36 67</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-call-title" datatype="html">
@@ -398,7 +412,7 @@
       </trans-unit>
       <trans-unit id="prices-location-contact-4" datatype="html">
         <source>
-                        notre disponibilité
+                        nos disponibilités
                     </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
