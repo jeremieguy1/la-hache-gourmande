@@ -45,6 +45,7 @@ a:focus {
     transform: translateY(0%);
   }
   
+  
   a.back-to-top {
     height: convert-to-rem(70);
     width: convert-to-rem(70);
@@ -62,6 +63,14 @@ a:focus {
     fa-icon {
       color: white;
     }
+
+  }
+
+  a.back-to-top:hover {
+    animation: pulse;
+    animation-duration: 1s;
+    transition: opacity;
+    opacity: 1;
   }
 
 @include md {
