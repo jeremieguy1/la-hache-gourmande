@@ -46,30 +46,34 @@ export class AppComponent implements OnInit {
   constructor(private router: Router,
     @Inject(LOCALE_ID) protected locale: string) { }
 
+    /**
+     * Says if the screen is scrolled between a threshold
+     */
   @HostListener("window:scroll", [])
   onWindowScroll() {
-      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+      if (window.pageYOffset || document.documentElement.scrollTop  > 100 || document.body.scrollTop > 100) {
           this.isScrolled = true;
       } 
-     else if (this.isScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+     else if (this.isScrolled && window.pageYOffset || document.documentElement.scrollTop < 10 || document.body.scrollTop < 10) {
           this.isScrolled = false;
       }
   }
+
   ngOnInit() {
+    // Set the skiplink path
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)).subscribe(() => {
-      if (!this.router.url.endsWith('#main-content')) {
-          this.skipLinkPath = `/${this.locale}${this.router.url}#main-content`;
-      }
-   });
-}
-
-  scroll(): void {
-    this.isScrolled = window.pageYOffset > 100;
+        if (!this.router.url.endsWith('#main-content')) {
+            this.skipLinkPath = `/${this.locale}${this.router.url}#main-content`;
+        }
+    });
   }
 
+  /**
+   * Set the link to redurect when a flag button is clicked
+   * @param locale the locale to switch
+   */
   redirectTo(locale: string): void {
     this.hrefLocale = `${window.location.origin}/${locale}${this.router.url}`;
-    console.log(`${window.location.origin}/${locale}${this.router.url}`);
   }
- }
+}

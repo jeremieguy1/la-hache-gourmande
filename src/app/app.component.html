@@ -1,4 +1,4 @@
-<a class="skiplink" [href]="skipLinkPath">Passer au contenu</a>
+<a i18n="@@app-skiplink" class="skiplink" [href]="skipLinkPath">Passer au contenu</a>
 <div class="head is-flex">
     <div class="container">
         <div class="is-flex">
@@ -9,10 +9,14 @@
             </div>
             <div class="is-flex">
                 <a class="image is-24x24" [href]="hrefLocale" (click)='redirectTo("fr")'>
-                    <img src="assets/flag/flag-fr.png" alt="Flag france">
+                    <img src="assets/flag/flag-fr.png"
+                        i18n-alt="@@app-flag-french-alt" alt="Drapeau Français"
+                        i18n-title="@@app-flag-french-title" title="Drapeau Français">
                 </a>
                 <a class="image is-24x24" [href]="hrefLocale" (click)='redirectTo("en")'>
-                    <img src="assets/flag/flag-en.png" alt="Flag england">
+                    <img src="assets/flag/flag-en.png"
+                    i18n-alt="@@app-flag-english-alt" alt="Drapeau Anglais"
+                    i18n-title="@@app-flag-english-title" title="Drapeau Anglais">
                 </a>
             </div>
         </div>
@@ -22,6 +26,9 @@
 <div id="main-content">
     <router-outlet></router-outlet>
 </div>
-<a *ngIf="isScrolled" class="back-to-top" [href]="skipLinkPath" title="Lien haut de page">
+<a *ngIf="isScrolled"
+    class="back-to-top"
+    [href]="skipLinkPath"
+    i18n-title="@@app-backToTop-title" title="Lien haut de page">
     <fa-icon [icon]="faArrowUp"></fa-icon>
 </a>
