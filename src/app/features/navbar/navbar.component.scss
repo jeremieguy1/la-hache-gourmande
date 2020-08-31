@@ -6,13 +6,19 @@
     background-color: $background-gray-0;
 
     .navbar {
-        
-        background-color: transparent;
+        background-color: $background-gray-0;
 
         .welcome-libelle {
             padding-left: convert-to-rem(10);
         }
         
+        .navbar-item:hover {
+            font-weight: 600;
+            backface-visibility: hidden;
+            transition: transform 0.3s linear;
+            transform: scale(1.1);
+        }
+
         .active {
             font-weight: 600;
             transition: background-color 1s ease;
