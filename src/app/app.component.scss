@@ -45,6 +45,7 @@ a:focus {
     transform: translateY(0%);
   }
   
+  
   a.back-to-top {
     height: convert-to-rem(70);
     width: convert-to-rem(70);
@@ -61,9 +62,23 @@ a:focus {
     
     fa-icon {
       color: white;
+      font-size: convert-to-rem(24);
     }
+
   }
 
+  a.back-to-top:hover {
+    animation: pulse;
+    animation-duration: 1s;
+    transition: opacity;
+    opacity: 1;
+  }
+
+  a.image:hover {
+    backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+  }
 @include md {
   a.back-to-top {
     height: convert-to-rem(60);

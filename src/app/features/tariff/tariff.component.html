@@ -1,6 +1,10 @@
 <app-page-header [pageName]="pageName"></app-page-header>
 <div class="container">
-    <p i18n="@@prices-warning-week" class="is-size-3 has-text-danger has-text-centered space">Location sur une semaine minimum</p>
+    <div class="is-flex space">
+        <div class="notification is-danger is-flex">
+            <p i18n="@@prices-warning-week" class="is-size-3 has-text-white has-text-centered">Location sur une semaine minimum</p>
+          </div>
+    </div>
     <div class="section">
         <div class="cards">
             <app-card animation="animate__backInLeft"
@@ -89,7 +93,7 @@
                     </a>
                     <span i18n="@@prices-location-contact-3" class="is-size-4">ou vérifiez</span>
                     <a i18n="@@prices-location-contact-4" class="is-size-4 has-text-link" routerLink="/disponibility">
-                        notre disponibilité
+                        nos disponibilités
                     </a>
                     <span i18n="@@prices-location-contact-5">dès à présent !</span>
                 </p>
