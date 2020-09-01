@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <!-- App component -->
+      <trans-unit id="app-skiplink" datatype="html">
+        <source>Passer au contenu</source>
+        <target>Skip to content</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-flag-french-alt" datatype="html">
+        <source>Drapeau Français</source>
+        <target>French flag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-flag-french-title" datatype="html">
+        <source>Drapeau Français</source>
+        <target>French flag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-flag-english-alt" datatype="html">
+        <source>Drapeau Anglais</source>
+        <target>English flag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-flag-english-title" datatype="html">
+        <source>Drapeau Anglais</source>
+        <target>English flag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app-backToTop-title" datatype="html">
+        <source>Lien haut de page</source>
+        <target>Link to top of the page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Page header -->
+      <trans-unit id="header-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{headerContent.title}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Bienvenue au gîte d'Ariège "la grange de la hache gourmande" ! {Welcome to the lodging of Ariège "la grange de la hache gourmande" !}
+          Visitez le gîte en image {Visit the lodging in pictures}
+          Comment nous joindre ? {How to join us ?}
+          Nos disponibilités {Our availabilities}
+          Nos tarifs {Our prices}
+          Descriptif du gîte {Description of the lodging}
+          Entrevoyez notre histoire {Our history}
+          Découvrez notre hameau {The corner of "Les Martis"}
+          Notre localisation {Our location}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/page-header/page-header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header-subtitle" datatype="html">
+        <source>{VAR_SELECT, select, subtitle {subtitle} other {<x id="INTERPOLATION" equiv-text="{{headerContent.subtitle}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          5 pers. 3 épis de 470 à 535 € {5 pers. 3 épis from 470 to €535.}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/page-header/page-header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Coordinate -->
+      <!-- Card Mail-->
+      <trans-unit id="coordinate-mail-desc" datatype="html">
+        <source>(réponse rapide assurée !)</source>
+        <target>(quick answer guaranteed !)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-mail-title" datatype="html">
+        <source>Par courrier électronique</source>
+        <target>By e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="coordinate-or" datatype="html">
+        <source>OU</source>
+        <target>OR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card phone-->
+      <trans-unit id="coordinate-content-phone-1" datatype="html">
+        <source>05 61 02 88 12</source>
+        <target>+33 5 61 02 88 12</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-content-or" datatype="html">
+        <source>ou</source>
+        <target>or</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-content-phone-2" datatype="html">
+        <source>06 33 59 36 67</source>
+        <target>+33 6 33 59 36 67</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-call-title" datatype="html">
+        <source>Par téléphone</source>
+        <target>By phone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="coordinate-call" datatype="html">
+        <source>Veuillez préciser dès le début de la communication la raison de votre appel, merci...</source>
+        <target>Please specify at the beginning of the communication the reason of your call, thanks...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Prices -->
+      <!-- Warning -->
+      <trans-unit id="prices-warning-week" datatype="html">
+        <source>Location sur une semaine minimum</source>
+        <target>Location for a minimum of one week</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card H season -->
+      <trans-unit id="prices-location-H-season-months" datatype="html">
+        <source>1er Juillet au 31 Août</source>
+        <target>1st July to 31st August</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-H-season-price" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{535 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /semaine</source>
+        <target><x id="INTERPOLATION" equiv-text="{{535 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /week</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-H-season" datatype="html">
+        <source>Haute saison</source>
+        <target>High season</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card L season -->
+      <trans-unit id="prices-location-L-season-months" datatype="html">
+        <source>1er septembre au 31 septembre</source>
+        <target>1st september to 31st september</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-L-season-price" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{470 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /semaine</source>
+        <target><x id="INTERPOLATION" equiv-text="{{470 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /week</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-L-season" datatype="html">
+        <source>Basse saison</source>
+        <target>Low season</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card Discount -->
+      <trans-unit id="prices-location-discount-2-weeks" datatype="html">
+        <source>2 semaines : -5%</source>
+        <target>2 weeks : -5%</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount-3-weeks" datatype="html">
+        <source>3 semaines : -7%</source>
+        <target>3 weeks : -7%</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount-4-weeks" datatype="html">
+        <source>4 semaines : -10%</source>
+        <target>4 weeks : -10%</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-discount" datatype="html">
+        <source>Remise</source>
+        <target>Discount</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card includes-->
+      <trans-unit id="prices-location-includes-1" datatype="html">
+        <source>Le linge de maison</source>
+        <target>Household linen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-includes-2" datatype="html">
+        <source>Le linge de lit (faits à l&apos;arrivée)</source>
+        <target>Bed linen (mades on arrival)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-includes" datatype="html">
+        <source>Le prix comprend</source>
+        <target>The price includes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card not include -->
+      <trans-unit id="prices-location-not-include-1" datatype="html">
+        <source>Electricité <x id="INTERPOLATION" equiv-text="{{0.11184 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.1-5&apos;}}"/> par Kwh</source>
+        <target>Electricity <x id="INTERPOLATION" equiv-text="{{0.11184 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.1-5&apos;}}"/> by Kwh</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-not-include-2" datatype="html">
+        <source>Dépôt de garantie <x id="INTERPOLATION" equiv-text="{{250 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></source>
+        <target>Guarantee deposit <x id="INTERPOLATION" equiv-text="{{250 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-not-include-3" datatype="html">
+        <source>Taxe de séjour</source>
+        <target>Visitor's fee</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-not-include" datatype="html">
+        <source>Le prix ne comprend pas</source>
+        <target>The price does not include</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Card Option-->
+      <trans-unit id="prices-location-option-1" datatype="html">
+        <source>Ménage  <x id="INTERPOLATION" equiv-text="{{60 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></source>
+        <target>Cleaning  <x id="INTERPOLATION" equiv-text="{{60 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-option-2" datatype="html">
+        <source>sur demande en fin de séjour</source>
+        <target>on request at the end of the stay</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-option" datatype="html">
+        <source>En option</source>
+        <target>In option</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Contact -->
+      <trans-unit id="prices-location-contact-1" datatype="html">
+        <source>Intéressé ? Alors,</source>
+        <target>Interested ? Then, </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-2" datatype="html">
+        <source>contactez-nous</source>
+        <target>contact us </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-3" datatype="html">
+        <source>ou vérifiez</source>
+        <target>or check </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-4" datatype="html">
+        <source>nos disponibilités</source>
+        <target>our availabilities</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prices-location-contact-5" datatype="html">
+        <source>dès à présent !</source>
+        <target> now !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Description -->
+      <!-- Description title -->
+      <trans-unit id="description-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{description.title}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Aménagements intérieurs {Internal fittings}
+          Aménagements extérieurs {External fittings}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/description/description.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Description part title -->
+      <trans-unit id="description-part-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{part.title}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Au rez de rue : {On the street level: }
+          Au rez de chaussée : {On the ground floor: }
+          Au 1er étage : {On the 1st floor: }
+        }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/description/description.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Description part content -->
+      <trans-unit id="description-part-content" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{content.text}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          Grand_garage privatif avecs étagères de rangement ; Buanderie : Lave-linge, Sèche-linge, évier bi-bacs avec eau chaude, matériel petite enfance (baignoire-lit parapluie-chaise haute). {Large_private_garage with storage shelves; Laundry: Washing machine, tumble dryer, double sink with hot water, children's equipment (bath-bed, umbrella and high chair).}
+          Séjour avec différents coins salons (129 m²) : Chaîne Hi-Fi mini, Télévision couleur (lecteur DVD), Fauteuil (2), Canapé (2), Grande table massive, Cheminée, Bibliothèque, Jeux... Alfumisterie... {Living_room with different sitting areas (129 m²): Hi-Fi mini, Colour television (DVD player), Armchair (2), Sofa (2), Large massive table, Fireplace, Library, Games... Alfumisterie...}
+          Cuisine équipée avec four micro-ondes, réfrigérateur-congélateur, hotte aspirante, gazinière avec four. {Fully equipped kitchen with microwave oven, fridge-freezer, extractor hood, gas cooker with oven.}
+          WC indépendant avec lave-mains. {Separate WC with washbasin.}
+          Salle_d'eau privée avec chauffage électrique (avec sèche-serviettes), Douche, Lavabo. {Private_bathroom with electric heating (with towel dryer), Shower, Washbasin.}
+          Chambre_1 avec des rangements (armoire, console/bureau), Lit 2 personnes en 140. {Bedroom_1 with storages (wardrobe, console/study), Double bed in 140.}
+          Chambre_2 en mezzanine : Trés belle mansarde dont l'ouverture donne sur la pièce de jour - Lit 2 personnes en 140, Rangements (armoire, coiffeuse). {Bedroom_2 on the mezzanine: Very beautiful attic with an opening onto the day room - Double bed (140cm), Storage space (wardrobe, dressing table). }
+          Chambre_3 en mezzanine : Petite mansarde idéale pour enfant dont l'ouverture donne sur la pièce de jour - Lit 1 personne en 90, Rangements (espace jeux). {Bedroom_3 on the mezzanine: Small attic room ideal for children with an opening onto the day room - Single bed (90 cm), Storage (play area). }
+          Palier_aménagé en coin salon : Canapé, Fauteuil (2), table basse. {Landing_furnished in the living room: Sofa, Armchair (2), coffee table.}
+          Terrasse_couverte_bois sur pelouse, façon estrade, avec coin repas (4/6 personnes) électrification et éclairage incorporé. Barbecue fixe grande capacité. {Wooden_covered_terrace on lawn, platform-style, with dining area (4/6 people) electrification and built-in lighting. Large capacity fixed barbecue. }}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/description/description.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Availabilities -->
+      <trans-unit id="availability-week" datatype="html">
+        <source>Votre semaine est disponible ?</source>
+        <target>Is your week available ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-contact" datatype="html">
+        <source>Contactez-nous</source>
+        <target> Contact us </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-book" datatype="html">
+        <source>vite pour la réserver !</source>
+        <target>quickly to reserve it!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-calendar-title" datatype="html">
+        <source>Disponibilité du gîte sur google calendar</source>
+        <target>Availability of the lodging on google calendar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- History -->
+      <trans-unit id="history-content" datatype="html">
+        <source>{VAR_SELECT, select, content {content} other {<x id="INTERPOLATION" equiv-text="{{paragraph.content}}"/> } }</source>
+        <target>{VAR_SELECT, select,
+          En des temps lointains... {In faraway times...}
+          Depuis le début du 19ème siècle, le meunier du moulin de la commune de Brassac mettait de côté les fragments de ses meules de pierre cassées dans le but de s'en servir plus tard dans la construction de sa future grange. {Since the beginning of the 19th century, the miller of the mill in the commune of Brassac had been setting aside the fragments of his broken millstones in order to use them later in the construction of his future barn.}
+          C'est ainsi qu'en 1856 ce projet vit le jour. A l'origine, les bâtiments étaient constitués en rez-de-rue, d'une étable pour une quinzaine de vaches, d'une porcherie et d'un poulailler. L'étage quant à lui était destiné au stockage du fourrage, des baguettes et lamelles de noisetier (utilisées dans la fabrication des colliers de chevaux), ainsi que des tiges d’osier utilisées à l'époque pour la vannerie,... {This is how this project came into being in 1856. Originally, the buildings consisted of a ground floor, a stable for about fifteen cows, a pigsty and a henhouse. The first floor was used to store fodder, hazelwood sticks and strips (used in the manufacture of horse collars), as well as wicker stems used at the time for basketry, etc...}
+          En 1941, une rénovation de fortune permit de sauver l'intégrité de la grange qui, en presque cent ans et deux guerres avait bien souffert. {In 1941, a makeshift renovation saved the integrity of the barn which, in almost a hundred years and two wars, had suffered greatly.}
+          Soixante ans plus tard, en 1999, le bâtiment complètement décrépit et livré aux caprices du temps fut sauvé par son propriétaire actuel au terme de dix années d'une longue et patiente rénovation. {Sixty years later, in 1999, the completely decrepit building, left to the whims of time, was saved by its current owner after ten years of a long and patient renovation.}
+          Les volumes d'origine ont été conservés et quelques modifications originales ont permis encore d'agrandir la surface à vivre de l'étage: à coté du fénil de 120m² a été ajouté, après création d'un plancher surbaissé, une surface au sol de 43 m² où sont implantés maintenant cuisine, WC, salle de bains et chambre. Une mezzanine tout en mélèze a été montée dans la grande pièce, créant ainsi deux chambres mansardées façon "petits chalets" et un "palier détente". {The original volumes have been preserved and some original modifications have made it possible to increase the living space on the first floor: next to the 120m² fenil, after the creation of a low floor, a 43m² floor area has been added, where the kitchen, WC, bathroom and bedroom are now located. A mezzanine made of larch wood has been added to the large room, creating two attic bedrooms in the style of small chalets, and a landing for relaxation.}
+          Les matériaux d'origine retrouvés après "effacement" de la rénovation de 1941, sont dorénavant mis en valeur. On peut désormais entrevoir, dans le joli appareillage des murs, les fameux blocs de quartz des anciennes "meules à plat" du moulin de la commune. Un soin tout particulier a été porté par le propriétaire sur la restauration respectueuse du bâtiment et des objets issus du petit patrimoine local. {The original materials found after the 1941 renovation have been "erased", are henceforth highlighted. One can now glimpse, in the pretty wall fittings, the famous quartz blocks of the old " flat millstones " of the commune's mill. A very particular care was taken by the owner on the respectful restoration of the building and the objects resulting from the small local heritage.}
+          Cette rénovation s'est effectuée autour du thème des traditions locales et de la vie passionnante des artisans du 16ème au 19ème siècle. Sans jamais déroger au confort, la décoration intérieure évoque la "chaleur d'antan" d'une petite place médiévale où l'on pourrait encore entendre avec un peu d'imagination les bruits de la forge et de la vie d'autrefois. {This renovation was carried out around the theme of local traditions and the passionate life of craftsmen from the 16th to the 19th century. Without ever detracting from the comfort, the interior decoration evokes the "warmth of yesteryear" of a small medieval square where one could still hear with a little imagination the sounds of the forge and the life of yesteryear.}
+          Réveillez-vous avec le doux ronronnement du ruisseau du village, les chants des oiseaux, venez jouir pleinement de la nature qui s'éveille (écureuils, cervidés, blaireaux, chevaux...) des randonnées magnifiques vous attendent... {Wake up to the gentle purr of the village stream, the songs of the birds, come and enjoy the awakening nature (squirrels, deer, badgers, horses...) Magnificent hikes are waiting for you...}
+          Située dans la coulée verte de la vallée de la Barguillière, au coeur d'un petit hameau ancien haut-lieu de la clouterie, la grange de la hache gourmande vous surprendra et vous procurera un dépaysement garanti... {Situated in the Barguillière valley, in the heart of a small hamlet that used to be a centre for nail makers, the grange de la hache gourmande will surprise you and provide you with a guaranteed change of scenery ...}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/history/history.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Map -->
+      <trans-unit id="map-title" datatype="html">
+        <source>Localisation du gîte sur google maps</source>
+        <target>Location of the lodging google maps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/map.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- NavBar -->
+      <trans-unit id="navbar-nav-home-alt" datatype="html">
+        <source>Accueil logo</source>
+        <target>Home logo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-home" datatype="html">
+        <source>Accueil</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-visit" datatype="html">
+        <source>Visite du gîte</source>
+        <target>Visit of the lodging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-prices" datatype="html">
+        <source>Nos tarifs</source>
+        <target>Our prices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-coordinates" datatype="html">
+        <source>Nos coordonnées</source>
+        <target>Our coordinates</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-avaibility" datatype="html">
+        <source>Nos disponibilités</source>
+        <target>Our availabilities</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-description" datatype="html">
+        <source>Descriptif du gîte</source>
+        <target>Description of the lodging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-history" datatype="html">
+        <source>Notre histoire</source>
+        <target>Our history</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-les-martis" datatype="html">
+        <source>Le coin des Martis</source>
+        <target>The Martis corner</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbar-nav-map" datatype="html">
+        <source>Localisation</source>
+        <target>Location</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Image page -->
+      <trans-unit id="image-page-image-title" datatype="html">
+        <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{image.title}}"/> } }</source>
+        <target>{VAR_SELECT, select, 
+          Toutes ces prises de vues sont faites depuis le jardin du gîte {All these shots are taken from the Lodging's garden.}
+          Au détour du chemin, {At the turn of the road,}
+          Par une matinée ensoleillée, {On a sunny morning,}
+          Les heureux propriétaires d'attelages sont de sortie, {The happy carriage owners are out and about,}
+          La caravane avance, pour le plus grand plaisir des petits et des grands... {The caravan moves forward, to the delight of young and old...}
+          Bonne route, et à l'année prochaine... {Have a good trip, and see you next year...}
+          Au cours d'une balade vers Benac... suivez le "Cami des encantats". {During a walk towards Benac... follow the "Cami des encantats".}
+          Bonjour m'sieur,dame {Hello, sir, ma'am.}
+          Ce parcours vous mènera dans les petits hameaux de la commune et vous fera découvrir, à travers une jolie mise en scène, tous les personnages de l'ancien temps... {This route will take you through the small hamlets of the commune and will make you discover, through an attractive setting, all the characters of the old days...}
+          De plus, chaque personnage, est accompagné d'un petit récit qui le situe dans sa fonction, son rôle au sein de la localité. {In addition, each character is accompanied by a short story that situates him in his function, his role within the locality.}
+          Salut, facteur ! {Hey, postman !}
+          Bonjour monsieur le maire {Good morning, Mr. Mayor}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/image-page/image-page.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="image-page-explanation" datatype="html">
+        <source>{VAR_SELECT, select, ligne {ligne} other {<x id="INTERPOLATION" equiv-text="{{ligne}}"/> } }</source>
+        <target>{VAR_SELECT, select, 
+          Il existe, à quelques minutes de voiture des Martis, une multitude de chemins de randonnée {Within a few minutes drive from the Martis there are a multitude of hiking trails}
+          Dans des cadres tous plus magnifiques les uns que les autres... {In frames each one more magnificent than the other...}
+          Nos plus beaux coins et sommets verdoyants vous attendent... {Our most beautiful green corners and peaks are waiting for you...}
+          A voir, sur place, à la saison... {To see, on the spot, at the season...}
+          Les magnifiques chevaux de Mérens. {The magnificent horses of Mérens.}
+          Pure race Ariégeoise {Pure Ariegean breed}
+          Le propriétaire, Mr GUY, cultive les principes ludiques avec la même passion qui anime sa femme et ses extérieurs fleuris... {The owner, Mr GUY, cultivates playful principles with the same passion that animates his wife and his flowery exteriors...}
+          De son atelier sortent parfois des jeux insolites voir diaboliques qui pourront être mis à votre disposition..., pour des moments de détente originaux. {His workshop sometimes produces unusual or even diabolical games that can be put at your disposal..., for original moments of relaxation.}
+          Aurez-vous la concentration nécessaire pour arriver à la fin du parcours du jeu de "la nacelle"? {Will you be able to concentrate enough to get to the end of the "la nacelle" game?}
+          Chaque année, de nouveaux jeux inédits vous attendent... {Every year, new and original games are waiting for you...}
+          Venez encourager mon plaisir du "ludobricolage"... en testant mes créations du moment. {Come and encourage my pleasure of "do-it-yourself"... by testing my creations of the moment.}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/image-page/image-page.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Steps -->
+      <trans-unit id="steps-description" datatype="html">
+        <source>{VAR_SELECT, select, description {description} other {<x id="INTERPOLATION" equiv-text="{{stepContent.description}}"/> } }</source>
+        <target>{VAR_SELECT, select, 
+          Les extérieurs {The outsides}
+          La salle à manger {The dining room}
+          Les chambres {The rooms}
+          La cuisine {The kitchen}
+          La coin du roi {King's Corner}
+          La nature environnante {The surrounding nature}
+          Randonnées et balades {Walks and hikes}
+          Attelages en vadrouille {Mop hitches}
+          Les chevaux de Mérens {The horses of Mérens}
+          Les jeux du proprio {The owner's games}
+          Cami des encatats {Cami des encatats}
+          Alfumisterie(use) ! {Alfumisterie(use) !}}
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/steps/steps.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

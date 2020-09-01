@@ -1,53 +1,100 @@
 import { 
-  Component, OnInit, HostListener
+  Component,
+  OnInit,
+  HostListener,
+  Inject,
+  LOCALE_ID
 } from '@angular/core';
 
-import { Router, NavigationEnd } from '@angular/router';
+import {
+  Router,
+  NavigationEnd,
+} from '@angular/router';
 
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import {
+  faArrowUp
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
   filter
-} from 'rxjs/operators'
+} from 'rxjs/operators';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title: string = 'la-hache-gourmande';
 
   faArrowUp = faArrowUp;
 
+  /**
+   * Path to redirect by the back to top button
+   */
   skipLinkPath: string;
 
-  isScrolled: boolean = false;
-  
-  constructor(private router: Router) {
-    
-  }
+  /**
+   * Path to redirect by the back to top button
+   */
+  backToTopPath: string;
 
+  /**
+   * Tell if the window is scrolled
+   */
+  isScrolled: boolean = false;
+
+  /**
+   * Path to redirect for locale link
+   */
+  hrefLocale: string;
+  
+  constructor(private router: Router,
+    @Inject(LOCALE_ID) protected locale: string) { }
+
+    /**
+     * Says if the screen is scrolled between a threshold
+     */
   @HostListener("window:scroll", [])
   onWindowScroll() {
-      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+      if (window.pageYOffset || document.documentElement.scrollTop  > 100 || document.body.scrollTop > 100) {
           this.isScrolled = true;
       } 
-     else if (this.isScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+     else if (this.isScrolled && window.pageYOffset || document.documentElement.scrollTop < 10 || document.body.scrollTop < 10) {
           this.isScrolled = false;
       }
   }
-  ngOnInit() {
 
+  ngOnInit() {
+    // Set the skiplink path
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)).subscribe(() => {
-      if (!this.router.url.endsWith('#main-content')) {
-          this.skipLinkPath = `${this.router.url}#main-content`;
-      }
-   });
+        if (!this.router.url.endsWith('#main-content')) {
+          if (this.router.url.endsWith('#app')) {
+            this.skipLinkPath = `/${this.locale}${this.router.url}`.replace('#app', '#main-content');
+          } else {
+            this.skipLinkPath = `/${this.locale}${this.router.url}#main-content`;
+          }
+        }
+    });
+
+    // Set the back-to-top path
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)).subscribe(() => {
+        if (!this.router.url.endsWith('#app')) {
+          if (this.router.url.endsWith('#main-content')) {
+            this.backToTopPath = `/${this.locale}${this.router.url}`.replace('#main-content', '#app');
+          } else {
+            this.backToTopPath = `/${this.locale}${this.router.url}#app`;
+          }
+        }
+      });
   }
 
-  scroll(): void {
-    console.log(window.pageYOffset > 100)
-    this.isScrolled = window.pageYOffset > 100;
+  /**
+   * Set the link to redurect when a flag button is clicked
+   * @param locale the locale to switch
+   */
+  redirectTo(locale: string): void {
+    this.hrefLocale = `${window.location.origin}/${locale}${this.router.url}`;
   }
 }

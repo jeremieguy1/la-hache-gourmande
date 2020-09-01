@@ -9,7 +9,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -34,12 +34,17 @@ export class DescriptionComponent implements OnInit {
     private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.DESCRIPTION);
+    this.titleService.setPageTitle(PagesNameTitleEnum.DESCRIPTION);
     this.descriptionContent = [];
     this.descriptionContent.push(this.descriptionService.getContent('inside'));
     this.descriptionContent.push(this.descriptionService.getContent('outside'));
   }
 
+  /**
+   * Tells if the description part is the last
+   * @param description  The description to check
+   * @param index Index of the description
+   */
   isNotLast(description: Description, index: number): boolean {
     return description.part.length !== (index + 1);
   }

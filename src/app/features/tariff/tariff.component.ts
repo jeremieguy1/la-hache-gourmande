@@ -9,7 +9,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 import {
@@ -32,12 +32,12 @@ export class TariffComponent implements OnInit {
   faPlus = faPlus;
   faPercent = faPercent;
 
-  pageName: PagesNameEnum = PagesNameEnum.TARIFF;
+  pageName: PagesNameEnum = PagesNameEnum.PRICES;
 
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.TARIFF);
+    this.titleService.setPageTitle(PagesNameTitleEnum.PRICES);
   }
 
 }

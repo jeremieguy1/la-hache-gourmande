@@ -2,7 +2,7 @@
     <div *ngFor="let imgSrc of carouselContent; let _i = index" class="card" tabindex="-1">
         <div class="card-image">
             <div class="image is-16by9 is-covered">
-                <img [src]="imgSrc" alt="carousel image">
+                <img [src]="imgSrc" alt="carousel image {{_i}}">
             </div>
         </div>
     </div>

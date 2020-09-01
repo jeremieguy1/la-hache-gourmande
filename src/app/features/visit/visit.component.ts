@@ -9,7 +9,7 @@ import {
 
 import {
   PagesNameEnum,
-  PagesNameEnumFR
+  PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
 @Component({
@@ -23,6 +23,6 @@ export class VisitComponent implements OnInit {
   constructor(private titleService: TitleService) {}
 
   ngOnInit(): void {
-    this.titleService.setTitle(PagesNameEnumFR.VISIT);
+    this.titleService.setPageTitle(PagesNameTitleEnum.VISIT);
   }
 }

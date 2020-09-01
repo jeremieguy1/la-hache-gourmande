@@ -17,6 +17,11 @@ export class StepsService {
 
   constructor() { }
 
+  /**
+   * Fetch data for the steps wanted
+   * @param id The id of the steps to return
+   * @return The steps wanted
+   */
   getContent(id: string): Steps {
     return stepsContentJSON[id];
   }

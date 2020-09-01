@@ -1,8 +1,4 @@
 import {
-  CarouselComponent
-} from './carousel/carousel.component';
-
-import {
   NgModule
 } from '@angular/core';
 
@@ -11,12 +7,16 @@ import {
 } from '@angular/common';
 
 import {
+  FontAwesomeModule
+} from '@fortawesome/angular-fontawesome';
+
+import {
   ImagePageComponent
 } from './image-page/image-page.component';
 
 import {
-  FontAwesomeModule
-} from '@fortawesome/angular-fontawesome';
+  CarouselComponent
+} from './carousel/carousel.component';
 
 import {
   PageHeaderComponent
@@ -31,19 +31,8 @@ import {
 } from './steps/steps.component';
 
 import {
-   LOCALE_ID 
-} from '@angular/core';
-
-import {
-  registerLocaleData
-} from '@angular/common';
-
-import 
-  localeFR 
-from '@angular/common/locales/fr';
-import { CardComponent } from './card/card.component';
-
-registerLocaleData(localeFR);
+  CardComponent
+} from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +45,7 @@ registerLocaleData(localeFR);
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule,    
+    FontAwesomeModule,
   ],
   exports: [
     CarouselComponent,
@@ -68,8 +57,6 @@ registerLocaleData(localeFR);
     StepsComponent,
     CardComponent
   ],
-  providers: [
-    { provide: LOCALE_ID, useValue: 'fr' }
-  ]
+  providers: [ ]
 })
 export class SharedModule { }
