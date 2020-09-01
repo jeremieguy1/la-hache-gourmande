@@ -1,5 +1,5 @@
 <a i18n="@@app-skiplink" class="skiplink" [href]="skipLinkPath">Passer au contenu</a>
-<div class="head is-flex">
+<div id="app" class="head is-flex">
     <div class="container">
         <div class="is-flex">
             <div class="is-flex">
@@ -26,7 +26,7 @@
 </div>
 <a *ngIf="isScrolled"
     class="back-to-top"
-    [href]="skipLinkPath"
+    [href]="backToTopPath"
     i18n-title="@@app-backToTop-title" title="Lien haut de page">
     <fa-icon [icon]="faArrowUp"></fa-icon>
 </a>

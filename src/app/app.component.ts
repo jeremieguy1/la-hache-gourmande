@@ -34,6 +34,11 @@ export class AppComponent implements OnInit {
   skipLinkPath: string;
 
   /**
+   * Path to redirect by the back to top button
+   */
+  backToTopPath: string;
+
+  /**
    * Tell if the window is scrolled
    */
   isScrolled: boolean = false;
@@ -64,9 +69,25 @@ export class AppComponent implements OnInit {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)).subscribe(() => {
         if (!this.router.url.endsWith('#main-content')) {
+          if (this.router.url.endsWith('#app')) {
+            this.skipLinkPath = `/${this.locale}${this.router.url}`.replace('#app', '#main-content');
+          } else {
             this.skipLinkPath = `/${this.locale}${this.router.url}#main-content`;
+          }
         }
     });
+
+    // Set the back-to-top path
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)).subscribe(() => {
+        if (!this.router.url.endsWith('#app')) {
+          if (this.router.url.endsWith('#main-content')) {
+            this.backToTopPath = `/${this.locale}${this.router.url}`.replace('#main-content', '#app');
+          } else {
+            this.backToTopPath = `/${this.locale}${this.router.url}#app`;
+          }
+        }
+      });
   }
 
   /**
