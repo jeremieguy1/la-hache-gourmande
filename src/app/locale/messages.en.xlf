@@ -82,6 +82,14 @@
       </trans-unit>
 
       <!-- Coordinate -->
+      <trans-unit id="coordinates-warning-availabilities" datatype="html">
+        <source>Le gîte est actuellement indisponible</source>
+        <target>The lodging is currently unavailable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
       <!-- Card Mail-->
       <trans-unit id="coordinate-mail-desc" datatype="html">
         <source>(réponse rapide assurée !)</source>
@@ -456,6 +464,22 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
           <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="location-warning-availabilities-1" datatype="html">
+        <source>Le gîte est actuellement indisponible</source>
+        <target>The lodging is currently unavailable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="location-warning-availabilities-2" datatype="html">
+        <source>Nous nous excusons pour la gêne occasionnée...</source>
+        <target>We apologize for any inconvenience caused...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
 

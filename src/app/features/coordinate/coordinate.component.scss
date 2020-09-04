@@ -21,10 +21,11 @@
         }
     }
 
-    .space {
-        margin-top: convert-to-rem(24);
-        text-align: center;
-    }
+}
+
+.space {
+    margin-top: convert-to-rem(24);
+    text-align: center;
 }
 
 @include xs {

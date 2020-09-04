@@ -1,5 +1,5 @@
 <app-page-header [pageName]="pageName"></app-page-header>
-<div class="container">
+<div *ngIf="available; else notAvailable" class="container">
     <div class="section">
         <div class="space">
             <div class="is-flex">
@@ -24,3 +24,15 @@
         </div>
     </div>
 </div>
+<ng-template #notAvailable>
+    <div class="container">
+        <div class="space">
+            <div class="is-flex space-text">
+                <div class="notification is-danger">
+                    <p i18n="@@location-warning-availabilities-1" class="is-size-3 has-text-white has-text-centered">Le gîte est actuellement indisponible</p>
+                    <p i18n="@@location-warning-availabilities-2" class="is-size-3 has-text-white has-text-centered">Nous nous excusons pour la gêne occasionnée...</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

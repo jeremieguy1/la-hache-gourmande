@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   /**
    * Tell if the window is scrolled
    */
-  isScrolled: boolean = false;
+  isScrolled = false;
 
   /**
    * Path to redirect for locale link
