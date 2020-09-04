@@ -12,10 +12,10 @@ import {
 } from './../../config/enums/pages-name.enum';
 
 @Component({
-  templateUrl: './disponibility.component.html',
-  styleUrls: ['./disponibility.component.scss']
+  templateUrl: './availabilities.component.html',
+  styleUrls: ['./availabilities.component.scss']
 })
-export class DisponibilityComponent implements OnInit {
+export class AvailabilitiesComponent implements OnInit {
 
   pageName: PagesNameEnum = PagesNameEnum.AVAILABILITIES;
 

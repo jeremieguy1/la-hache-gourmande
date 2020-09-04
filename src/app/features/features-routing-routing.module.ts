@@ -32,8 +32,8 @@ import {
 } from './home/home.component';
 
 import {
-  DisponibilityComponent
-} from './disponibility/disponibility.component';
+  AvailabilitiesComponent
+} from './availabilities/availabilities.component';
 
 import {
   ImagePageComponent
@@ -57,7 +57,7 @@ const routes: Routes = [
       { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
     ]}, 
   { path: 'tariff', component: TariffComponent, pathMatch: 'full'},
-  { path: 'disponibility', component: DisponibilityComponent, pathMatch: 'full'},
+  { path: 'availabilities', component: AvailabilitiesComponent, pathMatch: 'full'},
   { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
   { path: 'description', component: DescriptionComponent, pathMatch: 'full'},
   { path: 'history', component: HistoryComponent, pathMatch: 'full' },

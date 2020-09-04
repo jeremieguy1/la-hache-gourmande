@@ -36,8 +36,8 @@ import {
 } from './../features/visit/visit.component';
 
 import {
-  DisponibilityComponent
-} from './disponibility/disponibility.component';
+  AvailabilitiesComponent
+} from './availabilities/availabilities.component';
 
 // Angular modules
 import {
@@ -64,7 +64,7 @@ import {
     NavbarComponent,
     TariffComponent,
     VisitComponent,
-    DisponibilityComponent,
+    AvailabilitiesComponent,
   ],
   imports: [
     FeaturesRoutingModule,

@@ -5,22 +5,22 @@ import {
 } from '@angular/core/testing';
 
 import {
-  DisponibilityComponent
-} from './disponibility.component';
+  AvailabilitiesComponent
+} from './availabilities.component';
 
-describe('DisponibilityComponent', () => {
-  let component: DisponibilityComponent;
-  let fixture: ComponentFixture<DisponibilityComponent>;
+describe('AvailabilitiesComponent', () => {
+  let component: AvailabilitiesComponent;
+  let fixture: ComponentFixture<AvailabilitiesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DisponibilityComponent ]
+      declarations: [ AvailabilitiesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DisponibilityComponent);
+    fixture = TestBed.createComponent(AvailabilitiesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

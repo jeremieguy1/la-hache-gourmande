@@ -3,7 +3,7 @@ export enum PagesNameEnum {
     VISIT = 'visit',
     COORDINATES = 'coordinate',
     PRICES = 'tariff',
-    AVAILABILITIES = 'disponibility',
+    AVAILABILITIES = 'availabilities',
     DESCRIPTION = 'description',
     HISTORY = 'history',
     LESMARTIS = 'les-martis',
