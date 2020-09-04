@@ -20,8 +20,8 @@ import {
 } from './coordinate/coordinate.component';
 
 import {
-  TariffComponent
-} from './tariff/tariff.component';
+  PricesComponent
+} from './prices/prices.component';
 
 import {
   VisitComponent
@@ -56,7 +56,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'page', pathMatch: 'full' },
       { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
     ]}, 
-  { path: 'tariff', component: TariffComponent, pathMatch: 'full'},
+  { path: 'prices', component: PricesComponent, pathMatch: 'full'},
   { path: 'availabilities', component: AvailabilitiesComponent, pathMatch: 'full'},
   { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
   { path: 'description', component: DescriptionComponent, pathMatch: 'full'},

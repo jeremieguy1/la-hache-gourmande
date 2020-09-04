@@ -2,7 +2,7 @@ export enum PagesNameEnum {
     HOME = 'home',
     VISIT = 'visit',
     COORDINATES = 'coordinate',
-    PRICES = 'tariff',
+    PRICES = 'prices',
     AVAILABILITIES = 'availabilities',
     DESCRIPTION = 'description',
     HISTORY = 'history',

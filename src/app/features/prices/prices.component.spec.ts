@@ -5,22 +5,22 @@ import {
 } from '@angular/core/testing';
 
 import {
-  TariffComponent
-} from './tariff.component';
+  PricesComponent
+} from './prices.component';
 
-describe('TariffComponent', () => {
-  let component: TariffComponent;
-  let fixture: ComponentFixture<TariffComponent>;
+describe('PricesComponent', () => {
+  let component: PricesComponent;
+  let fixture: ComponentFixture<PricesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TariffComponent ]
+      declarations: [ PricesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TariffComponent);
+    fixture = TestBed.createComponent(PricesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -28,8 +28,8 @@ import {
 } from './../features/navbar/navbar.component';
 
 import {
-  TariffComponent 
-} from './../features/tariff/tariff.component';
+  PricesComponent 
+} from './../features/prices/prices.component';
 
 import {
   VisitComponent
@@ -62,7 +62,7 @@ import {
     LesMartisComponent,
     MapComponent,
     NavbarComponent,
-    TariffComponent,
+    PricesComponent,
     VisitComponent,
     AvailabilitiesComponent,
   ],
