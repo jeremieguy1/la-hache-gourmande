@@ -7,7 +7,7 @@ export enum PagesNameEnum {
     DESCRIPTION = 'description',
     HISTORY = 'history',
     LESMARTIS = 'les-martis',
-    MAP = 'map',
+    LOCATION = 'location',
 }
 
 export enum PagesNameTitleEnum {
@@ -19,7 +19,7 @@ export enum PagesNameTitleEnum {
     DESCRIPTION = 'DESCRIPTION',
     HISTORY = 'HISTORY',
     LESMARTIS = 'LESMARTIS',
-    MAP = 'MAP',
+    LOCATION = 'LOCATION',
 }
 
 export enum PagesNameEnumTitleFR {
@@ -31,7 +31,7 @@ export enum PagesNameEnumTitleFR {
     DESCRIPTION = 'descriptif',
     HISTORY = 'histoire',
     LESMARTIS = 'Les Martis',
-    MAP = 'localisation',
+    LOCATION = 'location',
 }
 
 export enum PagesNameEnumTitleEN {
@@ -43,7 +43,7 @@ export enum PagesNameEnumTitleEN {
     DESCRIPTION = 'description',
     HISTORY = 'history',
     LESMARTIS = 'les Martis',
-    MAP = 'location',
+    LOCATION = 'location',
 }
 
 export enum PagesNameStepsEnumTitleFR {

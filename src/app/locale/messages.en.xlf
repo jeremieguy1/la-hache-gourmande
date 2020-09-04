@@ -480,12 +480,12 @@
         </context-group>
       </trans-unit>
 
-      <!-- Map -->
-      <trans-unit id="map-title" datatype="html">
+      <!-- Location -->
+      <trans-unit id="location-title" datatype="html">
         <source>Localisation du gîte sur google maps</source>
         <target>Location of the lodging google maps</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/map/map.component.html</context>
+          <context context-type="sourcefile">src/app/features/location/location.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
@@ -563,7 +563,7 @@
           <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="navbar-nav-map" datatype="html">
+      <trans-unit id="navbar-nav-location" datatype="html">
         <source>Localisation</source>
         <target>Location</target>
         <context-group purpose="location">

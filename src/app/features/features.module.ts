@@ -20,8 +20,8 @@ import {
 } from './../features/les-martis/les-martis.component';
 
 import {
-  MapComponent
-} from './../features/map/map.component';
+  LocationComponent
+} from './../features/location/location.component';
 
 import {
   NavbarComponent
@@ -60,7 +60,7 @@ import {
     HistoryComponent,
     HomeComponent,
     LesMartisComponent,
-    MapComponent,
+    LocationComponent,
     NavbarComponent,
     PricesComponent,
     VisitComponent,

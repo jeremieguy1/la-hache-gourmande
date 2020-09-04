@@ -1,7 +1,7 @@
 // Components
 import {
-  MapComponent
-} from './map/map.component';
+  LocationComponent
+} from './location/location.component';
 
 import {
   LesMartisComponent
@@ -67,7 +67,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'page', pathMatch: 'full' },
       { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
     ]},  
-  { path: 'map', component: MapComponent, pathMatch: 'full'},
+  { path: 'location', component: LocationComponent, pathMatch: 'full'},
 ];
 
 @NgModule({
