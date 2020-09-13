@@ -23,12 +23,15 @@ $steps-active-color: $orange-axe;
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
- 
+$screen-sm-max: 767.99px;
+
 // Small tablets (portrait view)
 $screen-md-min: 768px;
- 
+$screen-md-max: 996.99px;
+
 // Tablets and small desktops
-$screen-lg-min: 992px;
- 
+$screen-lg-min: 997px;
+$screen-lg-max: 1219.99px;
+
 // Large tablets and desktops
-$screen-xl-min: 1200px;
+$screen-xl-min: 1220px;
