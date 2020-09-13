@@ -160,56 +160,56 @@
         <source>(réponse rapide assurée !)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-mail-title" datatype="html">
         <source>Par courrier électronique</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-or" datatype="html">
         <source>OU</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-content-phone-1" datatype="html">
         <source>05 61 02 88 12</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-content-or" datatype="html">
         <source>ou</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-content-phone-2" datatype="html">
         <source>06 33 59 36 67</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-call-title" datatype="html">
         <source>Par téléphone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-call" datatype="html">
         <source>Veuillez préciser dès le début de la communication la raison de votre appel, merci...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="description-title" datatype="html">
@@ -463,18 +463,25 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="location-warning-availabilities-1" datatype="html">
+      <trans-unit id="availability-unavailable-1" datatype="html">
+        <source>Désolé...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-unavailable-2" datatype="html">
         <source>Le gîte est actuellement indisponible</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="location-warning-availabilities-2" datatype="html">
+      <trans-unit id="availability-unavailable-3" datatype="html">
         <source>Nous nous excusons pour la gêne occasionnée...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
     </body>
