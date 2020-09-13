@@ -13,17 +13,17 @@ import {
 } from './../../config/enums/pages-name.enum';
 
 @Component({
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  templateUrl: './location.component.html',
+  styleUrls: ['./location.component.scss']
 })
-export class MapComponent implements OnInit {
+export class LocationComponent implements OnInit {
 
-  pageName: PagesNameEnum = PagesNameEnum.MAP;
+  pageName: PagesNameEnum = PagesNameEnum.LOCATION;
 
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setPageTitle(PagesNameTitleEnum.MAP);
+    this.titleService.setPageTitle(PagesNameTitleEnum.LOCATION);
   }
 
 }

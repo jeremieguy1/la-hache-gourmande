@@ -21,10 +21,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  templateUrl: './tariff.component.html',
-  styleUrls: ['./tariff.component.scss']
+  templateUrl: './prices.component.html',
+  styleUrls: ['./prices.component.scss']
 })
-export class TariffComponent implements OnInit {
+export class PricesComponent implements OnInit {
 
   faBed = faBed;
   faTimes = faTimes;

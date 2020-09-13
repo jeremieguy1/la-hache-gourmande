@@ -11,13 +11,19 @@ import {
   PagesNameTitleEnum
 } from './../../config/enums/pages-name.enum';
 
+import {
+  Availabilities
+} from './../../config/enums/availabilities.enum';
+
 @Component({
-  templateUrl: './disponibility.component.html',
-  styleUrls: ['./disponibility.component.scss']
+  templateUrl: './availabilities.component.html',
+  styleUrls: ['./availabilities.component.scss']
 })
-export class DisponibilityComponent implements OnInit {
+export class AvailabilitiesComponent implements OnInit {
 
   pageName: PagesNameEnum = PagesNameEnum.AVAILABILITIES;
+
+  available: number = Availabilities.AVAILABLE;
 
   constructor(private titleService: TitleService) { }
 

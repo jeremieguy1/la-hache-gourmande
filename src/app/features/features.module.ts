@@ -20,24 +20,24 @@ import {
 } from './../features/les-martis/les-martis.component';
 
 import {
-  MapComponent
-} from './../features/map/map.component';
+  LocationComponent
+} from './../features/location/location.component';
 
 import {
   NavbarComponent
 } from './../features/navbar/navbar.component';
 
 import {
-  TariffComponent 
-} from './../features/tariff/tariff.component';
+  PricesComponent 
+} from './../features/prices/prices.component';
 
 import {
   VisitComponent
 } from './../features/visit/visit.component';
 
 import {
-  DisponibilityComponent
-} from './disponibility/disponibility.component';
+  AvailabilitiesComponent
+} from './availabilities/availabilities.component';
 
 // Angular modules
 import {
@@ -60,11 +60,11 @@ import {
     HistoryComponent,
     HomeComponent,
     LesMartisComponent,
-    MapComponent,
+    LocationComponent,
     NavbarComponent,
-    TariffComponent,
+    PricesComponent,
     VisitComponent,
-    DisponibilityComponent,
+    AvailabilitiesComponent,
   ],
   imports: [
     FeaturesRoutingModule,

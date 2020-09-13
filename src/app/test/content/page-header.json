@@ -12,10 +12,10 @@
     "description": {
         "title": "Descriptif du gîte"
     },
-    "tariff": {
+    "prices": {
         "title": "Nos tarifs"
     },
-    "disponibility": {
+    "availabilities": {
         "title": "Nos disponibiltés"
     },
     "history": {

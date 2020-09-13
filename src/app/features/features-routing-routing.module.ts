@@ -1,7 +1,7 @@
 // Components
 import {
-  MapComponent
-} from './map/map.component';
+  LocationComponent
+} from './location/location.component';
 
 import {
   LesMartisComponent
@@ -20,8 +20,8 @@ import {
 } from './coordinate/coordinate.component';
 
 import {
-  TariffComponent
-} from './tariff/tariff.component';
+  PricesComponent
+} from './prices/prices.component';
 
 import {
   VisitComponent
@@ -32,8 +32,8 @@ import {
 } from './home/home.component';
 
 import {
-  DisponibilityComponent
-} from './disponibility/disponibility.component';
+  AvailabilitiesComponent
+} from './availabilities/availabilities.component';
 
 import {
   ImagePageComponent
@@ -56,8 +56,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'page', pathMatch: 'full' },
       { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
     ]}, 
-  { path: 'tariff', component: TariffComponent, pathMatch: 'full'},
-  { path: 'disponibility', component: DisponibilityComponent, pathMatch: 'full'},
+  { path: 'prices', component: PricesComponent, pathMatch: 'full'},
+  { path: 'availabilities', component: AvailabilitiesComponent, pathMatch: 'full'},
   { path: 'coordinate', component: CoordinateComponent, pathMatch: 'full'},
   { path: 'description', component: DescriptionComponent, pathMatch: 'full'},
   { path: 'history', component: HistoryComponent, pathMatch: 'full' },
@@ -67,7 +67,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'page', pathMatch: 'full' },
       { path: 'page', component: ImagePageComponent, pathMatch: 'full'},
     ]},  
-  { path: 'map', component: MapComponent, pathMatch: 'full'},
+  { path: 'location', component: LocationComponent, pathMatch: 'full'},
 ];
 
 @NgModule({

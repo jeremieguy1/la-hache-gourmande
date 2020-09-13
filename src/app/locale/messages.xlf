@@ -44,7 +44,7 @@
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="navbar-nav-map" datatype="html">
+      <trans-unit id="navbar-nav-location" datatype="html">
         <source>Localisation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/navbar/navbar.component.html</context>
@@ -149,60 +149,67 @@
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="coordinates-warning-availabilities" datatype="html">
+        <source>Le gîte est actuellement indisponible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="coordinate-mail-desc" datatype="html">
         <source>(réponse rapide assurée !)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-mail-title" datatype="html">
         <source>Par courrier électronique</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-or" datatype="html">
         <source>OU</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-content-phone-1" datatype="html">
         <source>05 61 02 88 12</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-content-or" datatype="html">
         <source>ou</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-content-phone-2" datatype="html">
         <source>06 33 59 36 67</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-call-title" datatype="html">
         <source>Par téléphone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="coordinate-call" datatype="html">
         <source>Veuillez préciser dès le début de la communication la raison de votre appel, merci...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="description-title" datatype="html">
@@ -233,165 +240,165 @@
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="map-title" datatype="html">
+      <trans-unit id="location-title" datatype="html">
         <source>Localisation du gîte sur google maps</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/map/map.component.html</context>
+          <context context-type="sourcefile">src/app/features/location/location.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-warning-week" datatype="html">
         <source>Location sur une semaine minimum</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-H-season-months" datatype="html">
         <source>1er Juillet au 31 Août</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-H-season-price" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{535 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /semaine</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-H-season" datatype="html">
         <source>Haute saison</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-L-season-months" datatype="html">
         <source>1er septembre au 31 septembre</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-L-season-price" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{470 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/> /semaine</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-L-season" datatype="html">
         <source>Basse saison</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-discount-2-weeks" datatype="html">
         <source>2 semaines : -5%</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-discount-3-weeks" datatype="html">
         <source>3 semaines : -7%</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-discount-4-weeks" datatype="html">
         <source>4 semaines : -10%</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-discount" datatype="html">
         <source>Remise</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-includes-1" datatype="html">
         <source>Le linge de maison</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-includes-2" datatype="html">
         <source>Le linge de lit (faits à l&apos;arrivée)</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-includes" datatype="html">
         <source>Le prix comprend</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-not-include-1" datatype="html">
         <source>Electricité <x id="INTERPOLATION" equiv-text="{{0.11184 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.1-5&apos;}}"/> par Kwh</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-not-include-2" datatype="html">
         <source>Dépôt de garantie <x id="INTERPOLATION" equiv-text="{{250 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-not-include-3" datatype="html">
         <source>Taxe de séjour</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-not-include" datatype="html">
         <source>Le prix ne comprend pas</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-option-1" datatype="html">
         <source>Ménage  <x id="INTERPOLATION" equiv-text="{{60 | currency:&apos;EUR&apos;: &apos;symbol&apos;: &apos;1.0&apos;}}"/></source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-option-2" datatype="html">
         <source>sur demande en fin de séjour</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-option" datatype="html">
         <source>En option</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-contact-1" datatype="html">
         <source>Intéressé ? Alors,</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">86</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-contact-2" datatype="html">
@@ -399,15 +406,15 @@
                         contactez-nous
                     </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-contact-3" datatype="html">
         <source>ou vérifiez</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-contact-4" datatype="html">
@@ -415,21 +422,21 @@
                         nos disponibilités
                     </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="prices-location-contact-5" datatype="html">
         <source>dès à présent !</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/tariff/tariff.component.html</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="sourcefile">src/app/features/prices/prices.component.html</context>
+          <context context-type="linenumber">98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="availability-week" datatype="html">
         <source>Votre semaine est disponible ?</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
@@ -438,22 +445,43 @@
                         Contactez-nous
                     </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="availability-book" datatype="html">
         <source>vite pour la réserver !</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="availability-calendar-title" datatype="html">
         <source>Disponibilité du gîte sur google calendar</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/disponibility/disponibility.component.html</context>
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
           <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-unavailable-1" datatype="html">
+        <source>Désolé...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-unavailable-2" datatype="html">
+        <source>Le gîte est actuellement indisponible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-unavailable-3" datatype="html">
+        <source>Nous nous excusons pour la gêne occasionnée...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
     </body>
