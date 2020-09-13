@@ -82,6 +82,14 @@
       </trans-unit>
 
       <!-- Coordinate -->
+      <trans-unit id="coordinates-warning-availabilities" datatype="html">
+        <source>Le gîte est actuellement indisponible</source>
+        <target>The lodging is currently unavailable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/coordinate/coordinate.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
       <!-- Card Mail-->
       <trans-unit id="coordinate-mail-desc" datatype="html">
         <source>(réponse rapide assurée !)</source>
@@ -458,6 +466,30 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+	  <trans-unit id="availability-unavailable-1" datatype="html">
+        <source>Désolé...</source>
+        <target>Sorry...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-unavailable-2" datatype="html">
+        <source>Le gîte est actuellement indisponible.</source>
+		<target>The lodging is currently unavailable.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="availability-unavailable-3" datatype="html">
+        <source>Nous nous excusons pour la gêne occasionnée...</source>
+		<target>We apologize for any inconvenience caused...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/availabilities/availabilities.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
 
       <!-- History -->
       <trans-unit id="history-content" datatype="html">
@@ -575,7 +607,7 @@
       <!-- Image page -->
       <trans-unit id="image-page-image-title" datatype="html">
         <source>{VAR_SELECT, select, title {title} other {<x id="INTERPOLATION" equiv-text="{{image.title}}"/> } }</source>
-        <target>{VAR_SELECT, select, 
+        <target>{VAR_SELECT, select,
           Toutes ces prises de vues sont faites depuis le jardin du gîte {All these shots are taken from the Lodging's garden.}
           Au détour du chemin, {At the turn of the road,}
           Par une matinée ensoleillée, {On a sunny morning,}
@@ -596,7 +628,7 @@
       </trans-unit>
       <trans-unit id="image-page-explanation" datatype="html">
         <source>{VAR_SELECT, select, ligne {ligne} other {<x id="INTERPOLATION" equiv-text="{{ligne}}"/> } }</source>
-        <target>{VAR_SELECT, select, 
+        <target>{VAR_SELECT, select,
           Il existe, à quelques minutes de voiture des Martis, une multitude de chemins de randonnée {Within a few minutes drive from the Martis there are a multitude of hiking trails}
           Dans des cadres tous plus magnifiques les uns que les autres... {In frames each one more magnificent than the other...}
           Nos plus beaux coins et sommets verdoyants vous attendent... {Our most beautiful green corners and peaks are waiting for you...}
@@ -618,7 +650,7 @@
       <!-- Steps -->
       <trans-unit id="steps-description" datatype="html">
         <source>{VAR_SELECT, select, description {description} other {<x id="INTERPOLATION" equiv-text="{{stepContent.description}}"/> } }</source>
-        <target>{VAR_SELECT, select, 
+        <target>{VAR_SELECT, select,
           Les extérieurs {The outsides}
           La salle à manger {The dining room}
           Les chambres {The rooms}

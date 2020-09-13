@@ -1,3 +1,4 @@
+import { Availabilities } from './../../config/enums/availabilities.enum';
 import {
   Component,
   OnInit,
@@ -28,6 +29,8 @@ export class CoordinateComponent implements OnInit {
   faPhone = faPhone;
 
   pageName: string = PagesNameEnum.COORDINATES;
+
+  available: number = Availabilities.AVAILABLE;
 
   constructor(private titleService: TitleService) { }
 

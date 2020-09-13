@@ -1,5 +1,12 @@
 <app-page-header [pageName]="pageName"></app-page-header>
 <div class="container">
+    <div *ngIf="!available" class="space">
+        <div class="is-flex">
+            <div class="notification is-danger">
+                <p i18n="@@coordinates-warning-availabilities" class="is-size-3 has-text-white has-text-centered">Le gîte est actuellement indisponible</p>
+            </div>
+        </div>
+    </div>
     <div class="section">
         <div class="cards">
             <app-card animation="animate__backInLeft"
