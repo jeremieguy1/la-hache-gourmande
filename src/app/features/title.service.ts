@@ -27,17 +27,17 @@ export class TitleService {
    * Set the title of the page (Uppercase the first letter)
    * @param title The title to display
    */
-  setPageTitle(title: string) {
+  setPageTitle(title: string): void {
     title = this.locale === 'fr' ? PagesNameEnumTitleFR[title] : PagesNameEnumTitleEN[title];
-    this.title.setTitle(`${title.charAt(0).toUpperCase()}${title.slice(1)}`);
+    this.title.setTitle(`${title.charAt(0).toUpperCase()}${title.slice(1)} | La hache gourmande`);
   }
 
   /**
    * Set the title of the page by steps (Uppercase the first letter)
    * @param title The title to display
    */
-  setStepsTitle(idTitle: string) {
+  setStepsTitle(idTitle: string): void {
     idTitle = this.locale === 'fr' ? PagesNameStepsEnumTitleFR[idTitle] : PagesNameStepsEnumTitleEN[idTitle];
-    this.title.setTitle(`${idTitle.charAt(0).toUpperCase()}${idTitle.slice(1)}`);
+    this.title.setTitle(`${idTitle.charAt(0).toUpperCase()}${idTitle.slice(1)} | La hache gourmande`);
   }
 }
