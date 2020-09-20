@@ -9,7 +9,7 @@
     "css-build": "node-sass --omit-source-map-url src/styles.scss src/styles.css",
     "build": "ng build",
     "test": "ng test",
-    "test-ci": "ng test --browsers=ChromeHeadlessCI",
+    "test-ci": "ng test --browsers=ChromeHeadlessCI --no-watch",
     "lint": "eslint . --ext js,ts,json",
     "lint:fix": "eslint . --ext js,ts,json --quiet --fix",
     "extract:i18n": "ng xi18n --output-path src/app/locale",
