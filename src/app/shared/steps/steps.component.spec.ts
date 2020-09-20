@@ -16,7 +16,7 @@ import {
   StepsService
 } from './steps.service';
 
-import 
+import
   stepsTestJSON
 from '../../test/content/steps-content.json';
 
@@ -30,17 +30,17 @@ describe('StepsComponent', () => {
       declarations: [ StepsComponent ],
       imports: [RouterTestingModule],
       providers: [StepsService]
-      
+
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
     mockStepsService = TestBed.inject(StepsService);
-    mockStepsService.getContent = jasmine.createSpy().and.returnValue(stepsTestJSON);
+    mockStepsService.getContent = jasmine.createSpy().and.returnValue(stepsTestJSON["les-martis"]);
 
     fixture = TestBed.createComponent(StepsComponent);
-    component = fixture.componentInstance;
+	component = fixture.componentInstance;
     fixture.detectChanges();
 
   });
@@ -48,5 +48,5 @@ describe('StepsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  
+
 });
