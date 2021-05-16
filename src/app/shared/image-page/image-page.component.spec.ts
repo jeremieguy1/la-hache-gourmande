@@ -10,11 +10,7 @@ import {
   ImagePageContentService
 } from './image-page-content.service';
 
-import {
-  async,
-  ComponentFixture,
-  TestBed
-} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import {
   ImagePageComponent
@@ -32,7 +28,7 @@ describe('ImagePageComponent', () => {
 
   let mockRouterTestingModule: RouterTestingModule;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ImagePageComponent ],
       imports: [RouterTestingModule],

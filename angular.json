@@ -50,7 +50,6 @@
 							"optimization": true,
 							"outputHashing": "all",
 							"sourceMap": false,
-							"extractCss": true,
 							"namedChunks": false,
 							"extractLicenses": true,
 							"vendorChunk": false,
@@ -69,10 +68,12 @@
 							]
 						},
 						"en": {
-							"localize": ["en"]
+							"localize": ["en"],
+							"baseHref": "/en/"
 						},
 						"fr": {
-							"localize": ["fr"]
+							"localize": ["fr"],
+							"baseHref": "/fr/"
 						}
 					}
 				},
