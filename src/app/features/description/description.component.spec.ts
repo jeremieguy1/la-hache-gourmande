@@ -2,11 +2,7 @@ import {
   DescriptionService
 } from './description.service';
 
-import {
-  async,
-  ComponentFixture,
-  TestBed
-} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import {
   DescriptionComponent
@@ -16,7 +12,7 @@ describe('DescriptionComponent', () => {
   let component: DescriptionComponent;
   let fixture: ComponentFixture<DescriptionComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ DescriptionComponent ],
       providers: [ DescriptionService ]
