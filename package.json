@@ -13,6 +13,7 @@
 		"lint:fix": "eslint . --ext js,ts,json --quiet --fix",
 		"extract:i18n": "ng xi18n --output-path src/app/locale",
 		"e2e": "ng e2e",
+		"compodoc": "npx compodoc -p tsconfig.doc.json",
 		"heroku-postbuild": "ng build --configuration=production"
 	},
 	"private": true,
@@ -40,13 +41,12 @@
 		"express-sslify": "^1.2.0",
 		"path": "^0.12.7",
 		"rxjs": "~7.0.1",
-		"tslib": "^2.2.0",
-		"typescript": "~4.2.4",
 		"zone.js": "~0.11.4"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "12.0.1",
 		"@angular/language-service": "~12.0.1",
+		"@compodoc/compodoc": "^1.1.11",
 		"@types/jasmine": "~3.6.0",
 		"@types/jasminewd2": "~2.0.3",
 		"@types/node": "^12.11.1",
@@ -67,7 +67,9 @@
 		"protractor": "~7.0.0",
 		"puppeteer": "^5.3.0",
 		"ts-node": "~8.3.0",
-		"tslint": "~6.1.0"
+		"tslib": "^2.2.0",
+		"tslint": "~6.1.0",
+		"typescript": "~4.2.4"
 	},
 	"engines": {
 		"node": "14.16.0",
