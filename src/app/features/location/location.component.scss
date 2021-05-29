@@ -1,13 +1,13 @@
 @import "vars";
 @import "functions";
 
-.is-flex {
-    justify-content: center;
+.flex {
+	justify-content: center;
 }
 
 iframe {
-    animation: fadeIn;
-    animation-duration: 2s;
-    border: convert-to-rem(2) solid transparent;
-    border-image: linear-gradient($orange-axe, $gray) 1;
+	animation: fadeIn;
+	animation-duration: 2s;
+	border: convert-to-rem(2) solid transparent;
+	border-image: linear-gradient($orange-axe, $gray) 1;
 }

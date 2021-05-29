@@ -2,55 +2,54 @@
 @import "vars";
 @import "mixins";
 
-.is-flex {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.flex {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .section {
-    .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+	.cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
 
-        .or-cards {
-            animation: fadeIn;
-            animation-duration: 2s;
-        }
-    }
-
+		.or-cards {
+			animation: fadeIn;
+			animation-duration: 2s;
+		}
+	}
 }
 
 .space {
-    margin-top: convert-to-rem(24);
-    text-align: center;
+	margin-top: convert-to-rem(24);
+	text-align: center;
 }
 
 @include xs {
-    .section {
-        .cards {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+	.section {
+		.cards {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 }
 
 @include sm {
-    .section {
-        .cards {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+	.section {
+		.cards {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 }
 
 @include md {
-    .section {
-        .cards {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+	.section {
+		.cards {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 }

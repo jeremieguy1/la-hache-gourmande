@@ -1,15 +1,23 @@
 <div class="container">
-    <div class="section is-flex">
-        <div *ngFor="let image of imagePageContent.images; let _i = index">
-            <p *ngIf="image.title" class="is-size-4">
-                <span i18n="@@image-page-image-title">{image.title, select, title {title} other { {{image.title}} } }</span>
-            </p>
-            <img [src]="image.src" [alt]="imagePageContent.alt + (_i + 1)">
-        </div>
-        <div class="is-flex" *ngIf="imagePageContent.explanation">
-            <p class="is-size-4 explanation" *ngFor="let ligne of imagePageContent.explanation">
-                <span i18n="@@image-page-explanation">{ligne, select, ligne {ligne} other { {{ligne}} } }</span>
-            </p>
-        </div>
-    </div>
+	<div class="section flex">
+		<div *ngFor="let image of imagePageContent.images; let _i = index">
+			<p *ngIf="image.title" class="is-size-4">
+				<span i18n="@@image-page-image-title"
+					>{image.title, select, title {title} other {
+					{{ image.title }} } }</span
+				>
+			</p>
+			<img [src]="image.src" [alt]="imagePageContent.alt + (_i + 1)" />
+		</div>
+		<div class="flex" *ngIf="imagePageContent.explanation">
+			<p
+				class="is-size-4 explanation"
+				*ngFor="let ligne of imagePageContent.explanation"
+			>
+				<span i18n="@@image-page-explanation"
+					>{ligne, select, ligne {ligne} other { {{ ligne }} } }</span
+				>
+			</p>
+		</div>
+	</div>
 </div>

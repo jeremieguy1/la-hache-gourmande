@@ -1,40 +1,61 @@
 <app-page-header [pageName]="pageName"></app-page-header>
 <div class="container">
-    <div *ngIf="!available" class="space">
-        <div class="is-flex">
-            <div class="notification is-danger">
-                <p i18n="@@coordinates-warning-availabilities" class="is-size-3 has-text-white has-text-centered">Le gîte est actuellement indisponible</p>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="cards">
-            <app-card animation="animate__backInLeft"
-                i18n-title="@@coordinate-mail-title" title="Par courrier électronique"
-                [icon]="faEnvelope"
-                >
-                <div class="is-flex">
-                    <p class="is-size-4">
-                        <a href="mailto:lahachegourmande@gmail.com">lahachegourmande@gmail.com</a></p>
-                    <p i18n="@@coordinate-mail-desc" class="is-size-5">(réponse rapide assurée !)</p>
-                </div>
-            </app-card>
-            <div>
-                <p i18n="@@coordinate-or" class="or-cards is-size-1">OU</p>
-            </div>
-            <app-card animation="animate__backInRight"
-                i18n-title="@@coordinate-call-title" title="Par téléphone"
-                [icon]="faPhone"
-                >
-                <div class="is-flex">
-                    <p i18n="@@coordinate-content-phone-1" class="is-size-4">05 61 02 88 12</p>
-                    <p i18n="@@coordinate-content-or" class="is-size-5">ou</p>
-                    <p i18n="@@coordinate-content-phone-2" class="is-size-4">06 33 59 36 67</p>
-                </div>
-            </app-card>
-        </div>
-        <div class="is-flex space animate__animated animate__fadeIn">
-            <p i18n="@@coordinate-call" class="is-size-5">Veuillez préciser dès le début de la communication la raison de votre appel, merci...</p>
-        </div>
-    </div>
+	<div *ngIf="!available" class="space">
+		<div class="flex">
+			<div class="notification is-danger">
+				<p
+					i18n="@@coordinates-warning-availabilities"
+					class="is-size-3 has-text-white has-text-centered"
+				>
+					Le gîte est actuellement indisponible
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="cards">
+			<app-card
+				animation="animate__backInLeft"
+				i18n-title="@@coordinate-mail-title"
+				title="Par courrier électronique"
+				[icon]="faEnvelope"
+			>
+				<div class="flex">
+					<p class="is-size-4">
+						<a href="mailto:lahachegourmande@gmail.com"
+							>lahachegourmande@gmail.com</a
+						>
+					</p>
+					<p i18n="@@coordinate-mail-desc" class="is-size-5">
+						(réponse rapide assurée !)
+					</p>
+				</div>
+			</app-card>
+			<div>
+				<p i18n="@@coordinate-or" class="or-cards is-size-1">OU</p>
+			</div>
+			<app-card
+				animation="animate__backInRight"
+				i18n-title="@@coordinate-call-title"
+				title="Par téléphone"
+				[icon]="faPhone"
+			>
+				<div class="flex">
+					<p i18n="@@coordinate-content-phone-1" class="is-size-4">
+						05 61 02 88 12
+					</p>
+					<p i18n="@@coordinate-content-or" class="is-size-5">ou</p>
+					<p i18n="@@coordinate-content-phone-2" class="is-size-4">
+						06 33 59 36 67
+					</p>
+				</div>
+			</app-card>
+		</div>
+		<div class="flex space animate__animated animate__fadeIn">
+			<p i18n="@@coordinate-call" class="is-size-5">
+				Veuillez préciser dès le début de la communication la raison de
+				votre appel, merci...
+			</p>
+		</div>
+	</div>
 </div>

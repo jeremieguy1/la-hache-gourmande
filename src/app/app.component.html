@@ -1,32 +1,53 @@
-<a i18n="@@app-skiplink" class="skiplink" [href]="skipLinkPath">Passer au contenu</a>
-<div id="app" class="head is-flex">
-    <div class="container">
-        <div class="is-flex">
-            <div class="is-flex">
-                <span class="head-text">La hache gourmande</span>
-            </div>
-            <div class="is-flex">
-                <a class="image is-24x24" [href]="hrefLocale" (click)='redirectTo("fr")'>
-                    <img src="assets/flag/flag-fr.png"
-                        i18n-alt="@@app-flag-french-alt" alt="Drapeau Français"
-                        i18n-title="@@app-flag-french-title" title="Drapeau Français">
-                </a>
-                <a class="image is-24x24" [href]="hrefLocale" (click)='redirectTo("en")'>
-                    <img src="assets/flag/flag-en.png"
-                    i18n-alt="@@app-flag-english-alt" alt="Drapeau Anglais"
-                    i18n-title="@@app-flag-english-title" title="Drapeau Anglais">
-                </a>
-            </div>
-        </div>
-    </div>
+<a i18n="@@app-skiplink" class="skiplink" [href]="skipLinkPath"
+	>Passer au contenu</a
+>
+<div id="app" class="head flex">
+	<div class="container mx-4/6">
+		<div class="flex">
+			<div class="flex">
+				<span class="head-text">La hache gourmande</span>
+			</div>
+			<div class="flex">
+				<a
+					class="image is-24x24"
+					[href]="hrefLocale"
+					(click)="redirectTo('fr')"
+				>
+					<img
+						src="assets/flag/flag-fr.png"
+						i18n-alt="@@app-flag-french-alt"
+						alt="Drapeau Français"
+						i18n-title="@@app-flag-french-title"
+						title="Drapeau Français"
+					/>
+				</a>
+				<a
+					class="image is-24x24"
+					[href]="hrefLocale"
+					(click)="redirectTo('en')"
+				>
+					<img
+						src="assets/flag/flag-en.png"
+						i18n-alt="@@app-flag-english-alt"
+						alt="Drapeau Anglais"
+						i18n-title="@@app-flag-english-title"
+						title="Drapeau Anglais"
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
 <app-navbar></app-navbar>
 <div id="main-content">
-    <router-outlet></router-outlet>
+	<router-outlet></router-outlet>
 </div>
-<a *ngIf="isScrolled"
-    class="back-to-top"
-    [href]="backToTopPath"
-    i18n-title="@@app-backToTop-title" title="Lien haut de page">
-    <fa-icon [icon]="faArrowUp"></fa-icon>
+<a
+	*ngIf="isScrolled"
+	class="back-to-top"
+	[href]="backToTopPath"
+	i18n-title="@@app-backToTop-title"
+	title="Lien haut de page"
+>
+	<fa-icon [icon]="faArrowUp"></fa-icon>
 </a>

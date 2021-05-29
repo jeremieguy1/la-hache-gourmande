@@ -6,22 +6,25 @@
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma-carousel/src/sass/index.sass";
 @import "../node_modules/bulma-o-steps/bulma-steps.sass";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import "../node_modules/animate.css/animate.min.css";
 
 html {
-    height: 100%;
-    background-color: $background-gray-0;
-    color: $gray;
-    scroll-behavior: smooth;
-    
-    @include scroll-auto;
+	height: 100%;
+	background-color: $background-gray-0;
+	color: $gray;
+	scroll-behavior: smooth;
 
-    a {
-        color: $gray;
-    }
+	@include scroll-auto;
 
-    .title {
-        color: $gray;
-    }
+	a {
+		color: $gray;
+	}
+
+	.title {
+		color: $gray;
+	}
 }

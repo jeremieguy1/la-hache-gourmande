@@ -3,86 +3,85 @@
 @import "mixins";
 
 .container {
+	.flex {
+		justify-content: center;
+	}
 
-    .is-flex {
-        justify-content: center;
-    }
+	.notification {
+		max-width: 60%;
 
-    .notification {
-        max-width: 60%;
+		.flex {
+			align-items: center;
+			justify-content: center;
+		}
+	}
 
-        .is-flex {
-            align-items: center;
-            justify-content: center;
-        }
-    }
+	.hr {
+		display: flex;
+		justify-content: center;
 
-    .hr {
-        display: flex;
-        justify-content: center;
-        
-        hr {
-            border: none;
-            border-top: convert-to-rem(2) solid $gray;
-            text-align: center;
-            width: 50%;
-        }
-    }
-    
-    .space {
-        padding-top: convert-to-rem(24);
-    }
-    .section {
-        .is-flex {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .cards {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            
-            ul {
-                li {
-                    padding-bottom: convert-to-rem(8);
-                }
-            }
-        }
-    }
+		hr {
+			border: none;
+			border-top: convert-to-rem(2) solid $gray;
+			text-align: center;
+			width: 50%;
+		}
+	}
+
+	.space {
+		padding-top: convert-to-rem(24);
+	}
+	.section {
+		.flex {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.cards {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+
+			ul {
+				li {
+					padding-bottom: convert-to-rem(8);
+				}
+			}
+		}
+	}
 }
 
 @include xs {
-    .container {
-        .section {
-            .cards {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    }
+	.container {
+		.section {
+			.cards {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
 }
 
 @include sm {
-    .container {
-        .section {
-            .cards {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    }
+	.container {
+		.section {
+			.cards {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
 }
 
 @include md {
-    .container {
-        .section {
-            .cards {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    }
+	.container {
+		.section {
+			.cards {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
 }

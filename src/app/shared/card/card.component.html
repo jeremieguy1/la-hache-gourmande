@@ -1,11 +1,11 @@
 <div [class]="cardClass">
-    <header class="card-header">
-        <p class="card-header-title">{{title}}</p>
-    </header>
-    <div class="card-content">
-        <div class="is-flex">
-            <fa-icon [class]="iconClass" [icon]="icon"></fa-icon>
-            <ng-content></ng-content>
-        </div>
-    </div>
+	<header class="card-header">
+		<p class="card-header-title">{{ title }}</p>
+	</header>
+	<div class="card-content">
+		<div class="flex">
+			<fa-icon [class]="iconClass" [icon]="icon"></fa-icon>
+			<ng-content></ng-content>
+		</div>
+	</div>
 </div>

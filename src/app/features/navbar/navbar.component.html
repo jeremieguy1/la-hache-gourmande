@@ -1,68 +1,102 @@
 <div class="background">
-    <div class="container">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand navbar-item" routerLinkActive="active">
-                <a class="is-light is-outlined is-flex" routerLink="/home">
-                    <img src="assets/image/hache-g.png" i18n-alt="@@navbar-nav-home-alt" alt="Accueil logo">
-                    <span i18n="@@navbar-nav-home" class="welcome-libelle">Accueil</span>
-                </a>
-                <div (click)="burgerClick($event)"
-                    (keydown)="burgerClick($event)"
-                    role="button"
-                    class="navbar-burger burger"
-                    tabindex="0"
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbar-menu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                </div>
-            </div>
-            <div id="navbar-menu" class="navbar-menu">
-                <div class="navbar-start">
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/visit">
-                            <span i18n="@@navbar-nav-visit">Visite du gîte</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/description">
-                            <span i18n="@@navbar-nav-description">Descriptif du gîte</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/history">
-                            <span i18n="@@navbar-nav-history">Notre histoire</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/les-martis">
-                            <span i18n="@@navbar-nav-les-martis">Le coin des Martis</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/location">
-                            <span i18n="@@navbar-nav-location">Localisation</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/prices" >
-                            <span i18n="@@navbar-nav-prices">Nos tarifs</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/coordinate">
-                            <span i18n="@@navbar-nav-coordinates">Nos coordonnées</span>
-                        </a>
-                    </div>
-                    <div class="navbar-item" routerLinkActive="active">
-                        <a class="is-light is-outlined" routerLink="/availabilities">
-                            <span i18n="@@navbar-nav-avaibility">Nos disponibilités</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+	<div class="container">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand navbar-item" routerLinkActive="active">
+				<a class="is-light is-outlined flex" routerLink="/home">
+					<img
+						src="assets/image/hache-g.png"
+						i18n-alt="@@navbar-nav-home-alt"
+						alt="Accueil logo"
+					/>
+					<span i18n="@@navbar-nav-home" class="welcome-libelle"
+						>Accueil</span
+					>
+				</a>
+				<div
+					(click)="burgerClick($event)"
+					(keydown)="burgerClick($event)"
+					role="button"
+					class="navbar-burger burger"
+					tabindex="0"
+					aria-label="menu"
+					aria-expanded="false"
+					data-target="navbar-menu"
+				>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</div>
+			</div>
+			<div id="navbar-menu" class="navbar-menu">
+				<div class="navbar-start">
+					<div class="navbar-item" routerLinkActive="active">
+						<a class="is-light is-outlined" routerLink="/visit">
+							<span i18n="@@navbar-nav-visit"
+								>Visite du gîte</span
+							>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a
+							class="is-light is-outlined"
+							routerLink="/description"
+						>
+							<span i18n="@@navbar-nav-description"
+								>Descriptif du gîte</span
+							>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a class="is-light is-outlined" routerLink="/history">
+							<span i18n="@@navbar-nav-history"
+								>Notre histoire</span
+							>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a
+							class="is-light is-outlined"
+							routerLink="/les-martis"
+						>
+							<span i18n="@@navbar-nav-les-martis"
+								>Le coin des Martis</span
+							>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a class="is-light is-outlined" routerLink="/location">
+							<span i18n="@@navbar-nav-location"
+								>Localisation</span
+							>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a class="is-light is-outlined" routerLink="/prices">
+							<span i18n="@@navbar-nav-prices">Nos tarifs</span>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a
+							class="is-light is-outlined"
+							routerLink="/coordinate"
+						>
+							<span i18n="@@navbar-nav-coordinates"
+								>Nos coordonnées</span
+							>
+						</a>
+					</div>
+					<div class="navbar-item" routerLinkActive="active">
+						<a
+							class="is-light is-outlined"
+							routerLink="/availabilities"
+						>
+							<span i18n="@@navbar-nav-avaibility"
+								>Nos disponibilités</span
+							>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
 </div>

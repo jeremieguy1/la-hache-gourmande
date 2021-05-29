@@ -1,10 +1,14 @@
 <app-page-header [pageName]="pageName"></app-page-header>
 <div class="container">
-    <div class="section">
-        <p *ngFor="let paragraph of historyContent.section"
-            class="paragraph is-size-4">
-            <span i18n="@@history-content">{paragraph.content, select, content {content} other { {{paragraph.content}} } }</span>
-        </p>
-    </div>
+	<div class="section">
+		<p
+			*ngFor="let paragraph of historyContent.section"
+			class="paragraph is-size-4"
+		>
+			<span i18n="@@history-content"
+				>{paragraph.content, select, content {content} other {
+				{{ paragraph.content }} } }</span
+			>
+		</p>
+	</div>
 </div>
-
