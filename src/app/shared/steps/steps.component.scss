@@ -2,52 +2,52 @@
 @import "mixins";
 
 .section {
-    padding-top: convert-to-rem(48);
+	padding-top: convert-to-rem(48);
 
-    .steps {
-        animation: zoomIn;
-        animation-duration: 1s;
+	.steps {
+		animation: zoomIn;
+		animation-duration: 1s;
 
-        .steps-segment {
-            button {
-                transition:background-color 1s ease;
-            }
-        }
-    }
+		.steps-segment {
+			button {
+				transition: background-color 1s ease;
+			}
+		}
+	}
 }
 
 @include xs {
-    .section {
-        display: flex;
-        justify-content: center;
+	.section {
+		display: flex;
+		justify-content: center;
 
-        .steps {
-            .steps-segment {
-                display: flex;
-                align-items: baseline;
+		.steps {
+			.steps-segment {
+				display: flex;
+				align-items: baseline;
 
-                span {
-                    padding-left: convert-to-rem(4);
-                }
-            }
-        }
-    }
+				span {
+					padding-left: convert-to-rem(4);
+				}
+			}
+		}
+	}
 }
 
 @include sm {
-    .section {
-        display: flex;
-        justify-content: center;
+	.section {
+		display: flex;
+		justify-content: center;
 
-        .steps {
-            .steps-segment {
-                display: flex;
-                align-items: baseline;
+		.steps {
+			.steps-segment {
+				display: flex;
+				align-items: baseline;
 
-                span {
-                    padding-left: convert-to-rem(4);
-                }
-            }
-        }
-    }
+				span {
+					padding-left: convert-to-rem(4);
+				}
+			}
+		}
+	}
 }
